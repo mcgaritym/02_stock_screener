@@ -1,13 +1,21 @@
 # import libraries
-import config
+import pandas as pd
+import os
+import glob
+import time
+import numpy as np
+import yfinance as yf
 
-# set up database connection (credentials from config file)
-engine = create_engine(
-    f"mysql+mysqlconnector://{user}:{pwd}@{host}:{port}/",
-    echo=False)
-conn = engine.connect()
-conn.execute("CREATE DATABASE IF NOT EXISTS Stocks;")
-conn.close()
+# import config file and Setup class
+import config
+from setup import Setup
+
+# call Setup class from setup.py file
+connection = Setup(config.user, config.pwd, config.host, config.port, config.db)
+
+# create database and connection
+connection.create_database()
+conn = connection.create_connection()
 
 # extract financial data from stock data API (based on stock ticker table)
 def stock_financials(df):
@@ -19,8 +27,6 @@ def stock_financials(df):
                                           'revenue_Y-0', 'revenue_Y-1', 'revenue_Y-2', 'revenue_Y-3',
                                           'trailingPE', 'trailingEps', 'twoHundredDayAverage', 'fiftyDayAverage',
                                           'dividendRate', 'industry', 'sector', 'zip', 'state'])
-
-    df = df[2000:5000]
 
     # loop over tickers
     for i, row in df.iterrows():
@@ -192,11 +198,9 @@ def stock_financials(df):
     return df_financials
 
 
-tickers_list = pd.read_sql_query("""SELECT symbol FROM stock_tickers WHERE `Market Cap` > 0;""", con=engine)
+tickers_list = pd.read_sql_query("""SELECT symbol FROM stock_tickers WHERE `Market Cap` > 0;""", con=conn)
+df_financials = stock_financials(tickers_list[:20])
+df_financials.to_sql(name='stock_financials', con=conn, if_exists='replace')
 
-df_financials = stock_financials(tickers_list)
-df_financials.to_sql(name='stock_financials', con=engine, if_exists='append')
-
-conn.close()
-
-# load to SQL database (staging)
+# close connection
+connection.close_connection()
