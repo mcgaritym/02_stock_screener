@@ -1,6 +1,15 @@
-# extract from stock data API
+# import libraries
+import config
 
-# define function for generating stock history of each ticker and concatenate to master dataframe
+# set up database connection (credentials from config file)
+engine = create_engine(
+    f"mysql+mysqlconnector://{user}:{pwd}@{host}:{port}/",
+    echo=False)
+conn = engine.connect()
+conn.execute("CREATE DATABASE IF NOT EXISTS Stocks;")
+conn.close()
+
+# extract financial data from stock data API (based on stock ticker table)
 def stock_financials(df):
     # create empty df
     df_financials = pd.DataFrame(columns=['symbol',
@@ -189,3 +198,5 @@ df_financials = stock_financials(tickers_list)
 df_financials.to_sql(name='stock_financials', con=engine, if_exists='append')
 
 conn.close()
+
+# load to SQL database (staging)

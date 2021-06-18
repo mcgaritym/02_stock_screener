@@ -24,3 +24,5 @@ def get_news():
 df_news = get_news()
 
 # conn.close()
+
+# load to SQL database (staging)

@@ -1,5 +1,29 @@
-# extract from stock ticker download (.csv)
+# import libraries
+import pandas as pd
+import os
+import glob
+import time
 
+# scraping libraries
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium import webdriver
+from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions
+from selenium.webdriver.common.by import By
+
+# import config settings and Setup class
+import config
+from setup import Setup
+
+# call Setup class from setup.py file
+connection = Setup(config.user, config.pwd, config.host, config.port, config.db)
+
+# create database and connection
+connection.create_database()
+conn = connection.create_connection()
+
+# extract from stock ticker download (.csv)
 def get_tickers(url):
     # set page load and driver options
     capa = DesiredCapabilities.CHROME
@@ -45,4 +69,10 @@ def get_tickers(url):
 
 df_tickers = get_tickers('https://www.nasdaq.com/market-activity/stocks/screener')
 df_tickers = df_tickers.sort_values(by='Market Cap', ascending=False)
-df_tickers.to_sql(name='stock_tickers', con=engine, if_exists='replace', index=False)
+
+# load to SQL database (staging)
+df_tickers.to_sql(name='stock_tickers', con=conn, if_exists='replace', index=False)
+
+# close connection
+connection.close_connection()
+
