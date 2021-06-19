@@ -38,6 +38,3 @@ class Setup:
 # call Setup class from setup.py file
 connection = Setup(config.user, config.pwd, config.host, config.port, config.db)
 
-connection.create_database()
-connection.create_connection()
-connection.close_connection()
