@@ -53,6 +53,6 @@ def clean_news(df):
 df_clean = clean_news(df)
 
 # send to SQL table
-df_clean.to_sql(name='news_sentiment_CLEANED', con=conn, if_exists='replace', index_label='date')
+df_clean.to_sql(name='news_sentiment_CLEAN', con=conn, if_exists='replace', index_label='date')
 
 print('debug')
