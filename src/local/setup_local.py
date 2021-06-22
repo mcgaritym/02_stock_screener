@@ -1,7 +1,7 @@
 
 # import libraries
 from sqlalchemy import create_engine
-import config
+import config_local
 from mysql import connector
 # set up database connection (credentials from config file)
 class Setup:
@@ -35,6 +35,6 @@ class Setup:
         conn.close()
 
 
-# call Setup class from setup.py file
-connection = Setup(config.user, config.pwd, config.host, config.port, config.db)
+# call Setup class from setup_cloud.py file
+connection = Setup(config_local.user, config_local.pwd, config_local.host, config_local.port, config_local.db)
 

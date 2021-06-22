@@ -6,8 +6,10 @@ Created on Thu May 27 22:16:52 2021
 @author: mcgaritym
 """
 
-
-host="stocks-database.cj4j9csypvlc.us-east-2.rds.amazonaws.com"
+# credentials
 user="admin"
 pwd="Nalgene09!"
-db_name = "stocks_db"
+host="stocks-database.cj4j9csypvlc.us-east-2.rds.amazonaws.com"
+port = int(3306)
+db = 'Stocks'
+
