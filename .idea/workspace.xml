@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="" />
+    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="updated pycharm folders">
+      <change afterPath="$PROJECT_DIR$/src/02_stocks_ETL_extract_financials.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02_stocks_ETL_extract_sentiment.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02_stocks_ETL_extract_tickers.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02_stocks_ETL_load.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02_stocks_ETL_query.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/02_stocks_ETL_transform.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/airflow_DAG.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -18,6 +36,19 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/ELT" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/other" />
+      <recent name="$PROJECT_DIR$/src/ETL" />
+      <recent name="$PROJECT_DIR$/src/ELT" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -28,6 +59,30 @@
       <option name="presentableId" value="Default" />
       <updated>1624635078200</updated>
     </task>
+    <task id="LOCAL-00001" summary="updated pycharm folders">
+      <created>1624635544704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1624635544704</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated pycharm folders" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated pycharm folders" />
   </component>
 </project>

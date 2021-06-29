@@ -1,10 +1,4 @@
 # import config settings and Setup class
-import pandas as pd
-import numpy as np
-import re
-import time
-from sqlalchemy import create_engine
-import pymysql
 import config_local
 from setup_local import Setup
 

@@ -1,8 +1,5 @@
 # import libraries
 import pandas as pd
-import os
-import glob
-import time
 import numpy as np
 import yfinance as yf
 

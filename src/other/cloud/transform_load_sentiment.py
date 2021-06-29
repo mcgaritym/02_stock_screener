@@ -1,20 +1,14 @@
 # import config settings and Setup class
 import pandas as pd
-import numpy as np
-import re
-import time
-from sqlalchemy import create_engine
-import pymysql
 
-import config_local
-from setup_local import Setup
+import config_cloud
+from setup_cloud import Setup
 
 # import NLP libraries
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import nltk
 
 # call Setup class from setup_cloud.py file
-connection = Setup(config_local.user, config_local.pwd, config_local.host, config_local.port, config_local.db)
+connection = Setup(config_cloud.user, config_cloud.pwd, config_cloud.host, config_cloud.port, config_cloud.db)
 
 # create database and connection
 connection.create_database()
