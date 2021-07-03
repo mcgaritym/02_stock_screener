@@ -9,7 +9,8 @@ import logging
 # set up database connection (credentials from config file)
 class Setup:
 
-    def __init__(self, user, pwd, host, port, db, service_name, region_name, aws_access_key_id, aws_secret_access_key):
+    def __init__(self, user, pwd, host, port, db, service_name, region_name, aws_access_key_id, aws_secret_access_key,
+                 local_host, local_user, local_pwd, local_port, local_db):
         self.user = user
         self.pwd = pwd
         self.host = host
@@ -19,6 +20,12 @@ class Setup:
         self.region_name = region_name
         self.aws_access_key_id = aws_access_key_id
         self.aws_secret_access_key = aws_secret_access_key
+        self.local_host = local_host
+        self.local_user = local_user
+        self.local_pwd = local_pwd
+        self.local_port = local_port
+        self.local_db = local_db
+
 
     def rds_database(self):
         engine = create_engine(
@@ -48,6 +55,20 @@ class Setup:
             aws_access_key_id=self.aws_access_key_id,
             aws_secret_access_key=self.aws_secret_access_key)
         return s3
+
+    def local_database(self):
+        engine = create_engine(
+            f"mysql+mysqlconnector://{self.local_user}:{self.local_pwd}@{self.local_host}:{self.local_port}/",
+            echo=False)
+        conn = engine.connect()
+        conn.execute("CREATE DATABASE IF NOT EXISTS {};".format(self.local_db))
+        conn.close()
+
+    def local_connect(self):
+        engine = create_engine(
+            f"mysql+mysqlconnector://{self.local_user}:{self.local_pwd}@{self.local_host}:{self.local_port}/{self.local_db}",
+            echo=False)
+        return engine.connect()
 
     # def redshift(self):
     #     # TBD
