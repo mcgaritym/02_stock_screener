@@ -5,9 +5,11 @@ import os
 import boto3
 from src.setup.setup import Setup
 from src.setup import config
-import pyspark
-from pyspark import SparkConf, SparkContext
-from pyspark.sql import SparkSession
+import json
+import requests
+import io
+from io import BytesIO, StringIO
+
 
 # call Setup class as connection
 connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
@@ -23,52 +25,35 @@ connection.local_database()
 my_sql = connection.local_connect()
 
 # collect stock financials in local directory and upload to s3
-def upload_financials_s3(sql_table, parquet_name):
+def upload_financials_s3(sql_table, bucket_name, object_name):
 
-    # load into spark, convert to parquet
-    conf = SparkConf()  # create the configuration
-    conf.set("spark.driver.extraClassPath", "/Users/mcgaritym/server/mysql-connector-java-8.0.25/mysql-connector-java-8.0.25.jar")  # set the spark.jars
-    spark = SparkSession.builder.config(conf=conf).master("local").appName("Python Spark SQL basic example").getOrCreate()
-    # spark = SparkSession.builder.getOrCreate()
-    df = spark.read.jdbc(url="jdbc:mysql://localhost/Stocks", table=sql_table,
-                         properties={"user": "root", "password": "Nalgene09!"})
-    print(df.show())
-    df.write.parquet(parquet_name)
+    # connect to local SQL
+    df_financials = pd.read_sql(sql="SELECT * FROM {};".format(sql_table), con=my_sql)
+    print(df_financials.head())
 
+    # convert to csv in memory
+    csv_buffer = StringIO()
+    df_financials.to_csv(csv_buffer)
 
+    # upload to s3 as csv
+    try:
+        # upload to s3
+        s3 = connection.s3()
+        s3.Object(bucket_name, object_name).put(Body=csv_buffer.getvalue())
+        print('{} uploaded to s3 successfully'.format(object_name))
 
-    #
-    # # load to AWS s3
-    #
-    #
-    # # get current parent directory and data folder path
-    # par_directory = os.path.dirname(os.path.dirname(os.getcwd()))
-    # data_directory = os.path.join(par_directory, 'data/raw')
-    #
-    # # retrieve tripdata files
-    # files = glob.glob(os.path.join(data_directory, local_filename))
-    # print(files)
-    #
-    # for f in files:
-    #
-    #     try:
-    #         # upload file to s3
-    #         object_name = f.split("/")[-1]
-    #         s3.Object(bucket_name, object_name).upload_file(Filename=f)
-    #         print('{} uploaded to s3 successfully'.format(object_name))
-    #
-    #     except:
-    #         # error
-    #         print('Error: Did not upload {} to s3'.format(object_name))
-    #
+    except:
+        # error
+        print('Error: Did not upload {} to s3'.format(object_name))
+
 
 # call function
-upload_financials_s3("stock_financials", "parquet_test2.parquet")
+upload_financials_s3("stock_financials", "stocks.bucket", "stock_financials.csv")
 #
-# # print all s3 buckets
-# for bucket in s3.buckets.all():
-#     print(bucket.name)
-#
-# # # print objects within S3 bucket
-# for object in s3.Bucket('bikeshare.bucket').objects.all():
-#     print(object)
+# print all s3 buckets
+for bucket in s3.buckets.all():
+    print(bucket.name)
+
+# # print objects within S3 bucket
+for object in s3.Bucket('bikeshare.bucket').objects.all():
+    print(object)
