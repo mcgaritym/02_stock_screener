@@ -18,7 +18,7 @@ connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
                    config.local_pwd, config.local_port, 'Stocks')
 
 # create AWS s3 connection
-s3 = connection.s3()
+s3 = connection.s3_resource()
 
 # create local mySQL connection
 connection.local_database()

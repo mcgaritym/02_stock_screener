@@ -19,7 +19,7 @@ connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
 
 
 # create AWS s3 connection
-s3 = connection.s3()
+s3 = connection.s3_resource()
 
 # create local mySQL connection
 connection.local_database()
@@ -63,7 +63,7 @@ def upload_sentiment_s3(sql_table, bucket_name, object_name):
         print('Error: Did not upload {} to s3'.format(object_name))
 
 
-call function
+# call function
 upload_sentiment_s3("news_sentiment", "stocks.bucket", "news_sentiment.parquet")
 
 # print all s3 buckets

@@ -48,12 +48,20 @@ class Setup:
     #     conn = engine.connect()
     #     conn.close()
 
-    def s3(self):
+    def s3_resource(self):
         s3 = boto3.resource(
             service_name=self.service_name,
             region_name=self.region_name,
             aws_access_key_id=self.aws_access_key_id,
             aws_secret_access_key=self.aws_secret_access_key)
+        return s3
+
+    def s3_client(self):
+        s3_session = boto3.Session(
+            region_name=self.region_name,
+            aws_access_key_id=self.aws_access_key_id,
+            aws_secret_access_key=self.aws_secret_access_key)
+        s3 = s3_session.client('s3')
         return s3
 
     def local_database(self):
