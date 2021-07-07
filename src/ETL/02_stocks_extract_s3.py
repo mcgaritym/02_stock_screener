@@ -1,13 +1,7 @@
 # import libraries
 import pandas as pd
-import glob
-import os
-import boto3
 from src.setup.setup import Setup
 from src.setup import config
-import json
-import requests
-import io
 from io import BytesIO, StringIO
 
 # call Setup class as connection
@@ -99,22 +93,25 @@ def upload_sentiment_s3(sql_table, bucket_name, object_name):
         # error
         print('Error: Did not upload {} to s3'.format(object_name))
 
-# call function
-empty_s3("stocks.bucket")
 
-# call function
-upload_sentiment_s3("news_sentiment", "stocks.bucket", "news_sentiment.parquet")
+def main():
+    # call functions
+    empty_s3("stocks.bucket")
+    upload_sentiment_s3("news_sentiment", "stocks.bucket", "news_sentiment.parquet")
+    upload_tickers_s3("stock_tickers", "stocks.bucket", "stock_tickers.csv")
+    upload_financials_s3("stock_financials", "stocks.bucket", "stock_financials.csv")
 
-# call function
-upload_tickers_s3("stock_tickers", "stocks.bucket", "stock_tickers.csv")
+    # print all s3 buckets
+    for bucket in s3_resource.buckets.all():
+        print(bucket.name)
 
-# call function
-upload_financials_s3("stock_financials", "stocks.bucket", "stock_financials.csv")
+    # # print objects within S3 bucket
+    for object in s3_resource.Bucket('stocks.bucket').objects.all():
+        print(object)
 
-# print all s3 buckets
-for bucket in s3_resource.buckets.all():
-    print(bucket.name)
+if __name__ == "__main__":
+    main()
 
-# # print objects within S3 bucket
-for object in s3_resource.Bucket('stocks.bucket').objects.all():
-    print(object)
+
+
+

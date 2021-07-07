@@ -1,14 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="updated s3 to rds">
+    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="updated query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/02_stocks_ELT_extract_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/02_stocks_DAG.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/02_stocks_ELT_extract_sentiment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/02_stocks_ELT_extract_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/02_stocks_ELT_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/02_stocks_ELT_query.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/02_stocks_ELT_transform.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ELT/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_extract_rds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ETL/02_stocks_extract_rds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_extract_s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ETL/02_stocks_extract_s3.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_load_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ETL/02_stocks_load_query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_transform_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/02_stocks_transform_financials.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_transform_rds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/ETL/02_stocks_transform_rds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_transform_sentiment.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/02_stocks_transform_sentiment.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ETL/02_stocks_transform_tickers.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/other/02_stocks_transform_tickers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/02_stocks_extract_financials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/02_stocks_extract_sentiment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/02_stocks_extract_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/02_stocks_transform_financials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/02_stocks_transform_sentiment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/02_stocks_transform_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/config_cloud.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/extract_financials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/extract_sentiment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/extract_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/query_stocks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/setup_cloud.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/cloud/test_connect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/config2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/config_aws.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/config_google.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/create_db_test_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/financial_news_scraper.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/config_local.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/extract_financials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/extract_sentiment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/extract_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/query_stocks.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/setup_local.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/transform_load_financials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/transform_load_sentiment.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/local/transform_load_tickers.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_aws_rds.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_aws_rds2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_db_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_google_cloud.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_query1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_query_1.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_query_undervalued.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/other/stock_screener.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setup/airflow_DAG.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setup/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/setup/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +93,11 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/airflow" />
       <recent name="$PROJECT_DIR$/src/other" />
       <recent name="$PROJECT_DIR$/src/ETL" />
       <recent name="$PROJECT_DIR$/src/setup" />
       <recent name="$PROJECT_DIR$/src/ELT" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="Python.02_stocks_load_query">
@@ -225,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625626290730</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated query">
+      <created>1625663218381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1625663218381</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +293,7 @@
     <MESSAGE value="updated pycharm folders" />
     <MESSAGE value="updated ETL/ELT structure" />
     <MESSAGE value="updated s3 to rds" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated s3 to rds" />
+    <MESSAGE value="updated query" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated query" />
   </component>
 </project>

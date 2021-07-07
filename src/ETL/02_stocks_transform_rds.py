@@ -1,16 +1,8 @@
 # import libraries
 import pandas as pd
-import glob
-import os
-import boto3
 from src.setup.setup import Setup
 from src.setup import config
-import json
-import requests
-import io
-from io import BytesIO, StringIO
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-
 
 # call Setup class as connection
 connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
@@ -134,11 +126,20 @@ def clean_sentiment():
     # send to SQL table
     df_sentiment.to_sql(name='news_sentiment_CLEAN', con=rds, if_exists='replace', index_label='date')
 
-# call functions
-clean_financials()
-clean_tickers()
-clean_sentiment()
 
-# print tables in RDS
-tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = 'stocks';""", con=rds)
-print(tables)
+def main():
+    # call functions
+    clean_financials()
+    clean_tickers()
+    clean_sentiment()
+
+    # print tables in RDS
+    tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = 'stocks';""", con=rds)
+    print(tables)
+
+if __name__ == "__main__":
+    main()
+
+
+
+

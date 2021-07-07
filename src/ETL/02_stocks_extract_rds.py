@@ -1,16 +1,8 @@
 # import libraries
 import pandas as pd
-import glob
-import os
-import boto3
 from src.setup.setup import Setup
 from src.setup import config
-import json
-import requests
 import io
-from io import BytesIO, StringIO
-import s3fs
-from sqlalchemy import text, bindparam
 
 # call Setup class as connection
 connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
@@ -24,14 +16,13 @@ s3_resource = connection.s3_resource()
 
 # create AWS RDS connection
 rds_database = connection.rds_database()
-rds_database
 rds = connection.rds_connect()
 
 def empty_rds(db_name):
 
     # print current tables
-    tables = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = %s;", con=rds, params={db_name})
-    # tables = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = :s", con=rds, params={'s': db_name})
+    tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = %s;""",
+                         con=rds, params={db_name})
     tables_list = list(tables['TABLE_NAME'])
     print(tables_list)
 
@@ -41,7 +32,8 @@ def empty_rds(db_name):
         rds.execute(query)
 
     # print current tables
-    tables = pd.read_sql("SELECT table_name FROM information_schema.tables WHERE table_schema = %s;", con=rds, params={db_name})
+    tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = %s;""",
+                         con=rds, params={db_name})
     print(tables)
 
 # function to load from s3
@@ -83,12 +75,17 @@ def s3_to_rds(bucket_name):
             print('Error: Could not send {} to RDS'.format(object_name))
             pass
 
-# empty rds tables
-empty_rds('stocks')
 
-# load s3 objects to rds table
-s3_to_rds("stocks.bucket")
+def main():
+    # call functions
+    empty_rds('stocks')
+    s3_to_rds("stocks.bucket")
 
-# print tables in RDS
-tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = 'stocks';""", con=rds)
-print(tables)
+    # print tables in RDS
+    tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = 'stocks';""", con=rds)
+    print(tables)
+
+
+if __name__ == "__main__":
+    main()
+
