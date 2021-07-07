@@ -43,7 +43,7 @@ GROUP BY fin.industry
 ORDER BY AVG(fin.trailingPE) DESC
 )
 
-SELECT stock_financials_CLEAN.*, sector_pe_avg.*, industry_pe_avg.*, stock_tickers_CLEAN.`market_cap`, stock_tickers_CLEAN.`price`
+SELECT stock_financials_CLEAN.symbol, stock_financials_CLEAN.industry, stock_financials_CLEAN.sector, sector_pe_avg.*, industry_pe_avg.*, stock_tickers_CLEAN.`market_cap`, stock_tickers_CLEAN.`price`
 FROM stock_financials_CLEAN
 JOIN sector_pe_avg
 ON sector_pe_avg.sector = stock_financials_CLEAN.sector
@@ -58,5 +58,4 @@ AND `price` < twoHundredDayAverage
 ORDER BY `market_cap` DESC;
 """, con=rds)
 
-print(df.columns)
 print(df)

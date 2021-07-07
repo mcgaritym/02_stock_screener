@@ -10,7 +10,6 @@ import requests
 import io
 from io import BytesIO, StringIO
 import s3fs
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
 from sqlalchemy import text, bindparam
 
 # call Setup class as connection

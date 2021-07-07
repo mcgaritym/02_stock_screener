@@ -9,6 +9,7 @@ import json
 import requests
 import io
 from io import BytesIO, StringIO
+from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 
 # call Setup class as connection
@@ -137,3 +138,7 @@ def clean_sentiment():
 clean_financials()
 clean_tickers()
 clean_sentiment()
+
+# print tables in RDS
+tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = 'stocks';""", con=rds)
+print(tables)
