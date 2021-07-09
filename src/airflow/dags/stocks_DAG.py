@@ -1,7 +1,6 @@
 # import libraries
 from datetime import timedelta
-import logging
-import stocks_extract_s3, stocks_extract_rds, stocks_transform_rds, stocks_load_query
+import scripts.stocks_extract_s3, scripts.stocks_extract_rds, scripts.stocks_transform_rds, scripts.stocks_load_query
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
@@ -55,26 +54,26 @@ dag = DAG(
 
 stocks_extract_s3 = PythonOperator(
     task_id='stocks_extract_s3',
-    python_callable=stocks_extract_s3.main,
+    python_callable=scripts.stocks_extract_s3.main,
     dag=dag
 )
 
 stocks_extract_rds = PythonOperator(
     task_id='stocks_extract_rds',
-    python_callable=stocks_extract_rds.main,
+    python_callable=scripts.stocks_extract_rds.main,
     dag=dag
 )
 
 stocks_transform_rds = PythonOperator(
     task_id='stocks_transform_rds',
-    python_callable=stocks_transform_rds.main,
+    python_callable=scripts.stocks_transform_rds.main,
     dag=dag
 )
 
 
 stocks_load_query = PythonOperator(
     task_id='stocks_load_query',
-    python_callable=stocks_load_query.main,
+    python_callable=scripts.stocks_load_query.main,
     dag=dag
 )
 

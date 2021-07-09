@@ -1,7 +1,7 @@
 # import libraries
 import pandas as pd
-from src.setup.setup import Setup
-from src.setup import config
+from setup import config
+from setup.setup import Setup
 
 # call Setup class as connection
 connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
