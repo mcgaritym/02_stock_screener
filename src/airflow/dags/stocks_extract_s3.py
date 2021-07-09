@@ -96,17 +96,17 @@ def upload_sentiment_s3(sql_table, bucket_name, object_name):
 
 def main():
     # call functions
-    empty_s3("stocks.bucket")
-    upload_sentiment_s3("news_sentiment", "stocks.bucket", "news_sentiment.parquet")
-    upload_tickers_s3("stock_tickers", "stocks.bucket", "stock_tickers.csv")
-    upload_financials_s3("stock_financials", "stocks.bucket", "stock_financials.csv")
+    empty_s3("02.stocks.bucket")
+    upload_sentiment_s3("news_sentiment", "02.stocks.bucket", "news_sentiment.parquet")
+    upload_tickers_s3("stock_tickers", "02.stocks.bucket", "stock_tickers.csv")
+    upload_financials_s3("stock_financials", "02.stocks.bucket", "stock_financials.csv")
 
     # print all s3 buckets
     for bucket in s3_resource.buckets.all():
         print(bucket.name)
 
     # # print objects within S3 bucket
-    for object in s3_resource.Bucket('stocks.bucket').objects.all():
+    for object in s3_resource.Bucket('02.stocks.bucket').objects.all():
         print(object)
 
 if __name__ == "__main__":

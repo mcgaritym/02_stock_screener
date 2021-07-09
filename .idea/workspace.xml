@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="updated query">
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_DAG.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_rds.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_s3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_load_query.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_transform_rds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airflow/dags/02_stocks_DAG.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_rds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_rds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_s3.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +236,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625695828915</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="updated query">
+      <created>1625785138388</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625785138388</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

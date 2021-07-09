@@ -79,7 +79,7 @@ def s3_to_rds(bucket_name):
 def main():
     # call functions
     empty_rds('stocks')
-    s3_to_rds("stocks.bucket")
+    s3_to_rds("02.stocks.bucket")
 
     # print tables in RDS
     tables = pd.read_sql("""SELECT table_name FROM information_schema.tables WHERE table_schema = 'stocks';""", con=rds)
