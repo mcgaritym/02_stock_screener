@@ -1,10 +1,15 @@
 # import libraries
+import sys
+import os
+sys.path.insert(0,os.path.abspath(os.path.dirname(__file__)))
+
 from datetime import timedelta
 import scripts.stocks_extract_s3, scripts.stocks_extract_rds, scripts.stocks_transform_rds, scripts.stocks_load_query
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.operators.bash import BashOperator
 from airflow.utils.dates import days_ago
+
 
 # specify arguments for DAG
 default_args = {

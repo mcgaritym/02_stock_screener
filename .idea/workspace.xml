@@ -2,18 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="updated query">
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_rds.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/airflow/dags/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ETL/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/setup/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_rds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_rds.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_s3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_load_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_load_query.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_transform_rds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_transform_rds.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_DAG.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/stocks_DAG.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_rds.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_extract_s3.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_s3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_load_query.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_load_query.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/airflow/dags/stocks_transform_rds.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_transform_rds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setup/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,47 +45,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/airflow/scripts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/airflow/dags" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/airflow/dags" />
+      <recent name="$PROJECT_DIR$/src/airflow/dags/scripts" />
       <recent name="$PROJECT_DIR$/src/airflow/scripts" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/airflow" />
-      <recent name="$PROJECT_DIR$/src/airflow/dags" />
-      <recent name="$PROJECT_DIR$/src/airflow/dags/setup" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/airflow" />
       <recent name="$PROJECT_DIR$/src/airflow/dags/scripts" />
       <recent name="$PROJECT_DIR$/src/airflow/dags" />
-      <recent name="$PROJECT_DIR$/src/airflow" />
       <recent name="$PROJECT_DIR$/src/other" />
       <recent name="$PROJECT_DIR$/src/ETL" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.stocks_extract_rds">
-    <configuration name="02_stocks_extract_rds" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="02_stock_screener" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ETL" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ETL/02_stocks_extract_rds.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.stocks_extract_s3">
     <configuration name="02_stocks_load_query" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_stock_screener" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,13 +149,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="stocks_extract_s3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_stock_screener" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/airflow/dags/scripts" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/airflow/dags/scripts/stocks_extract_s3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.stocks_extract_s3" />
         <item itemvalue="Python.stocks_extract_rds" />
         <item itemvalue="Python.stocks_DAG" />
         <item itemvalue="Python.02_stocks_load_query" />
         <item itemvalue="Python.02_stocks_transform_rds" />
-        <item itemvalue="Python.02_stocks_extract_rds" />
       </list>
     </recent_temporary>
   </component>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625789522909</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated query">
+      <created>1625841601823</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1625841601823</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

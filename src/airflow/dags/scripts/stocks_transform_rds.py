@@ -1,14 +1,18 @@
 # import libraries
+import sys
+import os
+sys.path.insert(0,os.path.abspath(os.path.dirname(__file__)))
+
 import pandas as pd
-from setup import config
+import setup.config
 from setup.setup import Setup
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
 
 # call Setup class as connection
-connection = Setup(config.user, config.pwd, config.host, config.port, 'stocks',
-                   config.service_name, config.region_name, config.aws_access_key_id,
-                   config.aws_secret_access_key, config.local_host, config.local_user,
-                   config.local_pwd, config.local_port, 'Stocks')
+connection = Setup(setup.config.user, setup.config.pwd, setup.config.host, setup.config.port, 'stocks',
+                   setup.config.service_name, setup.config.region_name, setup.config.aws_access_key_id,
+                   setup.config.aws_secret_access_key, setup.config.local_host, setup.config.local_user,
+                   setup.config.local_pwd, setup.config.local_port, 'Stocks')
 
 # create AWS s3 connection
 s3_client = connection.s3_client()

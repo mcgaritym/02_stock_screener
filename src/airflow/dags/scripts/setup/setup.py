@@ -1,6 +1,8 @@
 # import libraries
 from sqlalchemy import create_engine
 import boto3
+import mysql
+from mysql import connector
 
 # set up database connection (credentials from config file)
 class Setup:

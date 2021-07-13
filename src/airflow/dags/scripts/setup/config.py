@@ -10,8 +10,8 @@ db = 'stocks'
 # s3 credentials
 service_name = 's3'
 region_name = 'us-east-2'
-aws_access_key_id = 'AKIAUT5FFG265JITH5MC'
-aws_secret_access_key = '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'
+aws_access_key_id = 'AKIAUT5FFG26THSONNOE'
+aws_secret_access_key = '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'
 
 # local mySQL credentials
 local_host="localhost"
