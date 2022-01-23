@@ -1,0 +1,85 @@
+[2022-01-15 20:14:21,912] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-15T20:08:13.036669+00:00 [queued]>
+[2022-01-15 20:14:21,929] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-15T20:08:13.036669+00:00 [queued]>
+[2022-01-15 20:14:21,933] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-15 20:14:21,934] {taskinstance.py:1239} INFO - Starting attempt 4 of 4
+[2022-01-15 20:14:21,935] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-15 20:14:21,982] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_tickers_2_> on 2022-01-15 20:08:13.036669+00:00
+[2022-01-15 20:14:22,023] {standard_task_runner.py:52} INFO - Started process 1440 to run task
+[2022-01-15 20:14:22,031] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_tickers_2_', 'manual__2022-01-15T20:08:13.036669+00:00', '--job-id', '493', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpj4d5b_oo', '--error-file', '/tmp/tmp_9udc2d3']
+[2022-01-15 20:14:22,037] {standard_task_runner.py:77} INFO - Job 493: Subtask get_tickers_2_
+[2022-01-15 20:14:22,202] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-15T20:08:13.036669+00:00 [running]> on host 241ebeaac988
+[2022-01-15 20:14:22,306] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_tickers_2_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-15T20:08:13.036669+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-15T20:08:13.036669+00:00
+[2022-01-15 20:14:22,308] {logging_mixin.py:109} INFO - Parent Directory:  /opt
+[2022-01-15 20:14:22,309] {logging_mixin.py:109} INFO - Data Directory:  /opt/data
+[2022-01-15 20:14:22,313] {logging_mixin.py:109} INFO - Current Working Directory:  /opt/***
+[2022-01-15 20:14:22,319] {logging_mixin.py:109} INFO - Current Files in WD_:  ['logs', 'dags', '***-worker.pid', '***.cfg', 'plugins', 'webserver_config.py', 'data', 'config.txt', 'requirements.txt', 'nasdaq_screener_1641856343892.csv']
+[2022-01-15 20:14:22,322] {logging_mixin.py:109} INFO - ['/opt/***/nasdaq_screener_1641856343892.csv']
+[2022-01-15 20:14:22,422] {logging_mixin.py:109} INFO -      Symbol  ...                                    Industry
+0         A  ...                         Electrical Products
+1        AA  ...                          Metal Fabrications
+2       AAC  ...                           Business Services
+3      AACG  ...              Service to the Health Industry
+4      AACI  ...                                         NaN
+...     ...  ...                                         ...
+8341    ZWS  ...                                Water Supply
+8342     ZY  ...                      Industrial Specialties
+8343   ZYME  ...                                         NaN
+8344   ZYNE  ...  Biotechnology: Pharmaceutical Preparations
+8345   ZYXI  ...                       Other Pharmaceuticals
+
+[8346 rows x 11 columns]
+[2022-01-15 20:14:22,463] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_tickers_2.py", line 50, in get_tickers_2
+    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=user, password=pwd, host=host, port=port,
+NameError: name 'host' is not defined
+[2022-01-15 20:14:22,485] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=stocks_dag, task_id=get_tickers_2_, execution_date=20220115T200813, start_date=20220115T201421, end_date=20220115T201422
+[2022-01-15 20:14:22,503] {standard_task_runner.py:92} ERROR - Failed to execute job 493 for task get_tickers_2_
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_tickers_2.py", line 50, in get_tickers_2
+    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=user, password=pwd, host=host, port=port,
+NameError: name 'host' is not defined
+[2022-01-15 20:14:22,544] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-01-15 20:14:22,604] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

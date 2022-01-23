@@ -1,0 +1,93 @@
+[2022-01-10 22:57:00,442] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_ manual__2022-01-10T22:52:53.508655+00:00 [queued]>
+[2022-01-10 22:57:00,451] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_ manual__2022-01-10T22:52:53.508655+00:00 [queued]>
+[2022-01-10 22:57:00,452] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-10 22:57:00,453] {taskinstance.py:1239} INFO - Starting attempt 3 of 4
+[2022-01-10 22:57:00,453] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-10 22:57:00,463] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_tickers_> on 2022-01-10 22:52:53.508655+00:00
+[2022-01-10 22:57:00,468] {standard_task_runner.py:52} INFO - Started process 2572 to run task
+[2022-01-10 22:57:00,471] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_tickers_', 'manual__2022-01-10T22:52:53.508655+00:00', '--job-id', '111', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpwmzb80ie', '--error-file', '/tmp/tmpdpqeiea7']
+[2022-01-10 22:57:00,472] {standard_task_runner.py:77} INFO - Job 111: Subtask get_tickers_
+[2022-01-10 22:57:00,523] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_tickers_ manual__2022-01-10T22:52:53.508655+00:00 [running]> on host 6e02ffb9d96a
+[2022-01-10 22:57:00,564] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_tickers_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-10T22:52:53.508655+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-10T22:52:53.508655+00:00
+[2022-01-10 22:57:00,565] {logging_mixin.py:109} WARNING - 
+[2022-01-10 22:57:00,565] {logger.py:26} INFO - 
+
+[2022-01-10 22:57:00,567] {logging_mixin.py:109} WARNING - ====== WebDriver manager ======
+[2022-01-10 22:57:00,567] {logger.py:26} INFO - ====== WebDriver manager ======
+[2022-01-10 22:57:00,578] {logging_mixin.py:109} WARNING - Could not get version for google-chrome with the any command: google-chrome --version || google-chrome-stable --version
+[2022-01-10 22:57:00,578] {logger.py:26} INFO - Could not get version for google-chrome with the any command: google-chrome --version || google-chrome-stable --version
+[2022-01-10 22:57:00,580] {logging_mixin.py:109} WARNING - Current google-chrome version is UNKNOWN
+[2022-01-10 22:57:00,580] {logger.py:26} INFO - Current google-chrome version is UNKNOWN
+[2022-01-10 22:57:00,581] {logging_mixin.py:109} WARNING - Get LATEST chromedriver version for UNKNOWN google-chrome
+[2022-01-10 22:57:00,581] {logger.py:26} INFO - Get LATEST chromedriver version for UNKNOWN google-chrome
+[2022-01-10 22:57:00,694] {logging_mixin.py:109} WARNING - Driver [/home/***/.wdm/drivers/chromedriver/linux64/97.0.4692.71/chromedriver] found in cache
+[2022-01-10 22:57:00,694] {logger.py:26} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/97.0.4692.71/chromedriver] found in cache
+[2022-01-10 22:57:01,706] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_tickers.py", line 22, in get_tickers
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/service.py", line 98, in start
+    self.assert_process_still_running()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/service.py", line 111, in assert_process_still_running
+    % (self.path, return_code)
+selenium.common.exceptions.WebDriverException: Message: Service /home/airflow/.wdm/drivers/chromedriver/linux64/97.0.4692.71/chromedriver unexpectedly exited. Status code was: 127
+
+[2022-01-10 22:57:01,738] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=stocks_dag, task_id=get_tickers_, execution_date=20220110T225253, start_date=20220110T225700, end_date=20220110T225701
+[2022-01-10 22:57:01,759] {standard_task_runner.py:92} ERROR - Failed to execute job 111 for task get_tickers_
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_tickers.py", line 22, in get_tickers
+    driver = webdriver.Chrome(ChromeDriverManager().install())
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/chrome/webdriver.py", line 73, in __init__
+    self.service.start()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/service.py", line 98, in start
+    self.assert_process_still_running()
+  File "/home/airflow/.local/lib/python3.7/site-packages/selenium/webdriver/common/service.py", line 111, in assert_process_still_running
+    % (self.path, return_code)
+selenium.common.exceptions.WebDriverException: Message: Service /home/airflow/.wdm/drivers/chromedriver/linux64/97.0.4692.71/chromedriver unexpectedly exited. Status code was: 127
+
+[2022-01-10 22:57:01,815] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-01-10 22:57:01,868] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

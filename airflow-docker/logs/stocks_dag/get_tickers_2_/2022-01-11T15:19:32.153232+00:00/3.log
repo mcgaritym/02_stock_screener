@@ -1,0 +1,26 @@
+[2022-01-11 15:33:09,663] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-11T15:19:32.153232+00:00 [queued]>
+[2022-01-11 15:33:09,684] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-11T15:19:32.153232+00:00 [queued]>
+[2022-01-11 15:33:09,685] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-11 15:33:09,686] {taskinstance.py:1239} INFO - Starting attempt 3 of 4
+[2022-01-11 15:33:09,687] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-11 15:33:09,709] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_tickers_2_> on 2022-01-11 15:19:32.153232+00:00
+[2022-01-11 15:33:09,717] {standard_task_runner.py:52} INFO - Started process 802 to run task
+[2022-01-11 15:33:09,723] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_tickers_2_', 'manual__2022-01-11T15:19:32.153232+00:00', '--job-id', '129', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpkzm8y5y7', '--error-file', '/tmp/tmpxqhhsmmj']
+[2022-01-11 15:33:09,724] {standard_task_runner.py:77} INFO - Job 129: Subtask get_tickers_2_
+[2022-01-11 15:33:09,805] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-11T15:19:32.153232+00:00 [running]> on host 36edd51a2216
+[2022-01-11 15:33:09,864] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_tickers_2_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-11T15:19:32.153232+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-11T15:19:32.153232+00:00
+[2022-01-11 15:33:09,866] {logging_mixin.py:109} INFO - Parent Directory:  /opt
+[2022-01-11 15:33:09,867] {logging_mixin.py:109} INFO - Data Directory:  /opt/data
+[2022-01-11 15:33:09,868] {logging_mixin.py:109} INFO - Current Working Directory:  /opt/***
+[2022-01-11 15:33:09,869] {python.py:175} INFO - Done. Returned value was: None
+[2022-01-11 15:33:09,882] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=stocks_dag, task_id=get_tickers_2_, execution_date=20220111T151932, start_date=20220111T153309, end_date=20220111T153309
+[2022-01-11 15:33:09,939] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-11 15:33:09,983] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

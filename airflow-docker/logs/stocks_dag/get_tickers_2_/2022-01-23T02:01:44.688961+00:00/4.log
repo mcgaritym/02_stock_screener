@@ -1,0 +1,50 @@
+[2022-01-23 02:07:50,640] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-23T02:01:44.688961+00:00 [queued]>
+[2022-01-23 02:07:50,657] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-23T02:01:44.688961+00:00 [queued]>
+[2022-01-23 02:07:50,658] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-23 02:07:50,659] {taskinstance.py:1239} INFO - Starting attempt 4 of 4
+[2022-01-23 02:07:50,660] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-23 02:07:50,676] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_tickers_2_> on 2022-01-23 02:01:44.688961+00:00
+[2022-01-23 02:07:50,681] {standard_task_runner.py:52} INFO - Started process 1842 to run task
+[2022-01-23 02:07:50,687] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_tickers_2_', 'manual__2022-01-23T02:01:44.688961+00:00', '--job-id', '551', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpkvv_zp3z', '--error-file', '/tmp/tmpsq71ha1s']
+[2022-01-23 02:07:50,688] {standard_task_runner.py:77} INFO - Job 551: Subtask get_tickers_2_
+[2022-01-23 02:07:50,765] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_tickers_2_ manual__2022-01-23T02:01:44.688961+00:00 [running]> on host 313081f76d55
+[2022-01-23 02:07:50,811] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_tickers_2_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-23T02:01:44.688961+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-23T02:01:44.688961+00:00
+[2022-01-23 02:07:50,812] {logging_mixin.py:109} INFO - Parent Directory:  /opt
+[2022-01-23 02:07:50,813] {logging_mixin.py:109} INFO - Data Directory:  /opt/data
+[2022-01-23 02:07:50,813] {logging_mixin.py:109} INFO - Current Working Directory:  /opt/***
+[2022-01-23 02:07:50,814] {logging_mixin.py:109} INFO - Current Files in WD_:  ['logs', 'dags', '***-worker.pid', '***.cfg', 'plugins', 'webserver_config.py', 'data', 'config.py', 'requirements.txt', 'nasdaq_screener_1641856343892.csv']
+[2022-01-23 02:07:50,815] {logging_mixin.py:109} INFO - ['/opt/***/nasdaq_screener_1641856343892.csv']
+[2022-01-23 02:07:50,880] {logging_mixin.py:109} INFO -      Symbol  ...                                    Industry
+0         A  ...                         Electrical Products
+1        AA  ...                          Metal Fabrications
+2       AAC  ...                           Business Services
+3      AACG  ...              Service to the Health Industry
+4      AACI  ...                                         NaN
+...     ...  ...                                         ...
+8341    ZWS  ...                                Water Supply
+8342     ZY  ...                      Industrial Specialties
+8343   ZYME  ...                                         NaN
+8344   ZYNE  ...  Biotechnology: Pharmaceutical Preparations
+8345   ZYXI  ...                       Other Pharmaceuticals
+
+[8346 rows x 11 columns]
+[2022-01-23 02:07:52,139] {logging_mixin.py:109} INFO -      Symbol  ...                                 Industry
+20     AAPL  ...                   Computer Manufacturing
+5046   MSFT  ...  Computer Software: Prepackaged Software
+3375  GOOGL  ...        Internet and Information Services
+3374   GOOG  ...        Internet and Information Services
+462    AMZN  ...           Catalog/Specialty Distribution
+
+[5 rows x 11 columns]
+[2022-01-23 02:07:52,141] {python.py:175} INFO - Done. Returned value was: Tickers Created and Sent to SQL
+[2022-01-23 02:07:52,168] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=stocks_dag, task_id=get_tickers_2_, execution_date=20220123T020144, start_date=20220123T020750, end_date=20220123T020752
+[2022-01-23 02:07:52,230] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-23 02:07:52,267] {local_task_job.py:264} INFO - 1 downstream tasks scheduled from follow-on schedule check

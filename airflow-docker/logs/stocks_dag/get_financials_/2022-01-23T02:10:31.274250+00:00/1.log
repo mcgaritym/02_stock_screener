@@ -1,0 +1,48 @@
+[2022-01-23 02:10:34,758] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_financials_ manual__2022-01-23T02:10:31.274250+00:00 [queued]>
+[2022-01-23 02:10:34,771] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_financials_ manual__2022-01-23T02:10:31.274250+00:00 [queued]>
+[2022-01-23 02:10:34,772] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-23 02:10:34,773] {taskinstance.py:1239} INFO - Starting attempt 1 of 4
+[2022-01-23 02:10:34,774] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-23 02:10:34,791] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_financials_> on 2022-01-23 02:10:31.274250+00:00
+[2022-01-23 02:10:34,798] {standard_task_runner.py:52} INFO - Started process 1990 to run task
+[2022-01-23 02:10:34,804] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_financials_', 'manual__2022-01-23T02:10:31.274250+00:00', '--job-id', '561', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpoknxjmfj', '--error-file', '/tmp/tmpu59_y7n5']
+[2022-01-23 02:10:34,805] {standard_task_runner.py:77} INFO - Job 561: Subtask get_financials_
+[2022-01-23 02:10:34,871] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_financials_ manual__2022-01-23T02:10:31.274250+00:00 [running]> on host 313081f76d55
+[2022-01-23 02:10:34,928] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_financials_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-23T02:10:31.274250+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-23T02:10:31.274250+00:00
+[2022-01-23 02:10:35,189] {logging_mixin.py:109} INFO - AAPL 1
+[2022-01-23 02:10:38,876] {logging_mixin.py:109} INFO - MSFT 2
+[2022-01-23 02:10:42,984] {logging_mixin.py:109} INFO - GOOGL 3
+[2022-01-23 02:10:46,575] {logging_mixin.py:109} INFO - GOOG 4
+[2022-01-23 02:10:55,224] {logging_mixin.py:109} INFO - AMZN 5
+[2022-01-23 02:11:04,991] {logging_mixin.py:109} INFO - TSLA 6
+[2022-01-23 02:11:14,872] {logging_mixin.py:109} INFO - FB 7
+[2022-01-23 02:11:24,693] {logging_mixin.py:109} INFO - NVDA 8
+[2022-01-23 02:11:34,673] {logging_mixin.py:109} INFO - TSM 9
+[2022-01-23 02:11:43,941] {logging_mixin.py:109} INFO - JPM 10
+[2022-01-23 02:11:53,872] {logging_mixin.py:109} INFO - V 11
+[2022-01-23 02:12:03,688] {logging_mixin.py:109} INFO - KeyError:  'Earnings'
+[2022-01-23 02:12:03,689] {logging_mixin.py:109} INFO - JNJ 12
+[2022-01-23 02:12:14,089] {logging_mixin.py:109} INFO - UNH 13
+[2022-01-23 02:12:23,858] {logging_mixin.py:109} INFO - BAC 14
+[2022-01-23 02:12:30,989] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-01-23 02:12:30,992] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 1990. PIDs of all processes in the group: [1990]
+[2022-01-23 02:12:30,993] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 1990
+[2022-01-23 02:12:30,994] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-01-23 02:12:30,998] {logging_mixin.py:109} INFO - HD 15
+[2022-01-23 02:12:40,950] {logging_mixin.py:109} INFO - WMT 16
+[2022-01-23 02:12:50,523] {logging_mixin.py:109} INFO - PG 17
+[2022-01-23 02:13:00,469] {logging_mixin.py:109} INFO - MA 18
+[2022-01-23 02:13:10,848] {logging_mixin.py:109} INFO - BABA 19
+[2022-01-23 02:13:21,025] {logging_mixin.py:109} INFO - PFE 20
+[2022-01-23 02:13:30,983] {process_utils.py:138} WARNING - process psutil.Process(pid=1990, name='airflow task ru', status='sleeping', started='02:10:33') did not respond to SIGTERM. Trying SIGKILL
+[2022-01-23 02:13:30,985] {process_utils.py:75} INFO - Sending the signal Signals.SIGKILL to group 1990
+[2022-01-23 02:13:31,014] {process_utils.py:70} INFO - Process psutil.Process(pid=1990, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='02:10:33') (1990) terminated with exit code Negsignal.SIGKILL
+[2022-01-23 02:13:31,016] {standard_task_runner.py:135} ERROR - Job 561 was killed before it finished (likely due to running out of memory)

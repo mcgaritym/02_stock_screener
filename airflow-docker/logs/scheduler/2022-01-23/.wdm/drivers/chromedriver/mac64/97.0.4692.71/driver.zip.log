@@ -1,0 +1,820 @@
+[2022-01-23 01:26:42,497] {processor.py:163} INFO - Started process (PID=30) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:26:42,498] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:26:42,499] {logging_mixin.py:109} INFO - [2022-01-23 01:26:42,499] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:26:42,515] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:26:42,518] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 01:27:13,232] {processor.py:163} INFO - Started process (PID=98) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:27:13,234] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:27:13,237] {logging_mixin.py:109} INFO - [2022-01-23 01:27:13,237] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:27:13,264] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:27:13,273] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.045 seconds
+[2022-01-23 01:27:32,312] {processor.py:163} INFO - Started process (PID=42) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:27:32,317] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:27:32,318] {logging_mixin.py:109} INFO - [2022-01-23 01:27:32,318] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:27:32,352] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:27:32,356] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.048 seconds
+[2022-01-23 01:28:02,559] {processor.py:163} INFO - Started process (PID=99) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:28:02,562] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:28:02,564] {logging_mixin.py:109} INFO - [2022-01-23 01:28:02,564] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:28:02,587] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:28:02,592] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 01:28:33,376] {processor.py:163} INFO - Started process (PID=165) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:28:33,378] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:28:33,379] {logging_mixin.py:109} INFO - [2022-01-23 01:28:33,379] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:28:33,394] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:28:33,397] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 01:29:03,852] {processor.py:163} INFO - Started process (PID=222) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:29:03,854] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:29:03,855] {logging_mixin.py:109} INFO - [2022-01-23 01:29:03,855] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:29:03,870] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:29:03,872] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.023 seconds
+[2022-01-23 01:29:34,535] {processor.py:163} INFO - Started process (PID=288) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:29:34,537] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:29:34,538] {logging_mixin.py:109} INFO - [2022-01-23 01:29:34,538] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:29:34,555] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:29:34,559] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 01:30:16,806] {processor.py:163} INFO - Started process (PID=32) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:30:16,811] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:30:16,812] {logging_mixin.py:109} INFO - [2022-01-23 01:30:16,812] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:30:16,847] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:30:16,861] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.058 seconds
+[2022-01-23 01:30:47,016] {processor.py:163} INFO - Started process (PID=99) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:30:47,017] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:30:47,018] {logging_mixin.py:109} INFO - [2022-01-23 01:30:47,018] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:30:47,036] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:30:47,040] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 01:31:17,432] {processor.py:163} INFO - Started process (PID=157) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:31:17,434] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:31:17,435] {logging_mixin.py:109} INFO - [2022-01-23 01:31:17,435] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:31:17,453] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:31:17,457] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 01:31:47,581] {processor.py:163} INFO - Started process (PID=224) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:31:47,583] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:31:47,583] {logging_mixin.py:109} INFO - [2022-01-23 01:31:47,583] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:31:47,599] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:31:47,602] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 01:32:18,155] {processor.py:163} INFO - Started process (PID=290) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:32:18,157] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:32:18,159] {logging_mixin.py:109} INFO - [2022-01-23 01:32:18,159] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:32:18,175] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:32:18,177] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.025 seconds
+[2022-01-23 01:32:48,646] {processor.py:163} INFO - Started process (PID=347) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:32:48,648] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:32:48,648] {logging_mixin.py:109} INFO - [2022-01-23 01:32:48,648] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:32:48,664] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:32:48,666] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 01:33:18,839] {processor.py:163} INFO - Started process (PID=414) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:33:18,841] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:33:18,843] {logging_mixin.py:109} INFO - [2022-01-23 01:33:18,842] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:33:18,865] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:33:18,869] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 01:33:49,400] {processor.py:163} INFO - Started process (PID=472) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:33:49,404] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:33:49,408] {logging_mixin.py:109} INFO - [2022-01-23 01:33:49,408] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:33:49,462] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:33:49,472] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.084 seconds
+[2022-01-23 01:34:19,951] {processor.py:163} INFO - Started process (PID=540) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:34:19,953] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:34:19,954] {logging_mixin.py:109} INFO - [2022-01-23 01:34:19,954] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:34:19,975] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:34:19,978] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:34:50,724] {processor.py:163} INFO - Started process (PID=599) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:34:50,727] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:34:50,728] {logging_mixin.py:109} INFO - [2022-01-23 01:34:50,728] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:34:50,746] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:34:50,749] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 01:35:20,786] {processor.py:163} INFO - Started process (PID=669) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:35:20,788] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:35:20,790] {logging_mixin.py:109} INFO - [2022-01-23 01:35:20,790] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:35:20,811] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:35:20,815] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 01:35:51,496] {processor.py:163} INFO - Started process (PID=726) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:35:51,499] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:35:51,501] {logging_mixin.py:109} INFO - [2022-01-23 01:35:51,500] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:35:51,522] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:35:51,525] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:36:22,266] {processor.py:163} INFO - Started process (PID=792) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:36:22,268] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:36:22,270] {logging_mixin.py:109} INFO - [2022-01-23 01:36:22,270] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:36:22,296] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:36:22,302] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.041 seconds
+[2022-01-23 01:36:53,043] {processor.py:163} INFO - Started process (PID=854) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:36:53,048] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:36:53,049] {logging_mixin.py:109} INFO - [2022-01-23 01:36:53,049] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:36:53,067] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:36:53,071] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:37:23,770] {processor.py:163} INFO - Started process (PID=921) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:37:23,772] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:37:23,773] {logging_mixin.py:109} INFO - [2022-01-23 01:37:23,773] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:37:23,799] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:37:23,804] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.038 seconds
+[2022-01-23 01:37:54,259] {processor.py:163} INFO - Started process (PID=980) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:37:54,261] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:37:54,263] {logging_mixin.py:109} INFO - [2022-01-23 01:37:54,263] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:37:54,284] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:37:54,289] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 01:38:24,752] {processor.py:163} INFO - Started process (PID=1051) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:38:24,755] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:38:24,756] {logging_mixin.py:109} INFO - [2022-01-23 01:38:24,756] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:38:24,779] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:38:24,784] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 01:38:55,726] {processor.py:163} INFO - Started process (PID=1110) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:38:55,728] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:38:55,731] {logging_mixin.py:109} INFO - [2022-01-23 01:38:55,731] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:38:55,747] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:38:55,750] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 01:39:26,524] {processor.py:163} INFO - Started process (PID=1178) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:39:26,526] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:39:26,528] {logging_mixin.py:109} INFO - [2022-01-23 01:39:26,527] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:39:26,548] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:39:26,552] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:39:56,594] {processor.py:163} INFO - Started process (PID=1235) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:39:56,596] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:39:56,597] {logging_mixin.py:109} INFO - [2022-01-23 01:39:56,597] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:39:56,621] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:39:56,624] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 01:40:26,840] {processor.py:163} INFO - Started process (PID=1307) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:40:26,842] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:40:26,843] {logging_mixin.py:109} INFO - [2022-01-23 01:40:26,843] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:40:26,862] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:40:26,866] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 01:40:57,585] {processor.py:163} INFO - Started process (PID=1365) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:40:57,588] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:40:57,589] {logging_mixin.py:109} INFO - [2022-01-23 01:40:57,589] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:40:57,621] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:40:57,626] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.046 seconds
+[2022-01-23 01:41:28,537] {processor.py:163} INFO - Started process (PID=1436) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:41:28,540] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:41:28,541] {logging_mixin.py:109} INFO - [2022-01-23 01:41:28,541] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:41:28,561] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:41:28,564] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 01:41:59,396] {processor.py:163} INFO - Started process (PID=1494) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:41:59,397] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:41:59,398] {logging_mixin.py:109} INFO - [2022-01-23 01:41:59,398] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:41:59,416] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:41:59,419] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 01:42:29,578] {processor.py:163} INFO - Started process (PID=1564) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:42:29,581] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:42:29,582] {logging_mixin.py:109} INFO - [2022-01-23 01:42:29,582] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:42:29,600] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:42:29,604] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 01:43:00,066] {processor.py:163} INFO - Started process (PID=1621) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:43:00,071] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:43:00,074] {logging_mixin.py:109} INFO - [2022-01-23 01:43:00,074] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:43:00,101] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:43:00,105] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.046 seconds
+[2022-01-23 01:43:30,639] {processor.py:163} INFO - Started process (PID=1691) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:43:30,641] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:43:30,642] {logging_mixin.py:109} INFO - [2022-01-23 01:43:30,642] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:43:30,657] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:43:30,660] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 01:44:01,551] {processor.py:163} INFO - Started process (PID=1758) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:44:01,553] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:44:01,554] {logging_mixin.py:109} INFO - [2022-01-23 01:44:01,554] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:44:01,572] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:44:01,575] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 01:44:32,423] {processor.py:163} INFO - Started process (PID=1820) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:44:32,425] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:44:32,426] {logging_mixin.py:109} INFO - [2022-01-23 01:44:32,426] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:44:32,443] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:44:32,446] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 01:45:03,409] {processor.py:163} INFO - Started process (PID=1886) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:45:03,412] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:45:03,416] {logging_mixin.py:109} INFO - [2022-01-23 01:45:03,414] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:45:03,439] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:45:03,443] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.037 seconds
+[2022-01-23 01:45:34,270] {processor.py:163} INFO - Started process (PID=1947) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:45:34,271] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:45:34,272] {logging_mixin.py:109} INFO - [2022-01-23 01:45:34,272] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:45:34,288] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:45:34,292] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.025 seconds
+[2022-01-23 01:46:04,960] {processor.py:163} INFO - Started process (PID=2015) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:46:04,962] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:46:04,963] {logging_mixin.py:109} INFO - [2022-01-23 01:46:04,963] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:46:04,983] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:46:04,987] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 01:46:35,544] {processor.py:163} INFO - Started process (PID=2072) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:46:35,547] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:46:35,548] {logging_mixin.py:109} INFO - [2022-01-23 01:46:35,548] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:46:35,567] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:46:35,571] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 01:47:06,113] {processor.py:163} INFO - Started process (PID=2141) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:47:06,116] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:47:06,118] {logging_mixin.py:109} INFO - [2022-01-23 01:47:06,117] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:47:06,143] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:47:06,148] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.038 seconds
+[2022-01-23 01:47:36,722] {processor.py:163} INFO - Started process (PID=2212) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:47:36,725] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:47:36,726] {logging_mixin.py:109} INFO - [2022-01-23 01:47:36,726] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:47:36,744] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:47:36,747] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 01:48:07,342] {processor.py:163} INFO - Started process (PID=2270) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:48:07,346] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:48:07,347] {logging_mixin.py:109} INFO - [2022-01-23 01:48:07,347] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:48:07,367] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:48:07,370] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:48:38,083] {processor.py:163} INFO - Started process (PID=2339) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:48:38,085] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:48:38,087] {logging_mixin.py:109} INFO - [2022-01-23 01:48:38,086] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:48:38,107] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:48:38,111] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:49:08,948] {processor.py:163} INFO - Started process (PID=2396) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:49:08,950] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:49:08,951] {logging_mixin.py:109} INFO - [2022-01-23 01:49:08,951] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:49:08,968] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:49:08,972] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 01:49:39,698] {processor.py:163} INFO - Started process (PID=2464) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:49:39,700] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:49:39,701] {logging_mixin.py:109} INFO - [2022-01-23 01:49:39,701] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:49:39,721] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:49:39,724] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 01:50:10,378] {processor.py:163} INFO - Started process (PID=2521) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:50:10,380] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:50:10,381] {logging_mixin.py:109} INFO - [2022-01-23 01:50:10,381] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:50:10,406] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:50:10,410] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 01:50:41,231] {processor.py:163} INFO - Started process (PID=2590) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:50:41,233] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:50:41,234] {logging_mixin.py:109} INFO - [2022-01-23 01:50:41,234] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:50:41,252] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:50:41,255] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 01:51:11,303] {processor.py:163} INFO - Started process (PID=2648) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:51:11,310] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:51:11,318] {logging_mixin.py:109} INFO - [2022-01-23 01:51:11,318] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:51:11,390] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:51:11,398] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.103 seconds
+[2022-01-23 01:51:41,547] {processor.py:163} INFO - Started process (PID=2718) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:51:41,553] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:51:41,554] {logging_mixin.py:109} INFO - [2022-01-23 01:51:41,554] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:51:41,574] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:51:41,577] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 01:52:12,289] {processor.py:163} INFO - Started process (PID=2778) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:52:12,292] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:52:12,293] {logging_mixin.py:109} INFO - [2022-01-23 01:52:12,293] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:52:12,309] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:52:12,312] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 01:52:43,028] {processor.py:163} INFO - Started process (PID=2846) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:52:43,030] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:52:43,031] {logging_mixin.py:109} INFO - [2022-01-23 01:52:43,031] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:52:43,053] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:52:43,058] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 01:53:13,361] {processor.py:163} INFO - Started process (PID=2910) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:53:13,363] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:53:13,364] {logging_mixin.py:109} INFO - [2022-01-23 01:53:13,364] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:53:13,387] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:53:13,391] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 01:53:44,285] {processor.py:163} INFO - Started process (PID=2976) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:53:44,287] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:53:44,288] {logging_mixin.py:109} INFO - [2022-01-23 01:53:44,288] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:53:44,375] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:53:44,379] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.097 seconds
+[2022-01-23 01:54:15,007] {processor.py:163} INFO - Started process (PID=3035) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:54:15,009] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:54:15,010] {logging_mixin.py:109} INFO - [2022-01-23 01:54:15,010] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:54:15,029] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:54:15,032] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 01:54:45,720] {processor.py:163} INFO - Started process (PID=3101) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:54:45,722] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:54:45,724] {logging_mixin.py:109} INFO - [2022-01-23 01:54:45,724] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:54:45,746] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:54:45,749] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 01:55:16,330] {processor.py:163} INFO - Started process (PID=3172) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:55:16,332] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:55:16,333] {logging_mixin.py:109} INFO - [2022-01-23 01:55:16,333] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:55:16,348] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:55:16,352] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 01:55:46,869] {processor.py:163} INFO - Started process (PID=3229) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:55:46,870] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:55:46,872] {logging_mixin.py:109} INFO - [2022-01-23 01:55:46,871] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:55:46,892] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:55:46,896] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 01:56:17,570] {processor.py:163} INFO - Started process (PID=3296) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:56:17,572] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:56:17,573] {logging_mixin.py:109} INFO - [2022-01-23 01:56:17,573] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:56:17,591] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:56:17,594] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 01:56:48,017] {processor.py:163} INFO - Started process (PID=3353) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:56:48,019] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:56:48,020] {logging_mixin.py:109} INFO - [2022-01-23 01:56:48,020] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:56:48,041] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:56:48,044] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:57:18,389] {processor.py:163} INFO - Started process (PID=3424) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:57:18,391] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:57:18,392] {logging_mixin.py:109} INFO - [2022-01-23 01:57:18,392] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:57:18,407] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:57:18,410] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.025 seconds
+[2022-01-23 01:57:49,060] {processor.py:163} INFO - Started process (PID=3481) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:57:49,062] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:57:49,063] {logging_mixin.py:109} INFO - [2022-01-23 01:57:49,063] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:57:49,085] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:57:49,089] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 01:58:19,858] {processor.py:163} INFO - Started process (PID=3548) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:58:19,860] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:58:19,862] {logging_mixin.py:109} INFO - [2022-01-23 01:58:19,862] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:58:19,897] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:58:19,902] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.050 seconds
+[2022-01-23 01:58:50,514] {processor.py:163} INFO - Started process (PID=3610) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:58:50,516] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:58:50,518] {logging_mixin.py:109} INFO - [2022-01-23 01:58:50,518] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:58:50,548] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:58:50,553] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.045 seconds
+[2022-01-23 01:59:20,941] {processor.py:163} INFO - Started process (PID=3681) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:59:20,943] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:59:20,945] {logging_mixin.py:109} INFO - [2022-01-23 01:59:20,944] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:59:20,965] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:59:20,968] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 01:59:51,435] {processor.py:163} INFO - Started process (PID=3738) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:59:51,437] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 01:59:51,439] {logging_mixin.py:109} INFO - [2022-01-23 01:59:51,438] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:59:51,459] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 01:59:51,462] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:00:22,113] {processor.py:163} INFO - Started process (PID=3805) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:00:22,115] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:00:22,116] {logging_mixin.py:109} INFO - [2022-01-23 02:00:22,116] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:00:22,134] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:00:22,137] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 02:00:52,864] {processor.py:163} INFO - Started process (PID=3867) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:00:52,866] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:00:52,867] {logging_mixin.py:109} INFO - [2022-01-23 02:00:52,867] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:00:52,886] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:00:52,891] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:01:23,226] {processor.py:163} INFO - Started process (PID=3933) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:01:23,228] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:01:23,229] {logging_mixin.py:109} INFO - [2022-01-23 02:01:23,229] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:01:23,246] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:01:23,249] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:01:53,532] {processor.py:163} INFO - Started process (PID=3996) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:01:53,534] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:01:53,536] {logging_mixin.py:109} INFO - [2022-01-23 02:01:53,535] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:01:53,553] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:01:53,557] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 02:02:24,264] {processor.py:163} INFO - Started process (PID=4064) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:02:24,267] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:02:24,268] {logging_mixin.py:109} INFO - [2022-01-23 02:02:24,268] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:02:24,288] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:02:24,291] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:02:54,731] {processor.py:163} INFO - Started process (PID=4127) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:02:54,734] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:02:54,736] {logging_mixin.py:109} INFO - [2022-01-23 02:02:54,736] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:02:54,766] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:02:54,769] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.043 seconds
+[2022-01-23 02:03:25,211] {processor.py:163} INFO - Started process (PID=4193) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:03:25,213] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:03:25,214] {logging_mixin.py:109} INFO - [2022-01-23 02:03:25,214] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:03:25,229] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:03:25,233] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.025 seconds
+[2022-01-23 02:03:55,557] {processor.py:163} INFO - Started process (PID=4250) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:03:55,558] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:03:55,560] {logging_mixin.py:109} INFO - [2022-01-23 02:03:55,560] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:03:55,584] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:03:55,587] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:04:26,452] {processor.py:163} INFO - Started process (PID=4317) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:04:26,454] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:04:26,455] {logging_mixin.py:109} INFO - [2022-01-23 02:04:26,455] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:04:26,477] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:04:26,481] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:04:57,093] {processor.py:163} INFO - Started process (PID=4374) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:04:57,095] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:04:57,096] {logging_mixin.py:109} INFO - [2022-01-23 02:04:57,096] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:04:57,116] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:04:57,120] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:05:27,848] {processor.py:163} INFO - Started process (PID=4440) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:05:27,850] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:05:27,851] {logging_mixin.py:109} INFO - [2022-01-23 02:05:27,851] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:05:27,871] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:05:27,877] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:05:58,520] {processor.py:163} INFO - Started process (PID=4500) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:05:58,552] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:05:58,553] {logging_mixin.py:109} INFO - [2022-01-23 02:05:58,553] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:05:58,570] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:05:58,572] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.056 seconds
+[2022-01-23 02:06:29,236] {processor.py:163} INFO - Started process (PID=4567) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:06:29,238] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:06:29,239] {logging_mixin.py:109} INFO - [2022-01-23 02:06:29,239] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:06:29,258] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:06:29,262] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:07:00,120] {processor.py:163} INFO - Started process (PID=4625) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:07:00,122] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:07:00,124] {logging_mixin.py:109} INFO - [2022-01-23 02:07:00,124] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:07:00,153] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:07:00,161] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.046 seconds
+[2022-01-23 02:07:30,730] {processor.py:163} INFO - Started process (PID=4694) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:07:30,732] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:07:30,734] {logging_mixin.py:109} INFO - [2022-01-23 02:07:30,734] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:07:30,757] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:07:30,761] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.038 seconds
+[2022-01-23 02:08:01,495] {processor.py:163} INFO - Started process (PID=4758) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:08:01,497] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:08:01,498] {logging_mixin.py:109} INFO - [2022-01-23 02:08:01,498] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:08:01,519] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:08:01,524] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:08:31,673] {processor.py:163} INFO - Started process (PID=4825) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:08:31,676] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:08:31,678] {logging_mixin.py:109} INFO - [2022-01-23 02:08:31,678] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:08:31,703] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:08:31,708] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.039 seconds
+[2022-01-23 02:09:02,197] {processor.py:163} INFO - Started process (PID=4883) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:09:02,199] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:09:02,201] {logging_mixin.py:109} INFO - [2022-01-23 02:09:02,201] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:09:02,223] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:09:02,226] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:09:32,309] {processor.py:163} INFO - Started process (PID=4951) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:09:32,311] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:09:32,313] {logging_mixin.py:109} INFO - [2022-01-23 02:09:32,313] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:09:32,334] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:09:32,338] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:10:02,468] {processor.py:163} INFO - Started process (PID=5010) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:10:02,471] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:10:02,472] {logging_mixin.py:109} INFO - [2022-01-23 02:10:02,472] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:10:02,494] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:10:02,498] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:10:32,817] {processor.py:163} INFO - Started process (PID=5084) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:10:32,820] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:10:32,822] {logging_mixin.py:109} INFO - [2022-01-23 02:10:32,822] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:10:32,844] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:10:32,848] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:11:03,485] {processor.py:163} INFO - Started process (PID=5146) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:11:03,487] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:11:03,489] {logging_mixin.py:109} INFO - [2022-01-23 02:11:03,489] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:11:03,509] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:11:03,512] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:11:33,632] {processor.py:163} INFO - Started process (PID=5216) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:11:33,634] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:11:33,636] {logging_mixin.py:109} INFO - [2022-01-23 02:11:33,636] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:11:33,661] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:11:33,665] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.037 seconds
+[2022-01-23 02:12:03,805] {processor.py:163} INFO - Started process (PID=5274) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:12:03,807] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:12:03,808] {logging_mixin.py:109} INFO - [2022-01-23 02:12:03,808] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:12:03,828] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:12:03,832] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:12:34,210] {processor.py:163} INFO - Started process (PID=5347) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:12:34,212] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:12:34,214] {logging_mixin.py:109} INFO - [2022-01-23 02:12:34,213] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:12:34,234] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:12:34,239] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 02:13:04,790] {processor.py:163} INFO - Started process (PID=5405) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:13:04,794] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:13:04,796] {logging_mixin.py:109} INFO - [2022-01-23 02:13:04,795] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:13:04,817] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:13:04,821] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.041 seconds
+[2022-01-23 02:13:35,296] {processor.py:163} INFO - Started process (PID=5472) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:13:35,299] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:13:35,300] {logging_mixin.py:109} INFO - [2022-01-23 02:13:35,300] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:13:35,327] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:13:35,331] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.039 seconds
+[2022-01-23 02:14:05,594] {processor.py:163} INFO - Started process (PID=5532) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:14:05,595] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:14:05,597] {logging_mixin.py:109} INFO - [2022-01-23 02:14:05,597] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:14:05,619] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:14:05,623] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 02:14:36,112] {processor.py:163} INFO - Started process (PID=5605) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:14:36,114] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:14:36,115] {logging_mixin.py:109} INFO - [2022-01-23 02:14:36,115] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:14:36,135] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:14:36,139] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:15:06,381] {processor.py:163} INFO - Started process (PID=5662) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:15:06,382] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:15:06,383] {logging_mixin.py:109} INFO - [2022-01-23 02:15:06,383] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:15:06,401] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:15:06,404] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:15:36,875] {processor.py:163} INFO - Started process (PID=5730) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:15:36,878] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:15:36,879] {logging_mixin.py:109} INFO - [2022-01-23 02:15:36,879] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:15:36,900] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:15:36,905] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 02:16:07,135] {processor.py:163} INFO - Started process (PID=5789) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:16:07,138] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:16:07,139] {logging_mixin.py:109} INFO - [2022-01-23 02:16:07,139] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:16:07,155] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:16:07,158] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:16:37,457] {processor.py:163} INFO - Started process (PID=5856) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:16:37,459] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:16:37,460] {logging_mixin.py:109} INFO - [2022-01-23 02:16:37,460] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:16:37,477] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:16:37,480] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:17:07,744] {processor.py:163} INFO - Started process (PID=5913) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:17:07,747] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:17:07,748] {logging_mixin.py:109} INFO - [2022-01-23 02:17:07,748] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:17:07,774] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:17:07,777] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:17:38,200] {processor.py:163} INFO - Started process (PID=5982) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:17:38,204] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:17:38,206] {logging_mixin.py:109} INFO - [2022-01-23 02:17:38,206] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:17:38,233] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:17:38,236] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.040 seconds
+[2022-01-23 02:18:08,468] {processor.py:163} INFO - Started process (PID=6041) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:18:08,469] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:18:08,471] {logging_mixin.py:109} INFO - [2022-01-23 02:18:08,471] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:18:08,494] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:18:08,498] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:18:38,789] {processor.py:163} INFO - Started process (PID=6109) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:18:38,791] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:18:38,793] {logging_mixin.py:109} INFO - [2022-01-23 02:18:38,793] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:18:38,813] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:18:38,817] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:19:09,169] {processor.py:163} INFO - Started process (PID=6170) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:19:09,171] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:19:09,172] {logging_mixin.py:109} INFO - [2022-01-23 02:19:09,172] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:19:09,196] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:19:09,199] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 02:19:39,582] {processor.py:163} INFO - Started process (PID=6236) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:19:39,584] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:19:39,586] {logging_mixin.py:109} INFO - [2022-01-23 02:19:39,585] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:19:39,607] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:19:39,610] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:20:09,843] {processor.py:163} INFO - Started process (PID=6304) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:20:09,845] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:20:09,846] {logging_mixin.py:109} INFO - [2022-01-23 02:20:09,846] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:20:09,866] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:20:09,869] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:20:39,902] {processor.py:163} INFO - Started process (PID=6358) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:20:39,904] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:20:39,905] {logging_mixin.py:109} INFO - [2022-01-23 02:20:39,905] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:20:39,929] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:20:39,933] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:21:10,229] {processor.py:163} INFO - Started process (PID=6424) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:21:10,231] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:21:10,232] {logging_mixin.py:109} INFO - [2022-01-23 02:21:10,232] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:21:10,250] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:21:10,253] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 02:21:40,364] {processor.py:163} INFO - Started process (PID=6482) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:21:40,365] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:21:40,366] {logging_mixin.py:109} INFO - [2022-01-23 02:21:40,366] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:21:40,382] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:21:40,385] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 02:22:10,659] {processor.py:163} INFO - Started process (PID=6550) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:22:10,661] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:22:10,662] {logging_mixin.py:109} INFO - [2022-01-23 02:22:10,662] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:22:10,679] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:22:10,682] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:22:40,884] {processor.py:163} INFO - Started process (PID=6608) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:22:40,886] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:22:40,887] {logging_mixin.py:109} INFO - [2022-01-23 02:22:40,887] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:22:40,905] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:22:40,908] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:23:10,970] {processor.py:163} INFO - Started process (PID=6675) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:23:10,972] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:23:10,973] {logging_mixin.py:109} INFO - [2022-01-23 02:23:10,973] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:23:10,995] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:23:10,998] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:23:41,160] {processor.py:163} INFO - Started process (PID=6733) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:23:41,162] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:23:41,164] {logging_mixin.py:109} INFO - [2022-01-23 02:23:41,163] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:23:41,183] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:23:41,187] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:24:11,627] {processor.py:163} INFO - Started process (PID=6802) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:24:11,629] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:24:11,631] {logging_mixin.py:109} INFO - [2022-01-23 02:24:11,631] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:24:11,652] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:24:11,656] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:24:41,734] {processor.py:163} INFO - Started process (PID=6860) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:24:41,737] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:24:41,738] {logging_mixin.py:109} INFO - [2022-01-23 02:24:41,738] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:24:41,764] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:24:41,771] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.043 seconds
+[2022-01-23 02:25:12,021] {processor.py:163} INFO - Started process (PID=6927) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:25:12,024] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:25:12,025] {logging_mixin.py:109} INFO - [2022-01-23 02:25:12,025] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:25:12,042] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:25:12,046] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:25:42,290] {processor.py:163} INFO - Started process (PID=6984) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:25:42,292] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:25:42,293] {logging_mixin.py:109} INFO - [2022-01-23 02:25:42,293] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:25:42,314] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:25:42,318] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:26:12,512] {processor.py:163} INFO - Started process (PID=7051) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:26:12,514] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:26:12,516] {logging_mixin.py:109} INFO - [2022-01-23 02:26:12,515] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:26:12,536] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:26:12,540] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:26:42,664] {processor.py:163} INFO - Started process (PID=7107) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:26:42,667] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:26:42,668] {logging_mixin.py:109} INFO - [2022-01-23 02:26:42,668] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:26:42,689] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:26:42,693] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:27:12,857] {processor.py:163} INFO - Started process (PID=7175) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:27:12,858] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:27:12,859] {logging_mixin.py:109} INFO - [2022-01-23 02:27:12,859] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:27:12,877] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:27:12,880] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:27:43,285] {processor.py:163} INFO - Started process (PID=7233) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:27:43,287] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:27:43,288] {logging_mixin.py:109} INFO - [2022-01-23 02:27:43,288] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:27:43,306] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:27:43,309] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:28:13,551] {processor.py:163} INFO - Started process (PID=7299) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:28:13,553] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:28:13,555] {logging_mixin.py:109} INFO - [2022-01-23 02:28:13,554] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:28:13,575] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:28:13,578] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:28:43,973] {processor.py:163} INFO - Started process (PID=7367) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:28:43,976] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:28:43,977] {logging_mixin.py:109} INFO - [2022-01-23 02:28:43,977] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:28:43,993] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:28:43,996] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:29:14,242] {processor.py:163} INFO - Started process (PID=7425) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:29:14,244] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:29:14,245] {logging_mixin.py:109} INFO - [2022-01-23 02:29:14,245] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:29:14,260] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:29:14,263] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.024 seconds
+[2022-01-23 02:29:44,531] {processor.py:163} INFO - Started process (PID=7492) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:29:44,534] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:29:44,541] {logging_mixin.py:109} INFO - [2022-01-23 02:29:44,541] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:29:44,573] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:29:44,580] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.057 seconds
+[2022-01-23 02:30:14,868] {processor.py:163} INFO - Started process (PID=7550) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:30:14,871] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:30:14,872] {logging_mixin.py:109} INFO - [2022-01-23 02:30:14,872] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:30:14,893] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:30:14,897] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:30:45,221] {processor.py:163} INFO - Started process (PID=7619) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:30:45,222] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:30:45,223] {logging_mixin.py:109} INFO - [2022-01-23 02:30:45,223] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:30:45,241] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:30:45,244] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:31:15,298] {processor.py:163} INFO - Started process (PID=7676) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:31:15,301] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:31:15,302] {logging_mixin.py:109} INFO - [2022-01-23 02:31:15,302] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:31:15,321] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:31:15,324] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:31:45,575] {processor.py:163} INFO - Started process (PID=7743) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:31:45,577] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:31:45,579] {logging_mixin.py:109} INFO - [2022-01-23 02:31:45,578] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:31:45,599] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:31:45,603] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:32:16,030] {processor.py:163} INFO - Started process (PID=7802) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:32:16,035] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:32:16,037] {logging_mixin.py:109} INFO - [2022-01-23 02:32:16,037] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:32:16,060] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:32:16,063] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:32:46,451] {processor.py:163} INFO - Started process (PID=7869) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:32:46,452] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:32:46,453] {logging_mixin.py:109} INFO - [2022-01-23 02:32:46,453] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:32:46,476] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:32:46,482] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 02:33:16,672] {processor.py:163} INFO - Started process (PID=7926) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:33:16,674] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:33:16,675] {logging_mixin.py:109} INFO - [2022-01-23 02:33:16,675] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:33:16,695] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:33:16,698] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:33:46,944] {processor.py:163} INFO - Started process (PID=7993) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:33:46,946] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:33:46,947] {logging_mixin.py:109} INFO - [2022-01-23 02:33:46,947] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:33:46,966] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:33:46,969] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:34:17,307] {processor.py:163} INFO - Started process (PID=8060) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:34:17,310] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:34:17,311] {logging_mixin.py:109} INFO - [2022-01-23 02:34:17,311] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:34:17,327] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:34:17,330] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:34:47,768] {processor.py:163} INFO - Started process (PID=8118) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:34:47,770] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:34:47,771] {logging_mixin.py:109} INFO - [2022-01-23 02:34:47,771] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:34:47,787] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:34:47,790] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:35:18,225] {processor.py:163} INFO - Started process (PID=8185) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:35:18,227] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:35:18,228] {logging_mixin.py:109} INFO - [2022-01-23 02:35:18,228] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:35:18,249] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:35:18,252] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:35:48,526] {processor.py:163} INFO - Started process (PID=8242) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:35:48,528] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:35:48,529] {logging_mixin.py:109} INFO - [2022-01-23 02:35:48,529] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:35:48,547] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:35:48,550] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.028 seconds
+[2022-01-23 02:36:18,825] {processor.py:163} INFO - Started process (PID=8310) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:36:18,827] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:36:18,829] {logging_mixin.py:109} INFO - [2022-01-23 02:36:18,829] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:36:18,852] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:36:18,856] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 02:36:49,155] {processor.py:163} INFO - Started process (PID=8366) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:36:49,157] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:36:49,159] {logging_mixin.py:109} INFO - [2022-01-23 02:36:49,158] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:36:49,178] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:36:49,181] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.029 seconds
+[2022-01-23 02:37:19,408] {processor.py:163} INFO - Started process (PID=8418) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:37:19,410] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:37:19,411] {logging_mixin.py:109} INFO - [2022-01-23 02:37:19,411] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:37:19,430] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:37:19,432] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:37:49,952] {processor.py:163} INFO - Started process (PID=8477) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:37:49,954] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:37:49,955] {logging_mixin.py:109} INFO - [2022-01-23 02:37:49,955] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:37:49,976] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:37:49,979] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:38:20,347] {processor.py:163} INFO - Started process (PID=8545) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:38:20,348] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:38:20,349] {logging_mixin.py:109} INFO - [2022-01-23 02:38:20,349] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:38:20,366] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:38:20,369] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:38:50,516] {processor.py:163} INFO - Started process (PID=8613) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:38:50,518] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:38:50,519] {logging_mixin.py:109} INFO - [2022-01-23 02:38:50,519] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:38:50,535] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:38:50,538] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.026 seconds
+[2022-01-23 02:39:20,732] {processor.py:163} INFO - Started process (PID=8671) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:39:20,734] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:39:20,735] {logging_mixin.py:109} INFO - [2022-01-23 02:39:20,735] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:39:20,756] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:39:20,760] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:39:51,075] {processor.py:163} INFO - Started process (PID=8740) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:39:51,078] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:39:51,079] {logging_mixin.py:109} INFO - [2022-01-23 02:39:51,079] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:39:51,102] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:39:51,106] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:40:21,518] {processor.py:163} INFO - Started process (PID=8798) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:40:21,520] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:40:21,521] {logging_mixin.py:109} INFO - [2022-01-23 02:40:21,521] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:40:21,537] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:40:21,540] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.025 seconds
+[2022-01-23 02:40:51,759] {processor.py:163} INFO - Started process (PID=8865) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:40:51,761] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:40:51,762] {logging_mixin.py:109} INFO - [2022-01-23 02:40:51,762] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:40:51,782] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:40:51,789] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 02:41:21,895] {processor.py:163} INFO - Started process (PID=8917) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:41:21,898] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:41:21,899] {logging_mixin.py:109} INFO - [2022-01-23 02:41:21,899] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:41:21,919] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:41:21,922] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 02:41:52,061] {processor.py:163} INFO - Started process (PID=8983) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:41:52,064] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:41:52,065] {logging_mixin.py:109} INFO - [2022-01-23 02:41:52,065] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:41:52,086] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:41:52,090] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.034 seconds
+[2022-01-23 02:42:22,333] {processor.py:163} INFO - Started process (PID=9040) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:42:22,336] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:42:22,337] {logging_mixin.py:109} INFO - [2022-01-23 02:42:22,337] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:42:22,359] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:42:22,362] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:42:52,401] {processor.py:163} INFO - Started process (PID=9107) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:42:52,404] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:42:52,405] {logging_mixin.py:109} INFO - [2022-01-23 02:42:52,405] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:42:52,425] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:42:52,429] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:43:23,007] {processor.py:163} INFO - Started process (PID=9167) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:43:23,009] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:43:23,011] {logging_mixin.py:109} INFO - [2022-01-23 02:43:23,011] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:43:23,031] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:43:23,034] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:43:53,621] {processor.py:163} INFO - Started process (PID=9235) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:43:53,623] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:43:53,624] {logging_mixin.py:109} INFO - [2022-01-23 02:43:53,624] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:43:53,644] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:43:53,648] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:44:24,199] {processor.py:163} INFO - Started process (PID=9305) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:44:24,202] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:44:24,203] {logging_mixin.py:109} INFO - [2022-01-23 02:44:24,203] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:44:24,224] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:44:24,228] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:44:54,482] {processor.py:163} INFO - Started process (PID=9368) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:44:54,484] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:44:54,485] {logging_mixin.py:109} INFO - [2022-01-23 02:44:54,485] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:44:54,506] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:44:54,510] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.033 seconds
+[2022-01-23 02:45:24,645] {processor.py:163} INFO - Started process (PID=9433) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:45:24,647] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:45:24,648] {logging_mixin.py:109} INFO - [2022-01-23 02:45:24,648] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:45:24,668] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:45:24,673] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:45:55,415] {processor.py:163} INFO - Started process (PID=9490) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:45:55,417] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:45:55,419] {logging_mixin.py:109} INFO - [2022-01-23 02:45:55,419] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:45:55,442] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:45:55,447] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.037 seconds
+[2022-01-23 02:46:25,854] {processor.py:163} INFO - Started process (PID=9556) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:46:25,855] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:46:25,856] {logging_mixin.py:109} INFO - [2022-01-23 02:46:25,856] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:46:25,874] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:46:25,878] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.030 seconds
+[2022-01-23 02:46:55,921] {processor.py:163} INFO - Started process (PID=9619) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:46:55,922] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:46:55,923] {logging_mixin.py:109} INFO - [2022-01-23 02:46:55,923] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:46:55,941] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:46:55,944] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.027 seconds
+[2022-01-23 02:47:26,030] {processor.py:163} INFO - Started process (PID=9686) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:47:26,032] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:47:26,033] {logging_mixin.py:109} INFO - [2022-01-23 02:47:26,033] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:47:26,057] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:47:26,062] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.036 seconds
+[2022-01-23 02:47:56,568] {processor.py:163} INFO - Started process (PID=9744) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:47:56,570] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:47:56,571] {logging_mixin.py:109} INFO - [2022-01-23 02:47:56,571] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:47:56,591] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:47:56,594] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.031 seconds
+[2022-01-23 02:48:26,790] {processor.py:163} INFO - Started process (PID=9814) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:48:26,792] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:48:26,793] {logging_mixin.py:109} INFO - [2022-01-23 02:48:26,793] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:48:26,814] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:48:26,818] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.032 seconds
+[2022-01-23 02:48:57,414] {processor.py:163} INFO - Started process (PID=9871) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:48:57,418] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:48:57,420] {logging_mixin.py:109} INFO - [2022-01-23 02:48:57,419] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:48:57,441] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:48:57,445] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds
+[2022-01-23 02:49:27,680] {processor.py:163} INFO - Started process (PID=9939) to work on /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:49:27,683] {processor.py:642} INFO - Processing file /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip for tasks to queue
+[2022-01-23 02:49:27,684] {logging_mixin.py:109} INFO - [2022-01-23 02:49:27,684] {dagbag.py:500} INFO - Filling up the DagBag from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:49:27,707] {processor.py:656} WARNING - No viable dags retrieved from /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip
+[2022-01-23 02:49:27,711] {processor.py:171} INFO - Processing /opt/airflow/dags/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip took 0.035 seconds

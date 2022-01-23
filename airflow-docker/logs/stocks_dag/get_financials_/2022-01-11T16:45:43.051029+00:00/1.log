@@ -1,0 +1,78 @@
+[2022-01-11 16:45:45,672] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_financials_ manual__2022-01-11T16:45:43.051029+00:00 [queued]>
+[2022-01-11 16:45:45,687] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_financials_ manual__2022-01-11T16:45:43.051029+00:00 [queued]>
+[2022-01-11 16:45:45,688] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-11 16:45:45,689] {taskinstance.py:1239} INFO - Starting attempt 1 of 4
+[2022-01-11 16:45:45,690] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-11 16:45:45,705] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_financials_> on 2022-01-11 16:45:43.051029+00:00
+[2022-01-11 16:45:45,710] {standard_task_runner.py:52} INFO - Started process 723 to run task
+[2022-01-11 16:45:45,715] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_financials_', 'manual__2022-01-11T16:45:43.051029+00:00', '--job-id', '237', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpua900yiz', '--error-file', '/tmp/tmpzn342rus']
+[2022-01-11 16:45:45,716] {standard_task_runner.py:77} INFO - Job 237: Subtask get_financials_
+[2022-01-11 16:45:45,774] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_financials_ manual__2022-01-11T16:45:43.051029+00:00 [running]> on host 05378dffc570
+[2022-01-11 16:45:45,819] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_financials_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-11T16:45:43.051029+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-11T16:45:43.051029+00:00
+[2022-01-11 16:45:45,839] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_financials.py", line 19, in get_financials
+    db="stocks_db"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/__init__.py", line 525, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 62, in dbapi
+    return __import__("pymysql")
+ModuleNotFoundError: No module named 'pymysql'
+[2022-01-11 16:45:45,853] {taskinstance.py:1277} INFO - Marking task as UP_FOR_RETRY. dag_id=stocks_dag, task_id=get_financials_, execution_date=20220111T164543, start_date=20220111T164545, end_date=20220111T164545
+[2022-01-11 16:45:45,866] {standard_task_runner.py:92} ERROR - Failed to execute job 237 for task get_financials_
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/get_financials.py", line 19, in get_financials
+    db="stocks_db"))
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/__init__.py", line 525, in create_engine
+    return strategy.create(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 87, in create
+    dbapi = dialect_cls.dbapi(**dbapi_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/dialects/mysql/pymysql.py", line 62, in dbapi
+    return __import__("pymysql")
+ModuleNotFoundError: No module named 'pymysql'
+[2022-01-11 16:45:45,889] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-01-11 16:45:45,932] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

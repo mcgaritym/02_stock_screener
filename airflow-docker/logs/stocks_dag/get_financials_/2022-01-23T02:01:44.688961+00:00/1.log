@@ -1,0 +1,81 @@
+[2022-01-23 02:07:53,906] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_financials_ manual__2022-01-23T02:01:44.688961+00:00 [queued]>
+[2022-01-23 02:07:53,927] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.get_financials_ manual__2022-01-23T02:01:44.688961+00:00 [queued]>
+[2022-01-23 02:07:53,928] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-23 02:07:53,928] {taskinstance.py:1239} INFO - Starting attempt 1 of 4
+[2022-01-23 02:07:53,929] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-23 02:07:53,949] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): get_financials_> on 2022-01-23 02:01:44.688961+00:00
+[2022-01-23 02:07:53,963] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'get_financials_', 'manual__2022-01-23T02:01:44.688961+00:00', '--job-id', '554', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmpagpfmckc', '--error-file', '/tmp/tmpm53f_l10']
+[2022-01-23 02:07:53,965] {standard_task_runner.py:77} INFO - Job 554: Subtask get_financials_
+[2022-01-23 02:07:53,958] {standard_task_runner.py:52} INFO - Started process 1859 to run task
+[2022-01-23 02:07:54,051] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.get_financials_ manual__2022-01-23T02:01:44.688961+00:00 [running]> on host 313081f76d55
+[2022-01-23 02:07:54,128] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=get_financials_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-23T02:01:44.688961+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-23T02:01:44.688961+00:00
+[2022-01-23 02:07:54,428] {logging_mixin.py:109} INFO - AAPL 1
+[2022-01-23 02:07:58,437] {logging_mixin.py:109} INFO - MSFT 2
+[2022-01-23 02:08:02,210] {logging_mixin.py:109} INFO - GOOGL 3
+[2022-01-23 02:08:06,098] {logging_mixin.py:109} INFO - GOOG 4
+[2022-01-23 02:08:10,195] {logging_mixin.py:109} INFO - AMZN 5
+[2022-01-23 02:08:13,889] {logging_mixin.py:109} INFO - TSLA 6
+[2022-01-23 02:08:17,584] {logging_mixin.py:109} INFO - FB 7
+[2022-01-23 02:08:21,467] {logging_mixin.py:109} INFO - NVDA 8
+[2022-01-23 02:08:25,166] {logging_mixin.py:109} INFO - TSM 9
+[2022-01-23 02:08:28,848] {logging_mixin.py:109} INFO - JPM 10
+[2022-01-23 02:08:32,619] {logging_mixin.py:109} INFO - V 11
+[2022-01-23 02:08:36,309] {logging_mixin.py:109} INFO - JNJ 12
+[2022-01-23 02:08:39,978] {logging_mixin.py:109} INFO - UNH 13
+[2022-01-23 02:08:43,581] {logging_mixin.py:109} INFO - BAC 14
+[2022-01-23 02:08:47,989] {logging_mixin.py:109} INFO - HD 15
+[2022-01-23 02:08:51,728] {logging_mixin.py:109} INFO - WMT 16
+[2022-01-23 02:08:55,553] {logging_mixin.py:109} INFO - PG 17
+[2022-01-23 02:08:59,371] {logging_mixin.py:109} INFO - MA 18
+[2022-01-23 02:09:03,332] {logging_mixin.py:109} INFO - BABA 19
+[2022-01-23 02:09:07,063] {logging_mixin.py:109} INFO - PFE 20
+[2022-01-23 02:09:10,762] {logging_mixin.py:109} INFO - ASML 21
+[2022-01-23 02:09:14,410] {logging_mixin.py:109} INFO - XOM 22
+[2022-01-23 02:09:17,992] {logging_mixin.py:109} INFO - KeyError:  'trailingPE'
+[2022-01-23 02:09:17,993] {logging_mixin.py:109} INFO - DIS 23
+[2022-01-23 02:09:21,881] {logging_mixin.py:109} INFO - TM 24
+[2022-01-23 02:09:25,692] {logging_mixin.py:109} INFO - NTES 25
+[2022-01-23 02:09:29,589] {logging_mixin.py:109} INFO - KO 26
+[2022-01-23 02:09:33,342] {logging_mixin.py:109} INFO - CSCO 27
+[2022-01-23 02:09:36,924] {logging_mixin.py:109} INFO - AVGO 28
+[2022-01-23 02:09:40,626] {logging_mixin.py:109} INFO - ADBE 29
+[2022-01-23 02:09:44,616] {logging_mixin.py:109} INFO - LLY 30
+[2022-01-23 02:09:48,610] {logging_mixin.py:109} INFO - TMO 31
+[2022-01-23 02:09:52,500] {logging_mixin.py:109} INFO - CVX 32
+[2022-01-23 02:09:56,301] {logging_mixin.py:109} INFO - ABBV 33
+[2022-01-23 02:10:00,237] {logging_mixin.py:109} INFO - PEP 34
+[2022-01-23 02:10:04,066] {logging_mixin.py:109} INFO - ABT 35
+[2022-01-23 02:10:07,604] {logging_mixin.py:109} INFO - NFLX 36
+[2022-01-23 02:10:11,279] {logging_mixin.py:109} INFO - ORCL 37
+[2022-01-23 02:10:15,345] {logging_mixin.py:109} INFO - NKE 38
+[2022-01-23 02:10:19,028] {logging_mixin.py:109} INFO - ACN 39
+[2022-01-23 02:10:22,663] {logging_mixin.py:109} INFO - NVO 40
+[2022-01-23 02:10:26,297] {logging_mixin.py:109} INFO - CMCSA 41
+[2022-01-23 02:10:29,988] {logging_mixin.py:109} INFO - COST 42
+[2022-01-23 02:10:30,375] {local_task_job.py:212} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2022-01-23 02:10:30,381] {process_utils.py:124} INFO - Sending Signals.SIGTERM to group 1859. PIDs of all processes in the group: [1859]
+[2022-01-23 02:10:30,382] {process_utils.py:75} INFO - Sending the signal Signals.SIGTERM to group 1859
+[2022-01-23 02:10:30,383] {taskinstance.py:1408} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-01-23 02:10:30,384] {logging_mixin.py:109} INFO - Task received SIGTERM signal
+[2022-01-23 02:10:30,386] {logging_mixin.py:109} INFO - CRM 43
+[2022-01-23 02:10:34,257] {logging_mixin.py:109} INFO - VZ 44
+[2022-01-23 02:10:37,940] {logging_mixin.py:109} INFO - INTC 45
+[2022-01-23 02:10:41,602] {logging_mixin.py:109} INFO - WFC 46
+[2022-01-23 02:10:45,061] {logging_mixin.py:109} INFO - DHR 47
+[2022-01-23 02:10:51,039] {logging_mixin.py:109} INFO - PYPL 48
+[2022-01-23 02:11:00,817] {logging_mixin.py:109} INFO - MRK 49
+[2022-01-23 02:11:10,291] {logging_mixin.py:109} INFO - NVS 50
+[2022-01-23 02:11:19,919] {logging_mixin.py:109} INFO - QCOM 51
+[2022-01-23 02:11:29,076] {logging_mixin.py:109} INFO - MCD 52
+[2022-01-23 02:11:30,375] {process_utils.py:138} WARNING - process psutil.Process(pid=1859, name='airflow task ru', status='sleeping', started='02:07:53') did not respond to SIGTERM. Trying SIGKILL
+[2022-01-23 02:11:30,377] {process_utils.py:75} INFO - Sending the signal Signals.SIGKILL to group 1859
+[2022-01-23 02:11:30,432] {process_utils.py:70} INFO - Process psutil.Process(pid=1859, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='02:07:53') (1859) terminated with exit code Negsignal.SIGKILL
+[2022-01-23 02:11:30,434] {standard_task_runner.py:135} ERROR - Job 554 was killed before it finished (likely due to running out of memory)

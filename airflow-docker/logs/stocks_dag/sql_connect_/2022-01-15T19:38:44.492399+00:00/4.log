@@ -1,0 +1,157 @@
+[2022-01-15 19:45:19,514] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.sql_connect_ manual__2022-01-15T19:38:44.492399+00:00 [queued]>
+[2022-01-15 19:45:19,526] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.sql_connect_ manual__2022-01-15T19:38:44.492399+00:00 [queued]>
+[2022-01-15 19:45:19,527] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-15 19:45:19,528] {taskinstance.py:1239} INFO - Starting attempt 4 of 4
+[2022-01-15 19:45:19,529] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-15 19:45:19,544] {taskinstance.py:1259} INFO - Executing <Task(PythonOperator): sql_connect_> on 2022-01-15 19:38:44.492399+00:00
+[2022-01-15 19:45:19,552] {standard_task_runner.py:52} INFO - Started process 67 to run task
+[2022-01-15 19:45:19,557] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'sql_connect_', 'manual__2022-01-15T19:38:44.492399+00:00', '--job-id', '448', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmprt2htcko', '--error-file', '/tmp/tmp84qgz0v9']
+[2022-01-15 19:45:19,558] {standard_task_runner.py:77} INFO - Job 448: Subtask sql_connect_
+[2022-01-15 19:45:19,624] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.sql_connect_ manual__2022-01-15T19:38:44.492399+00:00 [running]> on host 241ebeaac988
+[2022-01-15 19:45:19,689] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=sql_connect_
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-15T19:38:44.492399+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-15T19:38:44.492399+00:00
+[2022-01-15 19:45:19,691] {logging_mixin.py:109} INFO - AIRFLOW__CELERY__RESULT_BACKEND=db+postgresql://***:***@postgres/***
+[2022-01-15 19:45:19,692] {logging_mixin.py:109} INFO - DUMB_INIT_SETSID=0
+[2022-01-15 19:45:19,693] {logging_mixin.py:109} INFO - HOSTNAME=241ebeaac988
+[2022-01-15 19:45:19,694] {logging_mixin.py:109} INFO - PYTHON_VERSION=3.7.12
+[2022-01-15 19:45:19,695] {logging_mixin.py:109} INFO - LANGUAGE=C.UTF-8
+[2022-01-15 19:45:19,696] {logging_mixin.py:109} INFO - AIRFLOW_USER_HOME_DIR=/home/***
+[2022-01-15 19:45:19,697] {logging_mixin.py:109} INFO - ADDITIONAL_RUNTIME_APT_DEPS=
+[2022-01-15 19:45:19,697] {logging_mixin.py:109} INFO - PWD=/opt/***
+[2022-01-15 19:45:19,698] {logging_mixin.py:109} INFO - AIRFLOW__CELERY__BROKER_URL=redis://:@redis:6379/0
+[2022-01-15 19:45:19,699] {logging_mixin.py:109} INFO - AIRFLOW_VERSION=2.2.3
+[2022-01-15 19:45:19,700] {logging_mixin.py:109} INFO - AIRFLOW__CORE__LOAD_EXAMPLES=true
+[2022-01-15 19:45:19,701] {logging_mixin.py:109} INFO - INSTALL_MSSQL_CLIENT=true
+[2022-01-15 19:45:19,701] {logging_mixin.py:109} INFO - PYTHON_SETUPTOOLS_VERSION=57.5.0
+[2022-01-15 19:45:19,702] {logging_mixin.py:109} INFO - GUNICORN_CMD_ARGS=--worker-tmp-dir /dev/shm
+[2022-01-15 19:45:19,703] {logging_mixin.py:109} INFO - LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libstdc++.so.6
+[2022-01-15 19:45:19,704] {logging_mixin.py:109} INFO - HOME=/home/***
+[2022-01-15 19:45:19,705] {logging_mixin.py:109} INFO - LANG=C.UTF-8
+[2022-01-15 19:45:19,705] {logging_mixin.py:109} INFO - AIRFLOW_HOME=/opt/***
+[2022-01-15 19:45:19,706] {logging_mixin.py:109} INFO - GPG_KEY=0D96DF4D4110E5C43FBFB17F2D347EA6AA65421D
+[2022-01-15 19:45:19,707] {logging_mixin.py:109} INFO - AIRFLOW__CORE__EXECUTOR=CeleryExecutor
+[2022-01-15 19:45:19,708] {logging_mixin.py:109} INFO - COMMIT_SHA=c1bbe3c5bc84844e7b10bb484ffe783d4a2d3c29
+[2022-01-15 19:45:19,709] {logging_mixin.py:109} INFO - AIRFLOW_PIP_VERSION=21.2.4
+[2022-01-15 19:45:19,710] {logging_mixin.py:109} INFO - AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION=true
+[2022-01-15 19:45:19,711] {logging_mixin.py:109} INFO - ADDITIONAL_RUNTIME_APT_COMMAND=
+[2022-01-15 19:45:19,711] {logging_mixin.py:109} INFO - _PIP_ADDITIONAL_REQUIREMENTS=
+[2022-01-15 19:45:19,713] {logging_mixin.py:109} INFO - SHLVL=0
+[2022-01-15 19:45:19,715] {logging_mixin.py:109} INFO - LC_MESSAGES=C.UTF-8
+[2022-01-15 19:45:19,716] {logging_mixin.py:109} INFO - RUNTIME_APT_DEPS=       apt-transport-https        apt-utils        ca-certificates        curl        dumb-init        freetds-bin        gnupg        gosu        krb5-user        ldap-utils        libffi6        libldap-2.4-2        libsasl2-2        libsasl2-modules        libssl1.1        locales         lsb-release        netcat        openssh-client        postgresql-client        python2        rsync        sasl2-bin        sqlite3        sudo        unixodbc
+[2022-01-15 19:45:19,717] {logging_mixin.py:109} INFO - PYTHON_PIP_VERSION=21.2.4
+[2022-01-15 19:45:19,718] {logging_mixin.py:109} INFO - RUNTIME_APT_COMMAND=echo
+[2022-01-15 19:45:19,719] {logging_mixin.py:109} INFO - LC_CTYPE=C.UTF-8
+[2022-01-15 19:45:19,720] {logging_mixin.py:109} INFO - PYTHON_GET_PIP_SHA256=c518250e91a70d7b20cceb15272209a4ded2a0c263ae5776f129e0d9b5674309
+[2022-01-15 19:45:19,721] {logging_mixin.py:109} INFO - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://***:***@postgres/***
+[2022-01-15 19:45:19,721] {logging_mixin.py:109} INFO - AIRFLOW_INSTALLATION_METHOD=apache-***
+[2022-01-15 19:45:19,722] {logging_mixin.py:109} INFO - LC_ALL=C.UTF-8
+[2022-01-15 19:45:19,723] {logging_mixin.py:109} INFO - PYTHON_GET_PIP_URL=https://github.com/pypa/get-pip/raw/3cb8888cc2869620f57d5d2da64da38f516078c7/public/get-pip.py
+[2022-01-15 19:45:19,724] {logging_mixin.py:109} INFO - INSTALL_MYSQL_CLIENT=true
+[2022-01-15 19:45:19,725] {logging_mixin.py:109} INFO - PATH=/home/***/.local/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+[2022-01-15 19:45:19,726] {logging_mixin.py:109} INFO - PYTHON_BASE_IMAGE=ghcr.io/apache/***/main/python:3.7-slim-buster
+[2022-01-15 19:45:19,727] {logging_mixin.py:109} INFO - AIRFLOW_UID=50000
+[2022-01-15 19:45:19,728] {logging_mixin.py:109} INFO - AIRFLOW__API__AUTH_BACKEND=***.api.auth.backend.basic_auth
+[2022-01-15 19:45:19,728] {logging_mixin.py:109} INFO - BUILD_ID=0
+[2022-01-15 19:45:19,729] {logging_mixin.py:109} INFO - AIRFLOW__CORE__FERNET_KEY=
+[2022-01-15 19:45:19,730] {logging_mixin.py:109} INFO - DEBIAN_FRONTEND=noninteractive
+[2022-01-15 19:45:19,731] {logging_mixin.py:109} INFO - _MP_FORK_LOGLEVEL_=20
+[2022-01-15 19:45:19,731] {logging_mixin.py:109} INFO - _MP_FORK_LOGFILE_=
+[2022-01-15 19:45:19,732] {logging_mixin.py:109} INFO - _MP_FORK_LOGFORMAT_=[%(asctime)s: %(levelname)s/%(processName)s] %(message)s
+[2022-01-15 19:45:19,733] {logging_mixin.py:109} INFO - CELERY_LOG_LEVEL=20
+[2022-01-15 19:45:19,733] {logging_mixin.py:109} INFO - CELERY_LOG_FILE=
+[2022-01-15 19:45:19,734] {logging_mixin.py:109} INFO - CELERY_LOG_REDIRECT=1
+[2022-01-15 19:45:19,735] {logging_mixin.py:109} INFO - CELERY_LOG_REDIRECT_LEVEL=WARNING
+[2022-01-15 19:45:19,736] {logging_mixin.py:109} INFO - AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+[2022-01-15 19:45:19,737] {logging_mixin.py:109} INFO - AIRFLOW_CTX_DAG_OWNER=***
+[2022-01-15 19:45:19,738] {logging_mixin.py:109} INFO - AIRFLOW_CTX_DAG_ID=stocks_dag
+[2022-01-15 19:45:19,738] {logging_mixin.py:109} INFO - AIRFLOW_CTX_TASK_ID=sql_connect_
+[2022-01-15 19:45:19,739] {logging_mixin.py:109} INFO - AIRFLOW_CTX_EXECUTION_DATE=2022-01-15T19:38:44.492399+00:00
+[2022-01-15 19:45:19,740] {logging_mixin.py:109} INFO - AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-15T19:38:44.492399+00:00
+[2022-01-15 19:45:19,741] {logging_mixin.py:109} INFO - Parent Directory:  /opt
+[2022-01-15 19:45:19,742] {logging_mixin.py:109} INFO - Data Directory:  /opt/data
+[2022-01-15 19:45:19,743] {logging_mixin.py:109} INFO - Current Working Directory:  /opt/***
+[2022-01-15 19:45:19,744] {logging_mixin.py:109} INFO - Current Files in WD_:  ['logs', 'dags', '***-worker.pid', '***.cfg', 'plugins', 'webserver_config.py', 'data', 'config.txt', 'requirements.txt', 'nasdaq_screener_1641856343892.csv']
+[2022-01-15 19:45:19,746] {taskinstance.py:1700} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 236, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on 'localhost:3306' (99)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sql_connect.py", line 30, in sql_connect_1
+    connection_1 = mysql.connector.connect(host=host, user=user, password=pwd, port=port)
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/__init__.py", line 272, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 85, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/abstracts.py", line 1014, in connect
+    self._open_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 242, in _open_connection
+    sqlstate=exc.sqlstate)
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (99)
+[2022-01-15 19:45:19,769] {taskinstance.py:1277} INFO - Marking task as FAILED. dag_id=stocks_dag, task_id=sql_connect_, execution_date=20220115T193844, start_date=20220115T194519, end_date=20220115T194519
+[2022-01-15 19:45:19,783] {standard_task_runner.py:92} ERROR - Failed to execute job 448 for task sql_connect_
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 236, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on 'localhost:3306' (99)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/task/task_runner/standard_task_runner.py", line 85, in _start_by_fork
+    args.func(args, dag=self.dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/cli_parser.py", line 48, in command
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/cli.py", line 92, in wrapper
+    return f(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 298, in task_run
+    _run_task_by_selected_method(args, dag, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 107, in _run_task_by_selected_method
+    _run_raw_task(args, ti)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/cli/commands/task_command.py", line 184, in _run_raw_task
+    error_file=args.error_file,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 70, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1329, in _run_raw_task
+    self._execute_task_with_callbacks(context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1455, in _execute_task_with_callbacks
+    result = self._execute_task(context, self.task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1511, in _execute_task
+    result = execute_callable(context=context)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 174, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 185, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/sql_connect.py", line 30, in sql_connect_1
+    connection_1 = mysql.connector.connect(host=host, user=user, password=pwd, port=port)
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/__init__.py", line 272, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 85, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/abstracts.py", line 1014, in connect
+    self._open_connection()
+  File "/home/airflow/.local/lib/python3.7/site-packages/mysql/connector/connection_cext.py", line 242, in _open_connection
+    sqlstate=exc.sqlstate)
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 'localhost:3306' (99)
+[2022-01-15 19:45:19,814] {local_task_job.py:154} INFO - Task exited with return code 1
+[2022-01-15 19:45:19,851] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check

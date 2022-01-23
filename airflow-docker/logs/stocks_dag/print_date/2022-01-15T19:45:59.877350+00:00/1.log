@@ -1,0 +1,28 @@
+[2022-01-15 19:46:01,608] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.print_date manual__2022-01-15T19:45:59.877350+00:00 [queued]>
+[2022-01-15 19:46:01,626] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: stocks_dag.print_date manual__2022-01-15T19:45:59.877350+00:00 [queued]>
+[2022-01-15 19:46:01,627] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-15 19:46:01,628] {taskinstance.py:1239} INFO - Starting attempt 1 of 4
+[2022-01-15 19:46:01,629] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-01-15 19:46:01,645] {taskinstance.py:1259} INFO - Executing <Task(BashOperator): print_date> on 2022-01-15 19:45:59.877350+00:00
+[2022-01-15 19:46:01,653] {standard_task_runner.py:52} INFO - Started process 101 to run task
+[2022-01-15 19:46:01,661] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', 'stocks_dag', 'print_date', 'manual__2022-01-15T19:45:59.877350+00:00', '--job-id', '452', '--raw', '--subdir', 'DAGS_FOLDER/stocks_dag.py', '--cfg-path', '/tmp/tmppt9jli2_', '--error-file', '/tmp/tmpx_vemyg1']
+[2022-01-15 19:46:01,663] {standard_task_runner.py:77} INFO - Job 452: Subtask print_date
+[2022-01-15 19:46:01,749] {logging_mixin.py:109} INFO - Running <TaskInstance: stocks_dag.print_date manual__2022-01-15T19:45:59.877350+00:00 [running]> on host 241ebeaac988
+[2022-01-15 19:46:01,833] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=mcgaritym@gmail.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=stocks_dag
+AIRFLOW_CTX_TASK_ID=print_date
+AIRFLOW_CTX_EXECUTION_DATE=2022-01-15T19:45:59.877350+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-01-15T19:45:59.877350+00:00
+[2022-01-15 19:46:01,844] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-01-15 19:46:01,847] {subprocess.py:74} INFO - Running command: ['bash', '-c', 'date']
+[2022-01-15 19:46:01,869] {subprocess.py:85} INFO - Output:
+[2022-01-15 19:46:01,873] {subprocess.py:89} INFO - Sat Jan 15 19:46:01 UTC 2022
+[2022-01-15 19:46:01,875] {subprocess.py:93} INFO - Command exited with return code 0
+[2022-01-15 19:46:01,900] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=stocks_dag, task_id=print_date, execution_date=20220115T194559, start_date=20220115T194601, end_date=20220115T194601
+[2022-01-15 19:46:01,957] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-01-15 19:46:02,001] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
