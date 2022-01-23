@@ -7,12 +7,10 @@ from config import *
 # query SQL for undervalued stocks (create sector PE average common table expression, industry PE average common table expression)
 def query_stocks():
 
-    host = 'host.docker.internal'
-    port = int(3307)
-
     # specify second MySQL database connection (faster read_sql query feature)
-    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=user, password=MYSQL_ROOT_PASSWORD, host=host, port=port,
-                                                                      db=MYSQL_DATABASE))
+    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=MYSQL_USER,
+                                                                    password=MYSQL_ROOT_PASSWORD, host=MYSQL_HOST,
+                                                                    port=MYSQL_PORT, db=MYSQL_DATABASE))
 
     undervalued_stocks = pd.read_sql_query("""
     with sector_pe_avg as (
@@ -46,15 +44,15 @@ def query_stocks():
     WHERE trailingPE IS NOT NULL
     AND trailingPE < sector_trailingPE
     AND `Last Sale` < fiftyDayAverage
-    AND `Last Sale` < fiftyTwoWeekHigh*(.85)
+    AND `Last Sale` < fiftyTwoWeekHigh*(.90)
     AND `Market Cap` > 100000000000
     AND Country = "United States"
-    AND dividendRate > 0
     ORDER BY `Market Cap` DESC;
     """, con=connection_2)
 
     # drop duplicates, send to csv file, and print results
     undervalued_stocks = undervalued_stocks.drop_duplicates(subset=['symbol'])
+    undervalued_stocks.to_sql(name='undervalued_stocks', con=connection_2, if_exists="replace", chunksize=1000)
     undervalued_stocks.to_csv('undervalued_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
     print(undervalued_stocks)
 

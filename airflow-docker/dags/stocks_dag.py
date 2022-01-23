@@ -2,12 +2,15 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
+from airflow.operators.email import EmailOperator
+
 
 # import python functions in local python files
-from sql_connect import sql_connect_1
-from get_tickers_2 import get_tickers_2
+from sql_connect import sql_connect
+from get_tickers import get_tickers
 from get_financials import get_financials
 from query_stocks import query_stocks
+from email_results import email_results
 
 import pymysql
 
@@ -47,57 +50,53 @@ with DAG(
     tags=['stock_dag_tag'],
 ) as dag:
 
-    # t1, t2 and t3 are examples of tasks created by instantiating operators
-    t1 = BashOperator(
+    # print date bash task to kickoff events
+    print_date = BashOperator(
         task_id='print_date',
         bash_command='date',
     )
 
-    # t1.doc_md = dedent(
-    #     """\
-    # #### Task Documentation
-    # You can document your task using the attributes `doc_md` (markdown),
-    # `doc` (plain text), `doc_rst`, `doc_json`, `doc_yaml` which gets
-    # rendered in the UI's Task Instance Details page.
-    # ![img](http://montcs.bloomu.edu/~bobmon/Semesters/2012-01/491/import%20soul.png)
-    #
-    # """
-    # )
-
-    # define the first task
-    t2 = PythonOperator(
+    # connect to SQL python task
+    sql_connect = PythonOperator(
         task_id='sql_connect_',
-        python_callable=sql_connect_1,
+        python_callable=sql_connect,
         dag=dag,
     )
 
-    # define the first task
-    t3 = PythonOperator(
-        task_id='get_tickers_2_',
-        python_callable=get_tickers_2,
+    # get tickers python task
+    get_tickers = PythonOperator(
+        task_id='get_tickers_',
+        python_callable=get_tickers,
         dag=dag,
     )
 
-    # t3 = BashOperator(
-    #     task_id='get_tickers_',
-    #     bash_command='python /Users/mcgaritym/airflow-docker/dags/get_tickers.py',
-    #     dag=dag
-    #
-    # )
-    # define the first task
-    t4 = PythonOperator(
+    # get financials python task
+    get_financials = PythonOperator(
         task_id='get_financials_',
         python_callable=get_financials,
         dag=dag,
     )
 
-    # define the first task
-    t5 = PythonOperator(
+    # query stocks python task
+    query_stocks = PythonOperator(
         task_id='query_stocks_',
         python_callable=query_stocks,
         dag=dag,
     )
 
+
+
+    email_results = PythonOperator(
+        task_id='email_results_',
+        python_callable=email_results,
+        op_kwargs={"sender": 'pythonemail4u@gmail.com',
+                   "receiver": ['mcgaritym@gmail.com'],
+                   "email_subject": 'Undervalued Stock Picks for Today'},
+        dag=dag,
+    )
+
+
+
     # specify order/dependency of tasks
-    # t1 >> t2 >> t3 >> t4 >> t5
-    t3 >> t4 >> t5
+    print_date >> sql_connect >> get_tickers >> get_financials >> query_stocks >> email_results
+    # print_date >> email_results

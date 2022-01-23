@@ -1,1 +1,2 @@
 /airflow-docker/config.py
+/airflow-docker/dags/config.py

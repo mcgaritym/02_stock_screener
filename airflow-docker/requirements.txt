@@ -8,3 +8,5 @@ yfinance~=0.1.59
 apache-airflow~=2.2.3
 webdriver-manager==3.5.2
 pymysql==1.0.2
+pretty-html-table==0.9.15
+pretty_html_table==0.9.15

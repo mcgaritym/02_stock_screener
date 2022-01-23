@@ -9,20 +9,19 @@ from config import *
 # get ticker financial info via yfinance API:
 def get_financials():
 
-    host = 'host.docker.internal'
-    port = int(3307)
-
     # specify second MySQL database connection (faster read_sql query feature)
-    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=user, password=MYSQL_ROOT_PASSWORD, host=host, port=port,
-                                                                      db=MYSQL_DATABASE))
+    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=MYSQL_USER,
+                                                                    password=MYSQL_ROOT_PASSWORD, host=MYSQL_HOST,
+                                                                    port=MYSQL_PORT, db=MYSQL_DATABASE))
 
     # read SQL table for stocks with positive market cap and remove 2021 IPO stocks
     tickers_list = pd.read_sql_query(
         """SELECT Symbol FROM tickers WHERE `Market Cap` > 0 AND `IPO Year` != '2021' OR `IPO Year` IS NULL;""",
         con=connection_2)
+    connection_2.dispose()
 
     # only look at first 100 tickers by market cap
-    tickers_list = tickers_list[:100]
+    tickers_list = tickers_list[:20]
 
     # create empty list to append dictionary values
     list_financials = []
