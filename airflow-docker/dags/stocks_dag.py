@@ -24,6 +24,9 @@ default_args = {
     'email_on_retry': False,
     'retries': 3,
     'retry_delay': timedelta(minutes=2),
+    'execution_timeout': timedelta(hours=5),
+    'dagrun_timeout': timedelta(hours=5),
+
     # 'queue': 'bash_queue',
     # 'pool': 'backfill',
     # 'priority_weight': 10,

@@ -21,7 +21,7 @@ def get_financials():
     connection_2.dispose()
 
     # only look at first 100 tickers by market cap
-    tickers_list = tickers_list[:20]
+    tickers_list = tickers_list[:1000]
 
     # create empty list to append dictionary values
     list_financials = []

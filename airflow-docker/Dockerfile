@@ -64,13 +64,13 @@ USER ${spark_uid}
 
 # copy file
 # RUN mkdir -p opt/data
-COPY nasdaq_screener_1641856343892.csv .
-COPY data/nasdaq_screener_1641856343892.csv /opt/data
+COPY nasdaq_screener_1643467592418.csv .
+COPY data/nasdaq_screener_1643467592418.csv /opt/data
 COPY config.py .
 
 # copy package requirements and run
 FROM apache/airflow:2.2.3
-COPY nasdaq_screener_1641856343892.csv .
+COPY nasdaq_screener_1643467592418.csv .
 COPY requirements.txt .
 COPY config.py .
 COPY config.py /dags

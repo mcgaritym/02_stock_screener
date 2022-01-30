@@ -1,61 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="added email notification to airflow ETL">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/.env" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/dags/get_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/get_financials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/get_tickers.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/get_tickers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/get_tickers_2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/sql_connect.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/sql_connect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/dags/stocks_dag.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/stocks_dag.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-09__13-39-18.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-09__20-09-49.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-10__13-45-37.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-10__18-11-04.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-10__18-12-26.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-11__09-57-44.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/test_db.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/tickers_2022-01-11__10-19-11.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/data/nasdaq_screener_1641856343892.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/.wdm/drivers/chromedriver/mac64/97.0.4692.71/driver.zip.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_bash_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_bash_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_datetime_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_datetime_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_day_of_week_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_day_of_week_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_labels.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_labels.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_python_dop_operator_3.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_branch_python_dop_operator_3.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_complex.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_complex.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_dag_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_dag_decorator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_external_task_marker_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_external_task_marker_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_kubernetes_executor.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_kubernetes_executor.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_latest_only.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_latest_only.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_latest_only_with_trigger.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_latest_only_with_trigger.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_nested_branch_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_nested_branch_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_passing_params_via_test_command.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_passing_params_via_test_command.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_python_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_python_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_short_circuit_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_short_circuit_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_skip_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_skip_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_sla_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_sla_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_subdag_operator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_subdag_operator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_task_group.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_task_group.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_task_group_decorator.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_task_group_decorator.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_time_delta_sensor_async.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_time_delta_sensor_async.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_trigger_controller_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_trigger_controller_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_trigger_target_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_trigger_target_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_xcom.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_xcom.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_xcomargs.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/example_xcomargs.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/plugins/workday.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/plugins/workday.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/subdags/subdag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/subdags/subdag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial_etl_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial_etl_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial_taskflow_api_etl.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial_taskflow_api_etl.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial_taskflow_api_etl_virtualenv.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/native_dags/example_dags/tutorial_taskflow_api_etl_virtualenv.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/stocks_dag.py.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/2022-01-23/stocks_dag.py.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/stocks_dag/get_financials_/2022-01-23T02:46:53.697634+00:00/1.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/stocks_dag/get_financials_/2022-01-23T02:46:53.697634+00:00/1.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1641856343892.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/tickers_2022-01-10__09-28-42.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1642906475170</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added email notification to airflow ETL">
+      <created>1642969691049</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1642969691049</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -339,6 +303,7 @@
     <MESSAGE value="updated s3 to rds" />
     <MESSAGE value="updated query" />
     <MESSAGE value="airflow docker files" />
-    <option name="LAST_COMMIT_MESSAGE" value="airflow docker files" />
+    <MESSAGE value="added email notification to airflow ETL" />
+    <option name="LAST_COMMIT_MESSAGE" value="added email notification to airflow ETL" />
   </component>
 </project>
