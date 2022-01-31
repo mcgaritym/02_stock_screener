@@ -3,14 +3,14 @@ from sqlalchemy import create_engine
 import pandas as pd
 from datetime import datetime, date
 from config import *
+from SqlConnect import SqlConnect
 
 # query SQL for undervalued stocks
 def query_stocks():
 
-    # specify second MySQL database connection (faster read_sql query feature)
-    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=MYSQL_USER,
-                                                                    password=MYSQL_ROOT_PASSWORD, host=MYSQL_HOST,
-                                                                    port=MYSQL_PORT, db=MYSQL_DATABASE))
+    # get class, and create connections
+    stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
+    connection = stocks_connect.connect_sqlalchemy()
 
     # create sector PE average common table expression, industry PE average common table expression
     undervalued_stocks = pd.read_sql_query("""
@@ -49,11 +49,11 @@ def query_stocks():
     AND `Market Cap` > 100000000000
     AND Country = "United States"
     ORDER BY `Market Cap` DESC;
-    """, con=connection_2)
+    """, con=connection)
 
     # drop duplicates, send to csv file, and print results
     undervalued_stocks = undervalued_stocks.drop_duplicates(subset=['symbol'])
-    undervalued_stocks.to_sql(name='undervalued_stocks', con=connection_2, if_exists="replace", chunksize=1000)
+    undervalued_stocks.to_sql(name='undervalued_stocks', con=connection, if_exists="replace", chunksize=1000)
     undervalued_stocks.to_csv('undervalued_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
     print(undervalued_stocks)
 

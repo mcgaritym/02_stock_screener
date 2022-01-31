@@ -6,7 +6,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 
 # import python functions in local python files
-from sql_connect import sql_connect
+from sql_connect import create_database
 from get_tickers import get_tickers
 from get_financials import get_financials
 from query_stocks import query_stocks
@@ -44,8 +44,8 @@ with DAG(
 
     # connect to SQL python task
     sql_connect = PythonOperator(
-        task_id='sql_connect_',
-        python_callable=sql_connect,
+        task_id='create_database_',
+        python_callable=create_database,
         dag=dag,
     )
 

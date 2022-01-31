@@ -5,20 +5,22 @@ import numpy as np
 import yfinance as yf
 import time
 from config import *
+from SqlConnect import SqlConnect
 
 # get ticker financial info via yfinance API:
 def get_financials():
 
-    # specify second MySQL database connection (faster read_sql query feature)
-    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=MYSQL_USER,
-                                                                    password=MYSQL_ROOT_PASSWORD, host=MYSQL_HOST,
-                                                                    port=MYSQL_PORT, db=MYSQL_DATABASE))
+    # get class, and create connections
+    stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
+    connection = stocks_connect.connect_sqlalchemy()
 
     # read SQL table for stocks with positive market cap and remove 2021 IPO stocks
     tickers_list = pd.read_sql_query(
         """SELECT Symbol FROM tickers WHERE `Market Cap` > 0 AND `IPO Year` != '2021' OR `IPO Year` IS NULL;""",
-        con=connection_2)
-    connection_2.dispose()
+        con=connection)
+    connection.dispose()
+
+    tickers_list = tickers_list[:100]
 
     # create empty list to append dictionary values
     list_financials = []
@@ -219,6 +221,6 @@ def get_financials():
     df_financials = df_financials.replace([np.inf, -np.inf], np.nan)
 
     # send to SQL
-    df_financials.to_sql(name='stock_financials', con=connection_2, if_exists='replace')
+    df_financials.to_sql(name='stock_financials', con=connection, if_exists='replace')
 
     return print("Financials Sent to local MySQL")

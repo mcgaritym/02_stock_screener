@@ -5,21 +5,16 @@ from glob import glob
 import pandas as pd
 from datetime import timedelta, date, datetime
 from config import *
+from SqlConnect import SqlConnect
 
 # get stock tickers, save to SQL
 def get_tickers():
 
     # get current parent directory and data folder path
-    par_directory = os.path.dirname(os.getcwd())
-    print('Parent Directory: ', par_directory)
-    data_directory = os.path.join(par_directory, 'data')
-    print('Data Directory: ', data_directory)
-    cwd = os.getcwd()
-    print('Current Working Directory: ', cwd)
-    print('Current Files in WD_: ', os.listdir(cwd))
+    data_directory = os.path.join(os.getcwd(), 'data')
 
     # retrieve tripdata files
-    tickers = glob(os.path.join(cwd, '*nasdaq_screener*.csv'))
+    tickers = glob(os.path.join(data_directory, '*nasdaq_screener*.csv'))
     print(tickers)
 
     df_tickers = pd.read_csv(tickers[0])
@@ -38,13 +33,12 @@ def get_tickers():
     df_tickers['Last Sale'] = df_tickers['Last Sale'].astype(float)
     df_tickers = df_tickers.sort_values(by='Market Cap', ascending=False)
 
-    # specify second MySQL database connection (faster read_sql query feature)
-    connection_2 = create_engine("mysql+pymysql://{user}:{password}@{host}:{port}/{db}".format(user=MYSQL_USER,
-                                                                    password=MYSQL_ROOT_PASSWORD, host=MYSQL_HOST,
-                                                                    port=MYSQL_PORT, db=MYSQL_DATABASE))
+    # get class, and create connections
+    stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
+    connection = stocks_connect.connect_sqlalchemy()
 
     # send to SQL
-    df_tickers.to_sql(name='tickers', con=connection_2, if_exists="replace", chunksize=1000)
+    df_tickers.to_sql(name='tickers', con=connection, if_exists="replace", chunksize=1000)
     df_tickers.to_csv('tickers_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
     print(df_tickers.head())
 
