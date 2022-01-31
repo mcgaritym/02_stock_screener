@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime, date
 from config import *
 
-# query SQL for undervalued stocks (create sector PE average common table expression, industry PE average common table expression)
+# query SQL for undervalued stocks
 def query_stocks():
 
     # specify second MySQL database connection (faster read_sql query feature)
@@ -12,6 +12,7 @@ def query_stocks():
                                                                     password=MYSQL_ROOT_PASSWORD, host=MYSQL_HOST,
                                                                     port=MYSQL_PORT, db=MYSQL_DATABASE))
 
+    # create sector PE average common table expression, industry PE average common table expression
     undervalued_stocks = pd.read_sql_query("""
     with sector_pe_avg as (
     SELECT fin.sector, AVG(fin.trailingPE) as sector_trailingPE
@@ -56,4 +57,4 @@ def query_stocks():
     undervalued_stocks.to_csv('undervalued_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
     print(undervalued_stocks)
 
-    return "Undervalued Stocks Query Successful"
+    return print("Undervalued Stocks Query Successful")

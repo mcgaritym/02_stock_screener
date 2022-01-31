@@ -1,4 +1,4 @@
-# load required libraries
+# import libraries
 from sqlalchemy import create_engine
 import os
 from glob import glob
@@ -48,4 +48,4 @@ def get_tickers():
     df_tickers.to_csv('tickers_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
     print(df_tickers.head())
 
-    return "Tickers Created and Sent to SQL"
+    return print("Tickers Sent to local MySQL")

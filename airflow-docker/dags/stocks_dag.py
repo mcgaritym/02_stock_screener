@@ -1,9 +1,9 @@
+# import libraries
+# import airflow libraries
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
-from airflow.operators.email import EmailOperator
-
 
 # import python functions in local python files
 from sql_connect import sql_connect
@@ -12,10 +12,7 @@ from get_financials import get_financials
 from query_stocks import query_stocks
 from email_results import email_results
 
-import pymysql
-
-# These args will get passed on to each operator
-# You can override them on a per-task basis during operator initialization
+# specify default args
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -27,28 +24,14 @@ default_args = {
     'execution_timeout': timedelta(hours=5),
     'dagrun_timeout': timedelta(hours=5),
 
-    # 'queue': 'bash_queue',
-    # 'pool': 'backfill',
-    # 'priority_weight': 10,
-    # 'end_date': datetime(2016, 1, 1),
-    # 'wait_for_downstream': False,
-    # 'dag': dag,
-    # 'sla': timedelta(hours=2),
-    # 'execution_timeout': timedelta(seconds=300),
-    # 'on_failure_callback': some_function,
-    # 'on_success_callback': some_other_function,
-    # 'on_retry_callback': another_function,
-    # 'sla_miss_callback': yet_another_function,
-    # 'trigger_rule': 'all_success'
 }
 
 with DAG(
     'stocks_dag',
     default_args=default_args,
     description='Stock Screener DAG, delivering undervalued stock recommendations',
-    # schedule_interval="@hourly",
-    schedule_interval=None,
-    start_date=datetime(2021, 1, 9),
+    schedule_interval="@weekly",
+    start_date=datetime.now(),
     catchup=False,
     tags=['stock_dag_tag'],
 ) as dag:
@@ -87,8 +70,6 @@ with DAG(
         dag=dag,
     )
 
-
-
     email_results = PythonOperator(
         task_id='email_results_',
         python_callable=email_results,
@@ -98,8 +79,5 @@ with DAG(
         dag=dag,
     )
 
-
-
     # specify order/dependency of tasks
     print_date >> sql_connect >> get_tickers >> get_financials >> query_stocks >> email_results
-    # print_date >> email_results

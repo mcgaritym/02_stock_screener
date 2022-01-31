@@ -1,4 +1,4 @@
-# load required libraries
+# import libraries
 from sqlalchemy import create_engine
 import pandas as pd
 import numpy as np
@@ -19,9 +19,6 @@ def get_financials():
         """SELECT Symbol FROM tickers WHERE `Market Cap` > 0 AND `IPO Year` != '2021' OR `IPO Year` IS NULL;""",
         con=connection_2)
     connection_2.dispose()
-
-    # only look at first 100 tickers by market cap
-    tickers_list = tickers_list[:1000]
 
     # create empty list to append dictionary values
     list_financials = []
@@ -224,4 +221,4 @@ def get_financials():
     # send to SQL
     df_financials.to_sql(name='stock_financials', con=connection_2, if_exists='replace')
 
-    return "Financials Created and Sent to SQL"
+    return print("Financials Sent to local MySQL")
