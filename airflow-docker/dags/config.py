@@ -1,6 +1,0 @@
-MYSQL_DATABASE='stocks_db'
-MYSQL_ROOT_PASSWORD='Nalgene09!'
-MYSQL_HOST='host.docker.internal'
-MYSQL_USER='root'
-MYSQL_PORT = 3307
-GMAIL_PASSWORD='Python123!'
