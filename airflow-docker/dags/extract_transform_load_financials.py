@@ -20,8 +20,6 @@ def extract_transform_load_financials():
         con=connection)
     connection.dispose()
 
-    tickers_list = tickers_list[:100]
-
     # create empty list to append dictionary values
     list_financials = []
     counter = 0

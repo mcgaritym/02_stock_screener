@@ -16,7 +16,7 @@ def email_results(sender, receiver, email_subject):
     stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
     connection = stocks_connect.connect_sqlalchemy()
 
-    df = pd.read_sql_query("""SELECT symbol, `Last Sale`, `Market Cap`, industry, sector FROM undervalued_stocks""",
+    df = pd.read_sql_query("""SELECT symbol, Name, `Last Sale`, `Market Cap`, industry, sector FROM undervalued_stocks""",
                            con=connection)
 
     # specify credentials
