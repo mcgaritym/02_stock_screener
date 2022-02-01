@@ -8,7 +8,7 @@ from config import *
 from SqlConnect import SqlConnect
 
 # get stock tickers, save to SQL
-def get_tickers():
+def extract_transform_load_tickers():
 
     # get current parent directory and data folder path
     data_directory = os.path.join(os.getcwd(), 'data')

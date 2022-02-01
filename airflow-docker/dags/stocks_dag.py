@@ -7,8 +7,8 @@ from airflow.operators.python import PythonOperator
 
 # import python functions in local python files
 from create_database import create_database
-from get_tickers import get_tickers
-from get_financials import get_financials
+from extract_transform_load_tickers import extract_transform_load_tickers
+from extract_transform_load_financials import extract_transform_load_financials
 from query_stocks import query_stocks
 from email_results import email_results
 
@@ -50,16 +50,16 @@ with DAG(
     )
 
     # get tickers python task
-    get_tickers = PythonOperator(
-        task_id='get_tickers_',
-        python_callable=get_tickers,
+    extract_transform_load_tickers = PythonOperator(
+        task_id='extract_transform_load_tickers_',
+        python_callable=extract_transform_load_tickers,
         dag=dag,
     )
 
     # get financials python task
-    get_financials = PythonOperator(
-        task_id='get_financials_',
-        python_callable=get_financials,
+    extract_transform_load_financials = PythonOperator(
+        task_id='extract_transform_load_financials_',
+        python_callable=extract_transform_load_financials,
         dag=dag,
     )
 
@@ -80,4 +80,4 @@ with DAG(
     )
 
     # specify order/dependency of tasks
-    print_date >> create_database >> get_tickers >> get_financials >> query_stocks >> email_results
+    print_date >> create_database >> extract_transform_load_tickers >> extract_transform_load_financials >> query_stocks >> email_results

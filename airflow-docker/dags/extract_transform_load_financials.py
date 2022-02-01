@@ -8,7 +8,7 @@ from config import *
 from SqlConnect import SqlConnect
 
 # get ticker financial info via yfinance API:
-def get_financials():
+def extract_transform_load_financials():
 
     # get class, and create connections
     stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
