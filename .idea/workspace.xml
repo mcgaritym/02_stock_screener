@@ -3,11 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/create_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/create_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_tickers.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_tickers.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/stock_screener_SQL-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/.ipynb_checkpoints/stock_screener_SQL-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/stock_db_load.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebooks/stock_screener.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/notebooks/stock_screener_SQL.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/notebooks/stock_screener_SQL.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stock_screener.ipynb" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +320,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643679549546</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added email notification to airflow ETL">
+      <created>1643684247398</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1643684247398</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

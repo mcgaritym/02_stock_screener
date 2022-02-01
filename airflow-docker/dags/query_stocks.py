@@ -5,7 +5,7 @@ from datetime import datetime, date
 from config import *
 from SqlConnect import SqlConnect
 
-# query SQL for undervalued stocks
+# function to query SQL for undervalued stocks
 def query_stocks():
 
     # get class, and create connections

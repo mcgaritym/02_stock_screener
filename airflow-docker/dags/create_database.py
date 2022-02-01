@@ -2,7 +2,7 @@
 from config import *
 from SqlConnect import SqlConnect
 
-# connect to SQL and create database, table
+# function to create database if applicable, and drop tables
 def create_database():
 
     # get class, and create connections

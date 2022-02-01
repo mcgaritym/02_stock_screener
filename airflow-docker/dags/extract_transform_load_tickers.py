@@ -7,7 +7,7 @@ from datetime import timedelta, date, datetime
 from config import *
 from SqlConnect import SqlConnect
 
-# get stock tickers, save to SQL
+# function to get stock tickers, save to SQL
 def extract_transform_load_tickers():
 
     # get current parent directory and data folder path

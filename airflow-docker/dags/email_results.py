@@ -8,8 +8,7 @@ from pretty_html_table import build_table
 import pandas as pd
 from SqlConnect import SqlConnect
 
-
-# connect to SQL and create database, table
+# function to email results
 def email_results(sender, receiver, email_subject):
 
     # get class, and create connections

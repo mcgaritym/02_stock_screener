@@ -7,7 +7,7 @@ import time
 from config import *
 from SqlConnect import SqlConnect
 
-# get ticker financial info via yfinance API:
+# function to get financial info via yfinance API:
 def extract_transform_load_financials():
 
     # get class, and create connections
