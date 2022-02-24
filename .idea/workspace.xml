@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/airflow-docker/dags/TEST_extract_load_transform_financials.py" afterDir="false" />
+    <list default="true" id="01e3a3cf-f245-45f6-af84-d06e1c7c9318" name="Default Changelist" comment="changed to faster API to retrieve stock info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/TEST_extract_load_transform_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/TEST_extract_load_transform_financials.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_tickers.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_tickers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/data/nasdaq_screener_1643467592418.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1643467592418.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +24,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitSEFilterConfiguration">
     <file-type-list>
@@ -337,7 +343,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643691022366</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="changed to faster API to retrieve stock info">
+      <created>1645650608324</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1645650608324</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -358,6 +371,7 @@
     <MESSAGE value="updated query" />
     <MESSAGE value="airflow docker files" />
     <MESSAGE value="added email notification to airflow ETL" />
-    <option name="LAST_COMMIT_MESSAGE" value="added email notification to airflow ETL" />
+    <MESSAGE value="changed to faster API to retrieve stock info" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed to faster API to retrieve stock info" />
   </component>
 </project>

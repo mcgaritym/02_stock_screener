@@ -20,20 +20,20 @@ def extract_transform_load_financials():
     #     con=connection)
     # connection.dispose()
 
-    tickers_list = ['GOOG', 'AMZN', 'AAPL', 'CM', 'V', 'UBER', 'CO', 'LYFT', 'BAC', 'Z', 'IBM', 'COST']
+    tickers_list = pd.read_csv('nasdaq_screener_1643467592418.csv')
+    tickers_list = tickers_list.iloc[:30]
+    print(tickers_list)
 
     # create empty list to append dictionary values
     list_financials = []
     counter = 0
 
    # loop over ticker symbols
-    for row in tickers_list:
-    # for row in tickers_list.values:
+    for row in tickers_list.values:
 
-        # get symbol
+        # create counter, and get symbol
         counter += 1
-        # symbol = row[0]
-        symbol = row
+        symbol = row[0]
         print(symbol, counter)
 
         # get ticker information
@@ -46,6 +46,15 @@ def extract_transform_load_financials():
             # grab financials for list of tickers
             data = r.json()
 
+        # if exception occurs, print
+
+        except Exception as e:
+
+            # print exception, sleep for 1 minute
+            print(sys.exc_info()[0])
+            print('Exception Error: ', e)
+
+        try:
             # append info
             list_financials.append(dict({
                                             'symbol': data['Symbol'],
@@ -74,6 +83,7 @@ def extract_transform_load_financials():
         except Exception as e:
 
             # print exception, sleep for 1 minute
+            print(sys.exc_info()[0])
             print('Exception Error: ', e)
             time.sleep(60)
 

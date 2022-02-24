@@ -10,12 +10,17 @@ from SqlConnect import SqlConnect
 # function to get stock tickers, save to SQL
 def extract_transform_load_tickers():
 
-    # get current parent directory and data folder path
-    data_directory = os.path.join(os.getcwd(), 'data')
+    # # get current parent directory and data folder path
+    # data_directory = os.path.join(os.getcwd(), 'data')
+    # print('CWD :', os.getcwd())
+    # print('CWD Files :', os.listdir(os.getcwd()))
+    # print('Data Directory :', data_directory)
+    # print('Data Directory :', os.listdir(data_directory))
+
 
     # retrieve tripdata files
-    tickers = glob(os.path.join(data_directory, '*nasdaq_screener*.csv'))
-    print(tickers)
+    tickers = glob(os.path.join(os.getcwd(), '*nasdaq_screener*.csv'))
+    print('Tickers File: ', tickers)
 
     df_tickers = pd.read_csv(tickers[0])
     print(df_tickers)
