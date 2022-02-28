@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="'updated with Google Big Query'">
+      <change afterPath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1646018051980.csv" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/airflow-docker/stock-screener-credentials.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/TEST_extract_load_transform_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/AV_extract_load_transform_financials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_tickers.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_tickers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/nasdaq_screener_1645661502493.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1645661502493.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1645912090516</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="'updated with Google Big Query'">
+      <created>1646017783912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646017783912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
