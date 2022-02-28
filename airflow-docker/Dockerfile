@@ -72,6 +72,7 @@ USER ${spark_uid}
 FROM apache/airflow:2.2.3
 COPY nasdaq_screener_1645661502493.csv .
 COPY requirements.txt .
+COPY stock-screener-credentials.json .
 COPY config.py .
 COPY config.py /dags
 COPY data/* ./data/

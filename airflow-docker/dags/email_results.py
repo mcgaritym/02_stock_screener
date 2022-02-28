@@ -6,17 +6,25 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pretty_html_table import build_table
 import pandas as pd
-from SqlConnect import SqlConnect
+from google.cloud import bigquery
+from google.oauth2 import service_account
+from glob import glob
+import os
 
 # function to email results
 def email_results(sender, receiver, email_subject):
 
-    # get class, and create connections
-    stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
-    connection = stocks_connect.connect_sqlalchemy()
+    # get credentials for BigQuery API Connection:
+    credentials = glob(os.path.join(os.getcwd(), '*credentials.json'))[0]
+    print(credentials)
 
-    df = pd.read_sql_query("""SELECT symbol, Name, `Last Sale`, `Market Cap`, industry, sector FROM undervalued_stocks""",
-                           con=connection)
+    # get from BigQuery
+    df = pd.read_gbq('SELECT Name, last_sale, market_cap, industry, sector FROM {}'.format('stock_tickers.undervalued_stocks'),
+                project_id = 'stock-screener-342515',
+                credentials = service_account.Credentials.from_service_account_file(credentials))
+
+    # df = pd.read_sql_query("""SELECT symbol, Name, `Last Sale`, `Market Cap`, industry, sector FROM undervalued_stocks""",
+    #                        con=connection)
 
     # specify credentials
     port = 465  # For SSL

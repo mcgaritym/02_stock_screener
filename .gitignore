@@ -2,3 +2,6 @@
 /airflow-docker/dags/config.py
 /airflow-docker/.env
 /airflow-docker/dags/config.py
+/airflow-docker/stock-screener-credentials.json
+stock-screener-credentials.json
+

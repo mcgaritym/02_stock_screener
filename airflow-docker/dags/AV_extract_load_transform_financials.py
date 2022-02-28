@@ -10,43 +10,43 @@ from sqlalchemy import create_engine
 from google.cloud import bigquery
 from google.oauth2 import service_account
 
-
-# function to get financial info via yfinance API:
-def extract_transform_load_financials():
-
-    # get class, and create connections
-    stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
-    connection = stocks_connect.connect_sqlalchemy()
-
-    #
-    # # read SQL table for stocks with positive market cap and remove 2021 IPO stocks
-    # tickers_list = pd.read_sql_query(
-    #     """SELECT Symbol FROM tickers WHERE `Market Cap` > 0 AND `IPO Year` != '2021' OR `IPO Year` IS NULL;""",
-    #     con=connection)
-    # connection.dispose()
-
-    tickers_list = pd.read_csv('nasdaq_screener_1645661502493.csv')
-    tickers_list = tickers_list.rename({'Last Sale': 'last_sale',
-                         'Net Change': 'net_change',
-                         '% Change': 'percent_change',
-                         'Market Cap': 'market_cap',
-                         'IPO Year': 'ipo_year'},
-                        axis='columns')
-    tickers_list = tickers_list.iloc[:30]
-    print(tickers_list.columns)
-    print(tickers_list)
-
-    # create empty list to append dictionary values
-    list_financials = []
-    counter = 0
-
-   # loop over ticker symbols
-    for row in tickers_list.values:
-
-        # create counter, and get symbol
-        counter += 1
-        symbol = row[0]
-        print(symbol, counter)
+#
+# # function to get financial info via yfinance API:
+# def extract_transform_load_financials():
+#
+#     # get class, and create connections
+#     stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
+#     connection = stocks_connect.connect_sqlalchemy()
+#
+#     #
+#     # # read SQL table for stocks with positive market cap and remove 2021 IPO stocks
+#     # tickers_list = pd.read_sql_query(
+#     #     """SELECT Symbol FROM tickers WHERE `Market Cap` > 0 AND `IPO Year` != '2021' OR `IPO Year` IS NULL;""",
+#     #     con=connection)
+#     # connection.dispose()
+#
+#     tickers_list = pd.read_csv('nasdaq_screener_1645661502493.csv')
+#     tickers_list = tickers_list.rename({'Last Sale': 'last_sale',
+#                          'Net Change': 'net_change',
+#                          '% Change': 'percent_change',
+#                          'Market Cap': 'market_cap',
+#                          'IPO Year': 'ipo_year'},
+#                         axis='columns')
+#     tickers_list = tickers_list.iloc[:30]
+#     print(tickers_list.columns)
+#     print(tickers_list)
+#
+#     # create empty list to append dictionary values
+#     list_financials = []
+#     counter = 0
+#
+#    # loop over ticker symbols
+#     for row in tickers_list.values:
+#
+#         # create counter, and get symbol
+#         counter += 1
+#         symbol = row[0]
+#         print(symbol, counter)
 
     #     # get ticker information
     #     try:
@@ -178,22 +178,22 @@ def extract_transform_load_financials():
     #                                                                                         port=GCP_BQ_PORT,
     #                                                                                         db=GCP_BQ_DATABASE))
 
-    # send to BigQuery
-    tickers_list.to_gbq(destination_table = 'stock_tickers.stock_tickers',
-                        project_id= 'stock-screener-342515',
-                        credentials = service_account.Credentials.from_service_account_file('/Users/mcgaritym/Downloads/stock-screener-342515-d1ebf708f8a4.json'),
-                        if_exists = 'replace')
-
-    # get from BigQuery
-    tickers_df = pd.read_gbq('SELECT * FROM {} LIMIT 2'.format('stock_tickers.stock_tickers'),
-                project_id = 'stock-screener-342515',
-                credentials = service_account.Credentials.from_service_account_file(
-                    '/Users/mcgaritym/Downloads/stock-screener-342515-d1ebf708f8a4.json'))
-    print(tickers_df)
+    # # send to BigQuery
+    # tickers_list.to_gbq(destination_table = 'stock_tickers.stock_tickers',
+    #                     project_id= 'stock-screener-342515',
+    #                     credentials = service_account.Credentials.from_service_account_file('/Users/mcgaritym/Downloads/stock-screener-342515-d1ebf708f8a4.json'),
+    #                     if_exists = 'replace')
+    #
+    # # get from BigQuery
+    # tickers_df = pd.read_gbq('SELECT * FROM {} LIMIT 2'.format('stock_tickers.stock_tickers'),
+    #             project_id = 'stock-screener-342515',
+    #             credentials = service_account.Credentials.from_service_account_file(
+    #                 '/Users/mcgaritym/Downloads/stock-screener-342515-d1ebf708f8a4.json'))
+    # print(tickers_df)
 
     # tickers_list.to_sql(name='stock_financials', con=connection, if_exists='replace')
 
-
-    return print("Financials Sent to local MySQL")
-
-extract_transform_load_financials()
+#
+#     return print("Financials Sent to local MySQL")
+#
+# extract_transform_load_financials()

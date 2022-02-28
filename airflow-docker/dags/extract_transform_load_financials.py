@@ -1,24 +1,25 @@
 # import libraries
-from sqlalchemy import create_engine
 import pandas as pd
 import numpy as np
 import yfinance as yf
 import time
-from config import *
-from SqlConnect import SqlConnect
+from google.cloud import bigquery
+from google.oauth2 import service_account
+from glob import glob
+import os
 
 # function to get financial info via yfinance API:
 def extract_transform_load_financials():
 
-    # get class, and create connections
-    stocks_connect = SqlConnect(MYSQL_HOST, MYSQL_USER, MYSQL_ROOT_PASSWORD, MYSQL_PORT, MYSQL_DATABASE)
-    connection = stocks_connect.connect_sqlalchemy()
+    # get credentials for BigQuery API Connection:
+    credentials = glob(os.path.join(os.getcwd(), '*credentials.json'))[0]
 
-    # read SQL table for stocks with positive market cap and remove 2021 IPO stocks
-    tickers_list = pd.read_sql_query(
-        """SELECT Symbol FROM tickers WHERE `Market Cap` > 0 AND `IPO Year` != '2021' OR `IPO Year` IS NULL;""",
-        con=connection)
-    connection.dispose()
+    # get from BigQuery
+    tickers_list = pd.read_gbq("""SELECT Symbol FROM {} WHERE market_cap > 0 ORDER BY market_cap DESC;""".format('stock_tickers.stock_tickers'),
+                project_id = 'stock-screener-342515',
+                credentials = service_account.Credentials.from_service_account_file(credentials))
+    tickers_list = tickers_list[:100]
+    print(tickers_list)
 
     # create empty list to append dictionary values
     list_financials = []
@@ -48,20 +49,20 @@ def extract_transform_load_financials():
         # try to append values to dictionary list
         try:
             list_financials.append(dict({'symbol': symbol,
-                                         'earnings-0Q': stock_quarterly_earnings['Earnings'].iloc[-1],
-                                         'earnings-1Q': stock_quarterly_earnings['Earnings'].iloc[-2],
-                                         'earnings-2Q': stock_quarterly_earnings['Earnings'].iloc[-3],
-                                         'earnings-3Q': stock_quarterly_earnings['Earnings'].iloc[-4],
-                                         'earnings-0Y': stock_yearly_earnings['Earnings'].iloc[-1],
-                                         'earnings-1Y': stock_yearly_earnings['Earnings'].iloc[-2],
-                                         'earnings-2Y': stock_yearly_earnings['Earnings'].iloc[-3],
-                                         'revenue-0Q': stock_quarterly_earnings['Revenue'].iloc[-1],
-                                         'revenue-1Q': stock_quarterly_earnings['Revenue'].iloc[-2],
-                                         'revenue-2Q': stock_quarterly_earnings['Revenue'].iloc[-3],
-                                         'revenue-3Q': stock_quarterly_earnings['Revenue'].iloc[-4],
-                                         'revenue-0Y': stock_yearly_earnings['Revenue'].iloc[-1],
-                                         'revenue-1Y': stock_yearly_earnings['Revenue'].iloc[-2],
-                                         'revenue-2Y': stock_yearly_earnings['Revenue'].iloc[-3],
+                                         'earnings_minus0Q': stock_quarterly_earnings['Earnings'].iloc[-1],
+                                         'earnings_minus1Q': stock_quarterly_earnings['Earnings'].iloc[-2],
+                                         'earnings_minus2Q': stock_quarterly_earnings['Earnings'].iloc[-3],
+                                         'earnings_minus3Q': stock_quarterly_earnings['Earnings'].iloc[-4],
+                                         'earnings_minus0Y': stock_yearly_earnings['Earnings'].iloc[-1],
+                                         'earnings_minus1Y': stock_yearly_earnings['Earnings'].iloc[-2],
+                                         'earnings_minus2Y': stock_yearly_earnings['Earnings'].iloc[-3],
+                                         'revenue_minus0Q': stock_quarterly_earnings['Revenue'].iloc[-1],
+                                         'revenue_minus1Q': stock_quarterly_earnings['Revenue'].iloc[-2],
+                                         'revenue_minus2Q': stock_quarterly_earnings['Revenue'].iloc[-3],
+                                         'revenue_minus3Q': stock_quarterly_earnings['Revenue'].iloc[-4],
+                                         'revenue_minus0Y': stock_yearly_earnings['Revenue'].iloc[-1],
+                                         'revenue_minus1Y': stock_yearly_earnings['Revenue'].iloc[-2],
+                                         'revenue_minus2Y': stock_yearly_earnings['Revenue'].iloc[-3],
                                          'trailingPE': stock_info['trailingPE'],
                                          'trailingEps': stock_info['trailingEps'],
                                          'priceToSalesTrailing12Months': stock_info['priceToSalesTrailing12Months'],
@@ -87,24 +88,23 @@ def extract_transform_load_financials():
                 try:
 
                     list_financials.append(dict({'symbol': symbol,
-                                                 'earnings-0Q': stock_quarterly_earnings['Earnings'].iloc[-1],
-                                                 'earnings-1Q': stock_quarterly_earnings['Earnings'].iloc[-2],
-                                                 'earnings-2Q': stock_quarterly_earnings['Earnings'].iloc[-3],
-                                                 'earnings-3Q': stock_quarterly_earnings['Earnings'].iloc[-4],
-                                                 'earnings-0Y': stock_yearly_earnings['Earnings'].iloc[-1],
-                                                 'earnings-1Y': stock_yearly_earnings['Earnings'].iloc[-2],
-                                                 'earnings-2Y': stock_yearly_earnings['Earnings'].iloc[-3],
-                                                 'revenue-0Q': stock_quarterly_earnings['Revenue'].iloc[-1],
-                                                 'revenue-1Q': stock_quarterly_earnings['Revenue'].iloc[-2],
-                                                 'revenue-2Q': stock_quarterly_earnings['Revenue'].iloc[-3],
-                                                 'revenue-3Q': stock_quarterly_earnings['Revenue'].iloc[-4],
-                                                 'revenue-0Y': stock_yearly_earnings['Revenue'].iloc[-1],
-                                                 'revenue-1Y': stock_yearly_earnings['Revenue'].iloc[-2],
-                                                 'revenue-2Y': stock_yearly_earnings['Revenue'].iloc[-3],
+                                                 'earnings_minus0Q': stock_quarterly_earnings['Earnings'].iloc[-1],
+                                                 'earnings_minus1Q': stock_quarterly_earnings['Earnings'].iloc[-2],
+                                                 'earnings_minus2Q': stock_quarterly_earnings['Earnings'].iloc[-3],
+                                                 'earnings_minus3Q': stock_quarterly_earnings['Earnings'].iloc[-4],
+                                                 'earnings_minus0Y': stock_yearly_earnings['Earnings'].iloc[-1],
+                                                 'earnings_minus1Y': stock_yearly_earnings['Earnings'].iloc[-2],
+                                                 'earnings_minus2Y': stock_yearly_earnings['Earnings'].iloc[-3],
+                                                 'revenue_minus0Q': stock_quarterly_earnings['Revenue'].iloc[-1],
+                                                 'revenue_minus1Q': stock_quarterly_earnings['Revenue'].iloc[-2],
+                                                 'revenue_minus2Q': stock_quarterly_earnings['Revenue'].iloc[-3],
+                                                 'revenue_minus3Q': stock_quarterly_earnings['Revenue'].iloc[-4],
+                                                 'revenue_minus0Y': stock_yearly_earnings['Revenue'].iloc[-1],
+                                                 'revenue_minus1Y': stock_yearly_earnings['Revenue'].iloc[-2],
+                                                 'revenue_minus2Y': stock_yearly_earnings['Revenue'].iloc[-3],
                                                  'trailingPE': np.nan,
                                                  'trailingEps': np.nan,
-                                                 'priceToSalesTrailing12Months': stock_info[
-                                                     'priceToSalesTrailing12Months'],
+                                                 'priceToSalesTrailing12Months': stock_info['priceToSalesTrailing12Months'],
                                                  'quickRatio': stock_info['quickRatio'],
                                                  'currentRatio': stock_info['currentRatio'],
                                                  'debtToEquity': stock_info['debtToEquity'],
@@ -125,20 +125,20 @@ def extract_transform_load_financials():
                 try:
 
                     list_financials.append(dict({'symbol': symbol,
-                                                 'earnings-0Q': np.nan,
-                                                 'earnings-1Q': np.nan,
-                                                 'earnings-2Q': np.nan,
-                                                 'earnings-3Q': np.nan,
-                                                 'earnings-0Y': np.nan,
-                                                 'earnings-1Y': np.nan,
-                                                 'earnings-2Y': np.nan,
-                                                 'revenue-0Q': np.nan,
-                                                 'revenue-1Q': np.nan,
-                                                 'revenue-2Q': np.nan,
-                                                 'revenue-3Q': np.nan,
-                                                 'revenue-0Y': np.nan,
-                                                 'revenue-1Y': np.nan,
-                                                 'revenue-2Y': np.nan,
+                                                 'earnings_minus0Q': np.nan,
+                                                 'earnings_minus1Q': np.nan,
+                                                 'earnings_minus2Q': np.nan,
+                                                 'earnings_minus3Q': np.nan,
+                                                 'earnings_minus0Y': np.nan,
+                                                 'earnings_minus1Y': np.nan,
+                                                 'earnings_minus2Y': np.nan,
+                                                 'revenue_minus0Q': np.nan,
+                                                 'revenue_minus1Q': np.nan,
+                                                 'revenue_minus2Q': np.nan,
+                                                 'revenue_minus3Q': np.nan,
+                                                 'revenue_minus0Y': np.nan,
+                                                 'revenue_minus1Y': np.nan,
+                                                 'revenue_minus2Y': np.nan,
                                                  'trailingPE': np.nan,
                                                  'trailingEps': np.nan,
                                                  'priceToSalesTrailing12Months': np.nan,
@@ -172,10 +172,10 @@ def extract_transform_load_financials():
 
     # convert dictionary list to dataframe
     df = pd.DataFrame(list_financials, columns=['symbol',
-                                                'earnings-0Q', 'earnings-1Q', 'earnings-2Q', 'earnings-3Q',
-                                                'earnings-0Y', 'earnings-1Y', 'earnings-2Y',
-                                                'revenue-0Q', 'revenue-1Q', 'revenue-2Q', 'revenue-3Q',
-                                                'revenue-0Y', 'revenue-1Y', 'revenue-2Y',
+                                                'earnings_minus0Q', 'earnings_minus1Q', 'earnings_minus2Q', 'earnings_minus3Q',
+                                                'earnings_minus0Y', 'earnings_minus1Y', 'earnings_minus2Y',
+                                                'revenue_minus0Q', 'revenue_minus1Q', 'revenue_minus2Q', 'revenue_minus3Q',
+                                                'revenue_minus0Y', 'revenue_minus1Y', 'revenue_minus2Y',
                                                 'trailingPE', 'trailingEps', 'priceToSalesTrailing12Months',
                                                 'quickRatio', 'currentRatio', 'debtToEquity',
                                                 'profitMargins', 'pegRatio',
@@ -184,20 +184,20 @@ def extract_transform_load_financials():
 
     # using dictionary to convert specific columns
     convert_dict = {
-        'earnings-0Q': float,
-        'earnings-1Q': float,
-        'earnings-2Q': float,
-        'earnings-3Q': float,
-        'earnings-0Y': float,
-        'earnings-1Y': float,
-        'earnings-2Y': float,
-        'revenue-0Q': float,
-        'revenue-1Q': float,
-        'revenue-2Q': float,
-        'revenue-3Q': float,
-        'revenue-0Y': float,
-        'revenue-1Y': float,
-        'revenue-2Y': float,
+        'earnings_minus0Q': float,
+        'earnings_minus1Q': float,
+        'earnings_minus2Q': float,
+        'earnings_minus3Q': float,
+        'earnings_minus0Y': float,
+        'earnings_minus1Y': float,
+        'earnings_minus2Y': float,
+        'revenue_minus0Q': float,
+        'revenue_minus1Q': float,
+        'revenue_minus2Q': float,
+        'revenue_minus3Q': float,
+        'revenue_minus0Y': float,
+        'revenue_minus1Y': float,
+        'revenue_minus2Y': float,
         'trailingPE': float,
         'trailingEps': float,
         'priceToSalesTrailing12Months': float,
@@ -218,7 +218,16 @@ def extract_transform_load_financials():
     df_financials = df.astype(convert_dict)
     df_financials = df_financials.replace([np.inf, -np.inf], np.nan)
 
-    # send to SQL
-    df_financials.to_sql(name='stock_financials', con=connection, if_exists='replace')
+    # send to BigQuery
+    df_financials.to_gbq(destination_table = 'stock_tickers.stock_financials',
+                        project_id= 'stock-screener-342515',
+                        credentials = service_account.Credentials.from_service_account_file(credentials),
+                        if_exists = 'replace')
+
+    # get from BigQuery
+    df_financials = pd.read_gbq('SELECT * FROM {} LIMIT 5'.format('stock_tickers.stock_financials'),
+                project_id = 'stock-screener-342515',
+                credentials = service_account.Credentials.from_service_account_file(credentials))
+    print(df_financials)
 
     return print("Financials Sent to local MySQL")

@@ -10,3 +10,5 @@ webdriver-manager==3.5.2
 pymysql==1.0.2
 pretty-html-table==0.9.15
 pretty_html_table==0.9.15
+google-cloud-bigquery==2.34.0
+
