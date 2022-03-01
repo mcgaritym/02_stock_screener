@@ -47,7 +47,20 @@ def extract_transform_load_tickers():
     df_tickers.to_gbq(destination_table = 'stock_tickers.stock_tickers',
                         project_id= 'stock-screener-342515',
                         credentials = service_account.Credentials.from_service_account_file(credentials),
-                        if_exists = 'replace')
+                        if_exists = 'replace',
+                        table_schema=[
+                          {'name': 'last_sale', 'type': 'Float'},
+                          {'name': 'market_cap', 'type': 'Float'},
+                          {'name': 'ipo_year', 'type': 'String'},
+                          {'name': 'percent_change', 'type': 'Float'},
+                          {'name': 'net_change', 'type': 'Float'},
+                          {'name': 'Volume', 'type': 'Float'},
+                          {'name': 'Symbol', 'type': 'STRING'},
+                          {'name': 'Name', 'type': 'STRING'},
+                          {'name': 'Country', 'type': 'STRING'},
+                          {'name': 'Sector', 'type': 'STRING'},
+                          {'name': 'Industry', 'type': 'STRING'}]
+                      )
 
     # get from BigQuery
     df_tickers = pd.read_gbq('SELECT * FROM {}'.format('stock_tickers.stock_tickers'),

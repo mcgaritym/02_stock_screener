@@ -8,7 +8,7 @@ from airflow.operators.python import PythonOperator
 # import python functions in local python files
 from create_database import create_database
 from extract_transform_load_tickers import extract_transform_load_tickers
-from extract_transform_load_financials import extract_transform_load_financials
+from extract_transform_load_financials_AV import extract_transform_load_financials_AV
 from query_stocks import query_stocks
 from email_results import email_results
 
@@ -20,7 +20,7 @@ default_args = {
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 3,
-    'retry_delay': timedelta(minutes=2),
+    'retry_delay': timedelta(minutes=1),
     'execution_timeout': timedelta(hours=5),
     'dagrun_timeout': timedelta(hours=5),
 
@@ -59,7 +59,7 @@ with DAG(
     # get financials python task
     extract_transform_load_financials = PythonOperator(
         task_id='extract_transform_load_financials_',
-        python_callable=extract_transform_load_financials,
+        python_callable=extract_transform_load_financials_AV,
         dag=dag,
     )
 

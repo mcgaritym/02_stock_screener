@@ -6,7 +6,6 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pretty_html_table import build_table
 import pandas as pd
-from google.cloud import bigquery
 from google.oauth2 import service_account
 from glob import glob
 import os
@@ -19,12 +18,9 @@ def email_results(sender, receiver, email_subject):
     print(credentials)
 
     # get from BigQuery
-    df = pd.read_gbq('SELECT Name, last_sale, market_cap, industry, sector FROM {}'.format('stock_tickers.undervalued_stocks'),
+    df = pd.read_gbq('SELECT name, last_sale, pct_change_offhigh, marketCapitalization, industry, sector FROM {} ORDER BY pct_change_offhigh ASC'.format('stock_tickers.undervalued_stocks'),
                 project_id = 'stock-screener-342515',
                 credentials = service_account.Credentials.from_service_account_file(credentials))
-
-    # df = pd.read_sql_query("""SELECT symbol, Name, `Last Sale`, `Market Cap`, industry, sector FROM undervalued_stocks""",
-    #                        con=connection)
 
     # specify credentials
     port = 465  # For SSL

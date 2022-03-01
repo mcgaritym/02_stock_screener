@@ -62,15 +62,9 @@ ENTRYPOINT [ "/opt/entrypoint.sh" ]
 # Specify the User that the actual main process will run as
 USER ${spark_uid}
 
-# copy file
-# RUN mkdir -p opt/data
-# COPY nasdaq_screener_1645661502493.csv .
-# COPY data/nasdaq_screener_1645661502493.csv /opt/data
-# COPY config.py .
-
 # copy package requirements and run
 FROM apache/airflow:2.2.3
-COPY nasdaq_screener_1646018051980.csv .
+COPY nasdaq_screener_1646146886865.csv .
 COPY requirements.txt .
 COPY stock-screener-credentials.json .
 COPY config.py .
@@ -79,9 +73,6 @@ COPY data/* ./data/
 RUN pip install -r requirements.txt
 RUN mkdir -p /home/airflow/.wdm
 RUN chmod -R 777 /home/airflow/.wdm
-
-# RUN mkdir -p data/
-# COPY nasdaq* data/
 
 
 
