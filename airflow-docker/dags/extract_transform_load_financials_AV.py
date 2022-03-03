@@ -22,7 +22,7 @@ def extract_transform_load_financials_AV():
         'stock_tickers.stock_tickers'),
                                project_id='stock-screener-342515',
                                credentials=service_account.Credentials.from_service_account_file(credentials))
-    tickers_list = tickers_list[:300]
+    # tickers_list = tickers_list[:300]
     print(tickers_list)
 
     # create empty list to append dictionary values
@@ -81,44 +81,8 @@ def extract_transform_load_financials_AV():
             # print exception, sleep for 1 minute
             print(sys.exc_info()[0])
             print('First Exception Error: ', e)
-            print('Begin sleeping...')
-            time.sleep(60)
-            print('Done sleeping...')
-
-            # get url, connect
-            url = 'https://www.alphavantage.co/query?function=OVERVIEW&symbol={}&apikey={}'.format(symbol, API_KEY)
-            r = requests.get(url)
-
-            # grab financials for list of tickers
-            data = r.json()
-            print(data)
-
-            # append info
-            list_financials.append(dict({
-                'symbol': data['Symbol'],
-                'name': data['Name'],
-                'country': data['Country'],
-                'sector': data['Sector'],
-                'industry': data['Industry'],
-                'marketCapitalization': data['MarketCapitalization'],
-                'peRatio': data['PERatio'],
-                'trailingPE': data['TrailingPE'],
-                'forwardPE': data['ForwardPE'],
-                'priceToSalesRatioTTM': data['PriceToSalesRatioTTM'],
-                'dividendYield': data['DividendYield'],
-                'dividendDate': data['DividendDate'],
-                'exDividendDate': data['ExDividendDate'],
-                'ePS': data['EPS'],
-                'revenuePerShareTTM': data['RevenuePerShareTTM'],
-                'quarterlyEarningsGrowthYOY': data['QuarterlyEarningsGrowthYOY'],
-                'quarterlyRevenueGrowthYOY': data['QuarterlyRevenueGrowthYOY'],
-                'FiftyTwoWeekHigh': data['52WeekHigh'],
-                'FiftyTwoWeekLow': data['52WeekLow'],
-                'FiftyDayMovingAverage': data['50DayMovingAverage'],
-                'ProfitMargin': data['ProfitMargin'],
-                'PEGRatio': data['PEGRatio']
-
-            }))
+            time.sleep(5)
+            continue
 
     # convert dictionary list to dataframe
     df = pd.DataFrame(list_financials, columns=['symbol', 'name', 'country', 'sector', 'industry',
