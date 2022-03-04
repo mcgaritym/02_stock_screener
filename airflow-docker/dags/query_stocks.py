@@ -13,7 +13,7 @@ def query_stocks():
     print(credentials)
 
     # get from BigQuery
-    undervalued_stocks = pd.read_gbq("""
+    undervalued_sector_stocks = pd.read_gbq("""
     with sector_pe_avg as (
     SELECT fin.sector, AVG(fin.trailingPE) as sector_trailingPE
     FROM stock_tickers.stock_financials as fin
@@ -45,7 +45,6 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sector_ProfitMargin DESC
     ) 
-     
 
     SELECT fin.*, sector_pe_avg.*, sector_PS_avg.*, sector_PEG_avg.*, sector_ProfitMargin_avg.*, 
     tick.last_sale, (((tick.last_sale-FiftyTwoWeekHigh)/(FiftyTwoWeekHigh))*100) AS pct_change_offhigh
@@ -79,22 +78,101 @@ def query_stocks():
     project_id = 'stock-screener-342515',
     credentials = service_account.Credentials.from_service_account_file(credentials))
 
+    undervalued_industry_stocks = pd.read_gbq("""
+    with industry_pe_avg as (
+    SELECT fin.industry, AVG(fin.trailingPE) as industry_trailingPE
+    FROM stock_tickers.stock_financials as fin
+    WHERE fin.industry != "nan" AND fin.marketCapitalization > 0
+    GROUP BY fin.industry
+    ORDER BY AVG(fin.trailingPE) DESC
+    ),
+        
+    industry_PS_avg as (
+    SELECT fin.industry, AVG(fin.priceToSalesRatioTTM) as industry_trailingPS
+    FROM stock_tickers.stock_financials as fin
+    WHERE fin.industry != "nan" AND fin.marketCapitalization > 0
+    GROUP BY fin.industry
+    ORDER BY industry_trailingPS DESC
+    ),   
+    
+    industry_PEG_avg as (
+    SELECT fin.industry, AVG(fin.PEGRatio) as industry_PEG
+    FROM stock_tickers.stock_financials as fin
+    WHERE fin.industry != "nan" AND fin.marketCapitalization > 0
+    GROUP BY fin.industry
+    ORDER BY industry_PEG DESC
+    ),  
+    
+    industry_ProfitMargin_avg as (
+    SELECT fin.industry, AVG(fin.ProfitMargin) as industry_ProfitMargin
+    FROM stock_tickers.stock_financials as fin
+    WHERE fin.industry != "nan" AND fin.marketCapitalization > 0
+    GROUP BY fin.industry
+    ORDER BY industry_ProfitMargin DESC
+    ) 
+        
+    SELECT fin.*, industry_pe_avg.*, industry_PS_avg.*, industry_PEG_avg.*, industry_ProfitMargin_avg.*, 
+    tick.last_sale, (((tick.last_sale-FiftyTwoWeekHigh)/(FiftyTwoWeekHigh))*100) AS pct_change_offhigh
+    FROM stock_tickers.stock_financials AS fin
+    JOIN industry_pe_avg 
+    ON industry_pe_avg.industry = fin.industry
+    JOIN industry_PS_avg
+    ON industry_PS_avg.industry = fin.industry
+    JOIN industry_PEG_avg
+    ON industry_PEG_avg.industry = fin.industry
+    JOIN industry_ProfitMargin_avg
+    ON industry_ProfitMargin_avg.industry = fin.industry  
+    JOIN stock_tickers.stock_tickers AS tick
+    ON tick.Symbol = fin.symbol
+    WHERE trailingPE IS NOT NULL
+    AND priceToSalesRatioTTM IS NOT NULL
+    AND PEGRatio IS NOT NULL
+    AND ProfitMargin IS NOT NULL
+    AND trailingPE < industry_trailingPE
+    AND priceToSalesRatioTTM < industry_trailingPS
+    AND PEGRatio < industry_PEG
+    AND ProfitMargin >= industry_ProfitMargin
+    AND last_sale < FiftyDayMovingAverage
+    AND last_sale < FiftyTwoWeekHigh
+    AND marketCapitalization > 100000000000
+    AND dividendYield > 0
+    AND quarterlyEarningsGrowthYOY > 0
+    AND quarterlyRevenueGrowthYOY > 0
+    ORDER BY pct_change_offhigh ASC;
+    """,
+    project_id = 'stock-screener-342515',
+    credentials = service_account.Credentials.from_service_account_file(credentials))
+
+
     # drop duplicates, send to csv file
-    undervalued_stocks = undervalued_stocks.drop_duplicates(subset=['symbol'])
-    undervalued_stocks.to_csv('undervalued_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
-    print(undervalued_stocks)
+    undervalued_sector_stocks = undervalued_sector_stocks.drop_duplicates(subset=['symbol'])
+    undervalued_industry_stocks = undervalued_industry_stocks.drop_duplicates(subset=['symbol'])
+    undervalued_sector_stocks.to_csv('undervalued_sector_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
+    undervalued_industry_stocks.to_csv('undervalued_industry_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
 
     # send to BigQuery
-    undervalued_stocks.to_gbq(destination_table = 'stock_tickers.undervalued_stocks',
+    undervalued_sector_stocks.to_gbq(destination_table = 'stock_tickers.undervalued_sector_stocks',
+                        project_id= 'stock-screener-342515',
+                        credentials = service_account.Credentials.from_service_account_file(credentials),
+                        if_exists = 'replace')
+
+    undervalued_industry_stocks.to_gbq(destination_table = 'stock_tickers.undervalued_industry_stocks',
                         project_id= 'stock-screener-342515',
                         credentials = service_account.Credentials.from_service_account_file(credentials),
                         if_exists = 'replace')
 
     # get from BigQuery
-    undervalued_stocks = pd.read_gbq('SELECT * FROM {}'.format('stock_tickers.undervalued_stocks'),
+    undervalued_sector_stocks = pd.read_gbq('SELECT * FROM {}'.format('stock_tickers.undervalued_sector_stocks'),
                 project_id = 'stock-screener-342515',
                 credentials = service_account.Credentials.from_service_account_file(credentials))
 
-    print('Undervalued Stocks BQ: ', undervalued_stocks.head())
+    # get from BigQuery
+    undervalued_industry_stocks = pd.read_gbq('SELECT * FROM {}'.format('stock_tickers.undervalued_industry_stocks'),
+                project_id = 'stock-screener-342515',
+                credentials = service_account.Credentials.from_service_account_file(credentials))
+
+
+    print('Undervalued Sector Stocks BQ: ', undervalued_sector_stocks.head())
+    print('Undervalued Industry Stocks BQ: ', undervalued_industry_stocks.head())
 
     return print("Undervalued Stocks Query Successful")
