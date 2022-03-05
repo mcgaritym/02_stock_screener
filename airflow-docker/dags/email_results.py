@@ -18,11 +18,7 @@ def email_results(sender, receiver, email_subject):
     print(credentials)
 
     # get from BigQuery
-    df_sector = pd.read_gbq('SELECT name, ticker, last_sale, pct_change_offhigh, marketCapitalization, industry, sector FROM {} ORDER BY pct_change_offhigh ASC'.format('stock_tickers.undervalued_sector_stocks'),
-                project_id = 'stock-screener-342515',
-                credentials = service_account.Credentials.from_service_account_file(credentials))
-
-    df_industry = pd.read_gbq('SELECT name, ticker, last_sale, pct_change_offhigh, marketCapitalization, industry, sector FROM {} ORDER BY pct_change_offhigh ASC'.format('stock_tickers.undervalued_industry_stocks'),
+    df = pd.read_gbq('SELECT name, ticker, last_sale, pct_change_offhigh, marketCapitalization, industry, sector FROM {} ORDER BY pct_change_offhigh ASC'.format('stock_tickers.undervalued_stocks'),
                 project_id = 'stock-screener-342515',
                 credentials = service_account.Credentials.from_service_account_file(credentials))
 
@@ -37,19 +33,13 @@ def email_results(sender, receiver, email_subject):
     email_html = """
     <html>
       <body>
-        <p>Hello, here are today's stock picks: </p> <br>
-        
-        <p>Undervalued Sector Picks: picks: </p> <br>
-        
-        {}
-        
-        <p>Undervalued Industry Picks: picks: </p> <br>
-        
-        {}
+        <p>Hello, here are today's undervalued stock picks: </p> <br>
+                
+        {0}
         
       </body>
     </html>
-    """.format(build_table(df_sector, 'blue_light', font_size='large'), build_table(df_industry, 'blue_light', font_size='large') )
+    """.format(build_table(df, 'blue_light', font_size='large'))
 
     message = MIMEMultipart("multipart")
     # Turn these into plain/html MIMEText objects
