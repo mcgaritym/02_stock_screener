@@ -68,7 +68,6 @@ def query_stocks():
     ORDER BY sector_quarterlyRevenueGrowthYOY DESC
     ),
     
-    
     industry_pe_avg as (
     SELECT fin.industry, AVG(fin.trailingPE) as industry_trailingPE
     FROM stock_tickers.stock_financials as fin
