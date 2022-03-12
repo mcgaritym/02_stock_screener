@@ -179,7 +179,6 @@ def query_stocks():
     project_id = 'stock-screener-342515',
     credentials = service_account.Credentials.from_service_account_file(credentials))
 
-
     # drop duplicates, send to csv file
     undervalued_stocks = undervalued_stocks.drop_duplicates(subset=['symbol'])
     undervalued_stocks.to_csv('undervalued_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
