@@ -81,7 +81,7 @@ def extract_transform_load_financials_AV():
             # print exception, sleep for 1 minute
             print(sys.exc_info()[0])
             print('First Exception Error: ', e)
-            time.sleep(5)
+            time.sleep(2)
             continue
 
     # convert dictionary list to dataframe

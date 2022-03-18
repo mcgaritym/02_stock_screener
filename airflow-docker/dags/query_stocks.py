@@ -187,7 +187,39 @@ def query_stocks():
     undervalued_stocks.to_gbq(destination_table = 'stock_tickers.undervalued_stocks',
                         project_id= 'stock-screener-342515',
                         credentials = service_account.Credentials.from_service_account_file(credentials),
-                        if_exists = 'replace')
+                        if_exists = 'replace',
+                        table_schema=[
+                                  {'name': 'marketCapitalization', 'type': 'NUMERIC'},
+                                  {'name': 'pe_ratio', 'type': 'Float'},
+                                  {'name': 'trailingPE', 'type': 'Float'},
+                                  {'name': 'forwardPE', 'type': 'Float'},
+                                  {'name': 'priceToSalesRatioTTM', 'type': 'Float'},
+                                  {'name': 'dividendYield', 'type': 'Float'},
+                                  {'name': 'ePS', 'type': 'Float'},
+                                  {'name': 'revenuePerShareTTM', 'type': 'Float'},
+                                  {'name': 'quarterlyEarningsGrowthYOY', 'type': 'Float'},
+                                  {'name': 'quarterlyRevenueGrowthYOY', 'type': 'Float'},
+                                  {'name': 'FiftyTwoWeekHigh', 'type': 'Float'},
+                                  {'name': 'FiftyTwoWeekLow', 'type': 'Float'},
+                                  {'name': 'FiftyDayMovingAverage', 'type': 'Float'},
+                                  {'name': 'ProfitMargin', 'type': 'Float'},
+                                  {'name': 'PEGRatio', 'type': 'Float'},
+                                  {'name': 'last_sale', 'type': 'Float'},
+                                  {'name': 'pct_change_offhigh', 'type': 'Float'},
+                                  {'name': 'sector_trailingPE', 'type': 'Float'},
+                                  {'name': 'sector_trailingPS', 'type': 'Float'},
+                                  {'name': 'sector_PEG', 'type': 'Float'},
+                                  {'name': 'sector_ProfitMargin', 'type': 'Float'},
+                                  {'name': 'industry_trailingPE', 'type': 'Float'},
+                                  {'name': 'industry_trailingPS', 'type': 'Float'},
+                                  {'name': 'industry_PEG', 'type': 'Float'},
+                                  {'name': 'industry_ProfitMargin', 'type': 'Float'},
+                                  {'name': 'sector_quarterlyEarningsGrowthYOY', 'type': 'Float'},
+                                  {'name': 'sector_quarterlyRevenueGrowthYOY', 'type': 'Float'},
+                                  {'name': 'industry_quarterlyEarningsGrowthYOY', 'type': 'Float'},
+                                  {'name': 'industry_quarterlyRevenueGrowthYOY', 'type': 'Float'}
+                        ]
+                              )
 
     # get from BigQuery
     undervalued_stocks = pd.read_gbq('SELECT * FROM {}'.format('stock_tickers.undervalued_stocks'),

@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="'updated stock query based on industry, sector, more financial ratios'" />
+    <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="'updated stock query based on industry, sector, more financial ratios'">
+      <change afterPath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1647609187472.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1646259459495.csv" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -173,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647142356400</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="'updated stock query based on industry, sector, more financial ratios'">
+      <created>1647187890056</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1647187890056</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
