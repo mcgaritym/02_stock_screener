@@ -64,7 +64,7 @@ USER ${spark_uid}
 
 # copy package requirements and run
 FROM apache/airflow:2.2.3
-COPY nasdaq_screener_1647609187472.csv .
+COPY nasdaq_screener_1649021543977.csv .
 COPY requirements.txt .
 COPY stock-screener-credentials.json .
 COPY config.py .

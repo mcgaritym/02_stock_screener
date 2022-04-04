@@ -18,7 +18,7 @@ def email_results(sender, receiver, email_subject):
     print(credentials)
 
     # get from BigQuery
-    df = pd.read_gbq('SELECT symbol, name, last_sale, pct_change_offhigh, marketCapitalization, industry, sector FROM {} ORDER BY pct_change_offhigh ASC'.format('stock_tickers.undervalued_stocks'),
+    df = pd.read_gbq('SELECT symbol, name, last_sale, pct_change_offhigh, marketCapitalization, dividendYield*100 AS dividendYield, industry, sector FROM {} ORDER BY marketCapitalization DESC'.format('stock_tickers.undervalued_stocks'),
                 project_id = 'stock-screener-342515',
                 credentials = service_account.Credentials.from_service_account_file(credentials))
 
