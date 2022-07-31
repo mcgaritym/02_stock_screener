@@ -1,6 +1,6 @@
 Introduction:
 
-The purpose of this project is to a.) create an stock screener pipeline and b.) evaluate stock prices and correlations during COVID-19. The motivation for this project is due to personal interest (investing), and the fact that stocks provide a wealth of historical data to include in a data engineering problems. Also, I am interested in determining the effect of the COVID-19 pandemic on stocks in general. 
+The purpose of this project is to create a stock screener pipeline and evaluate stock prices and correlations during COVID-19. The motivation for this project is due to personal interest (investing), and the fact that stocks provide a wealth of historical data to include in a data engineering problems. Also, I am interested in determining the effect of the COVID-19 pandemic on stocks in general. 
 
 The data sources for this project include scraped news headlines from a variety of top financial news sources (for financial news sentiment), the yahoo finance API (for financial fundamentals such as stock prices, earnings, P/E ratios), and the NASDAQ website (for stock tickers, sectors, and industries). 
 
