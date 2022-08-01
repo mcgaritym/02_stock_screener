@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="'updated readme'">
-      <change afterPath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1659297761060.csv" afterDir="false" />
+    <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="'updated screener data'">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1649021543977.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1659297761060.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +206,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659295772498</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="'updated screener data'">
+      <created>1659299973684</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1659299973684</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +232,7 @@
     <MESSAGE value="'updated stock query based on industry, sector, more financial ratios'" />
     <MESSAGE value="'updated stock query'" />
     <MESSAGE value="'updated readme'" />
-    <option name="LAST_COMMIT_MESSAGE" value="'updated readme'" />
+    <MESSAGE value="'updated screener data'" />
+    <option name="LAST_COMMIT_MESSAGE" value="'updated screener data'" />
   </component>
 </project>

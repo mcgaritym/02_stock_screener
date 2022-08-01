@@ -26,8 +26,11 @@ def email_results(sender, receiver, email_subject):
     port = 465  # For SSL
     smtp_server = "smtp.gmail.com"
     sender_email = sender
+    print(sender_email)
     receiver_email = [receiver]
+    print(receiver_email)
     password = GMAIL_PASSWORD
+    print(password)
 
     # build HTML body with dataframe
     email_html = """
