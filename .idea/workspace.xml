@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="'updated screener data'">
+      <change afterPath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1660391780438.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1659297761060.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/nasdaq_screener_1659397397594.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +47,7 @@
       <recent name="$PROJECT_DIR$/airflow-docker/dags" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test_AV">
+  <component name="RunManager" selected="Python.extract_transform_load_financials_TEST">
     <configuration name="extract_transform_load_financials_AV" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="02_stock_screener" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,6 +61,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_AV.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="extract_transform_load_financials_TEST" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="02_stock_screener" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/airflow-docker/dags" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/airflow-docker/dags/extract_transform_load_financials_TEST.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -87,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.extract_transform_load_financials_TEST" />
         <item itemvalue="Python.test_AV" />
         <item itemvalue="Python.extract_transform_load_financials_AV" />
       </list>
@@ -213,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659299973684</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="'updated screener data'">
+      <created>1659397485052</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659397485052</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

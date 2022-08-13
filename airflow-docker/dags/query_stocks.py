@@ -20,7 +20,7 @@ def query_stocks():
     WHERE fin.sector != "nan" AND fin.sector IS NOT NULL
     AND fin.marketCapitalization > 0
     GROUP BY fin.sector
-    ORDER BY AVG(fin.trailingPE) DESC
+    ORDER BY sector_trailingPE DESC
     ),
         
     sector_PS_avg as (
@@ -74,7 +74,7 @@ def query_stocks():
     WHERE fin.industry != "nan" AND fin.industry IS NOT NULL
     AND fin.marketCapitalization > 0
     GROUP BY fin.industry
-    ORDER BY AVG(fin.trailingPE) DESC
+    ORDER BY industry_trailingPE DESC
     ),
         
     industry_PS_avg as (
@@ -161,17 +161,17 @@ def query_stocks():
     AND priceToSalesRatioTTM IS NOT NULL
     AND PEGRatio IS NOT NULL
     AND ProfitMargin IS NOT NULL
-    AND (trailingPE < sector_trailingPE) AND (trailingPE < industry_trailingPE)
-    AND (priceToSalesRatioTTM < sector_trailingPS) AND (priceToSalesRatioTTM < industry_trailingPS)
-    AND (PEGRatio < sector_PEG) AND (PEGRatio < industry_PEG)
-    AND (ProfitMargin >= sector_ProfitMargin) AND (ProfitMargin >= industry_ProfitMargin)
-    AND (quarterlyEarningsGrowthYOY >= sector_quarterlyEarningsGrowthYOY) OR (quarterlyEarningsGrowthYOY >= industry_quarterlyEarningsGrowthYOY)
-    AND (quarterlyRevenueGrowthYOY >= sector_quarterlyRevenueGrowthYOY) OR (quarterlyRevenueGrowthYOY >= industry_quarterlyRevenueGrowthYOY)
+    AND ((trailingPE < sector_trailingPE) OR (trailingPE < industry_trailingPE))
+    AND ((priceToSalesRatioTTM < sector_trailingPS) OR (priceToSalesRatioTTM < industry_trailingPS))
+    AND ((ProfitMargin >= sector_ProfitMargin) OR (ProfitMargin >= industry_ProfitMargin))
+    AND ((PEGRatio <= industry_PEG) OR (PEGRatio <= sector_PEG))
+    AND ((quarterlyEarningsGrowthYOY >= sector_quarterlyEarningsGrowthYOY) OR (quarterlyEarningsGrowthYOY >= industry_quarterlyEarningsGrowthYOY))
+    AND ((quarterlyRevenueGrowthYOY >= sector_quarterlyRevenueGrowthYOY) OR (quarterlyRevenueGrowthYOY >= industry_quarterlyRevenueGrowthYOY))
     AND tick.last_sale < FiftyDayMovingAverage
     AND tick.last_sale < FiftyTwoWeekHigh
     AND fin.quarterlyEarningsGrowthYOY > 0
     AND fin.quarterlyRevenueGrowthYOY > 0
-    AND dividendYield > 0
+    AND fin.dividendYield > 0
     ORDER BY marketCapitalization DESC;
     """,
     project_id = 'stock-screener-342515',

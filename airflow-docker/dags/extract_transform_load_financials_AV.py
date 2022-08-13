@@ -8,7 +8,6 @@ from google.oauth2 import service_account
 from glob import glob
 import os
 import numpy as np
-from airflow import AirflowException
 
 
 # function to get financial info via yfinance API:
@@ -22,7 +21,6 @@ def extract_transform_load_financials_AV():
         'stock_tickers.stock_tickers'),
                                project_id='stock-screener-342515',
                                credentials=service_account.Credentials.from_service_account_file(credentials))
-    # tickers_list = tickers_list[:300]
     print(tickers_list)
 
     # create empty list to append dictionary values
@@ -30,7 +28,7 @@ def extract_transform_load_financials_AV():
     counter = 0
 
     # loop over ticker symbols
-    for row in tickers_list.values[:20]:
+    for row in tickers_list.values:
 
         # get symbol
         counter += 1
@@ -58,6 +56,13 @@ def extract_transform_load_financials_AV():
                                             'industry': data['Industry'],
                                             'marketCapitalization': data['MarketCapitalization'],
                                             'peRatio': data['PERatio'],
+                                            'PEGRatio': data['PEGRatio'],
+                                            'bookvalue': data['BookValue'],
+                                            'OperatingMarginTTM': data['OperatingMarginTTM'],
+                                            'ReturnOnAssetsTTM': data['ReturnOnAssetsTTM'],
+                                            'ReturnOnEquityTTM': data['ReturnOnEquityTTM'],
+                                            'PriceToBookRatio': data['PriceToBookRatio'],
+                                            'EVToRevenue': data['EVToRevenue'],
                                             'trailingPE': data['TrailingPE'],
                                             'forwardPE': data['ForwardPE'],
                                             'priceToSalesRatioTTM': data['PriceToSalesRatioTTM'],
@@ -71,27 +76,51 @@ def extract_transform_load_financials_AV():
                                             'FiftyTwoWeekHigh': data['52WeekHigh'],
                                             'FiftyTwoWeekLow': data['52WeekLow'],
                                             'FiftyDayMovingAverage': data['50DayMovingAverage'],
-                                            'ProfitMargin': data['ProfitMargin'],
-                                            'PEGRatio': data['PEGRatio']
+                                            'TwoHundredDayMovingAverage': data['200DayMovingAverage'],
+                                            'ProfitMargin': data['ProfitMargin']
                                             }))
 
         # if exception occurs, print and sleep for 60 sec
-        except KeyError as e:
+        except Exception as e:
 
             # print exception, sleep for 1 minute
             print(sys.exc_info()[0])
-            print('First Exception Error: ', e)
-            time.sleep(60)
+            print(e)
+            time.sleep(5)
             continue
 
     # convert dictionary list to dataframe
-    df = pd.DataFrame(list_financials, columns=['symbol', 'name', 'country', 'sector', 'industry',
-                                                'marketCapitalization', 'peRatio', 'trailingPE',
-                                                'forwardPE', 'priceToSalesRatioTTM', 'dividendYield',
-                                                'dividendDate', 'exDividendDate', 'ePS', 'revenuePerShareTTM',
-                                                'quarterlyEarningsGrowthYOY', 'quarterlyRevenueGrowthYOY',
-                                                'FiftyTwoWeekHigh', 'FiftyTwoWeekLow', 'FiftyDayMovingAverage',
-                                                'ProfitMargin', 'PEGRatio'])
+    df = pd.DataFrame(list_financials, columns=[
+                                                'symbol',
+                                                'name',
+                                                'country',
+                                                'sector',
+                                                'industry',
+                                                'marketCapitalization',
+                                                'peRatio',
+                                                'PEGRatio',
+                                                'bookvalue',
+                                                'OperatingMarginTTM',
+                                                'ReturnOnAssetsTTM',
+                                                'ReturnOnEquityTTM',
+                                                'PriceToBookRatio',
+                                                'EVToRevenue',
+                                                'trailingPE',
+                                                'forwardPE',
+                                                'priceToSalesRatioTTM',
+                                                'dividendYield',
+                                                'dividendDate',
+                                                'exDividendDate',
+                                                'ePS',
+                                                'revenuePerShareTTM',
+                                                'quarterlyEarningsGrowthYOY',
+                                                'quarterlyRevenueGrowthYOY',
+                                                'FiftyTwoWeekHigh',
+                                                'FiftyTwoWeekLow',
+                                                'FiftyDayMovingAverage',
+                                                'TwoHundredDayMovingAverage',
+                                                'ProfitMargin'
+                                                ])
 
     # replace empty and None values
     df.replace('None', np.nan, inplace=True)
@@ -99,9 +128,9 @@ def extract_transform_load_financials_AV():
 
     # send to BigQuery
     df.to_gbq(destination_table = 'stock_tickers.stock_financials',
-                        project_id= 'stock-screener-342515',
+                        project_id = 'stock-screener-342515',
                         credentials = service_account.Credentials.from_service_account_file(credentials),
-                        table_schema=[
+                        table_schema = [
                                     {'name': 'symbol', 'type': 'STRING'},
                                     {'name': 'name', 'type': 'STRING'},
                                     {'name': 'country', 'type': 'STRING'},
@@ -109,6 +138,13 @@ def extract_transform_load_financials_AV():
                                     {'name': 'industry', 'type': 'STRING'},
                                     {'name': 'marketCapitalization', 'type': 'NUMERIC'},
                                     {'name': 'peRatio', 'type': 'NUMERIC'},
+                                    {'name': 'PEGRatio', 'type': 'NUMERIC'},
+                                    {'name': 'bookvalue', 'type': 'NUMERIC'},
+                                    {'name': 'OperatingMarginTTM', 'type': 'NUMERIC'},
+                                    {'name': 'ReturnOnAssetsTTM', 'type': 'NUMERIC'},
+                                    {'name': 'ReturnOnEquityTTM', 'type': 'NUMERIC'},
+                                    {'name': 'PriceToBookRatio', 'type': 'NUMERIC'},
+                                    {'name': 'EVToRevenue', 'type': 'NUMERIC'},
                                     {'name': 'trailingPE', 'type': 'NUMERIC'},
                                     {'name': 'forwardPE', 'type': 'NUMERIC'},
                                     {'name': 'priceToSalesRatioTTM', 'type': 'NUMERIC'},
@@ -122,9 +158,8 @@ def extract_transform_load_financials_AV():
                                     {'name': 'FiftyTwoWeekHigh', 'type': 'NUMERIC'},
                                     {'name': 'FiftyTwoWeekLow', 'type': 'NUMERIC'},
                                     {'name': 'FiftyDayMovingAverage', 'type': 'NUMERIC'},
-                                    {'name': 'ProfitMargin', 'type': 'NUMERIC'},
-                                    {'name': 'PEGRatio', 'type': 'NUMERIC'}
-
+                                    {'name': 'TwoHundredDayMovingAverage', 'type': 'NUMERIC'},
+                                    {'name': 'ProfitMargin', 'type': 'NUMERIC'}
                         ],
                         if_exists = 'replace')
 
