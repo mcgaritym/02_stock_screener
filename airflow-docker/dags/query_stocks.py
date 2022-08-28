@@ -22,7 +22,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorTrailingPE DESC
     ),
-
+    
     industryTrailingPE_avg as (
     SELECT fin.industry, AVG(fin.trailingpe) as industryTrailingPE
     FROM stock_tickers.stock_financials as fin
@@ -58,7 +58,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorPEG DESC
     ),  
-
+    
     industryPEG_avg as (
     SELECT fin.industry, AVG(fin.PEGRatio) as industryPEG
     FROM stock_tickers.stock_financials as fin
@@ -67,7 +67,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryPEG DESC
     ),  
-
+    
     sectorBookValue_avg as (
     SELECT fin.sector, AVG(fin.bookvalue) as sectorBookValue
     FROM stock_tickers.stock_financials as fin
@@ -76,7 +76,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorBookValue DESC
     ),  
-
+    
     industryBookValue_avg as (
     SELECT fin.industry, AVG(fin.bookvalue) as industryBookValue
     FROM stock_tickers.stock_financials as fin
@@ -85,7 +85,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryBookValue DESC
     ),  
-
+    
     sectorOperatingMarginTTM_avg as (
     SELECT fin.sector, AVG(fin.OperatingMarginTTM) as sectorOperatingMarginTTM
     FROM stock_tickers.stock_financials as fin
@@ -94,7 +94,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorOperatingMarginTTM DESC
     ),  
-
+    
     industryOperatingMarginTTM_avg as (
     SELECT fin.industry, AVG(fin.OperatingMarginTTM) as industryOperatingMarginTTM
     FROM stock_tickers.stock_financials as fin
@@ -103,7 +103,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryOperatingMarginTTM DESC
     ), 
-
+    
     sectorReturnOnAssetsTTM_avg as (
     SELECT fin.sector, AVG(fin.ReturnOnAssetsTTM) as sectorReturnOnAssetsTTM
     FROM stock_tickers.stock_financials as fin
@@ -112,7 +112,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorReturnOnAssetsTTM DESC
     ),  
-
+    
     industryReturnOnAssetsTTM_avg as (
     SELECT fin.industry, AVG(fin.ReturnOnAssetsTTM) as industryReturnOnAssetsTTM
     FROM stock_tickers.stock_financials as fin
@@ -121,7 +121,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryReturnOnAssetsTTM DESC
     ), 
-
+    
     sectorReturnOnEquityTTM_avg as (
     SELECT fin.sector, AVG(fin.ReturnOnEquityTTM) as 
     sectorReturnOnEquityTTM
@@ -131,7 +131,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorReturnOnEquityTTM DESC
     ),  
-
+    
     industryReturnOnEquityTTM_avg as (
     SELECT fin.industry, AVG(fin.ReturnOnEquityTTM) as 
     industryReturnOnEquityTTM
@@ -141,7 +141,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryReturnOnEquityTTM DESC
     ), 
-
+    
     sectorPriceToBookRatio_avg as (
     SELECT fin.sector, AVG(fin.PriceToBookRatio) as 
     sectorPriceToBookRatio
@@ -151,7 +151,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorPriceToBookRatio DESC
     ),  
-
+    
     industryPriceToBookRatio_avg as (
     SELECT fin.industry, AVG(fin.PriceToBookRatio) as     
     industryPriceToBookRatio
@@ -161,7 +161,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryPriceToBookRatio DESC
     ), 
-
+    
     sectorDividendYield_avg as (
     SELECT fin.sector, AVG(fin.dividendYield) as 
     sectorDividendYield
@@ -171,7 +171,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorDividendYield DESC
     ),  
-
+    
     industryDividendYield_avg as (
     SELECT fin.industry, AVG(fin.dividendYield) as     
     industryDividendYield
@@ -181,17 +181,17 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryDividendYield DESC
     ), 
-
+    
     sectorEPS_avg as (
     SELECT fin.sector, AVG(fin.ePS) as 
-    ePS
+    sectorEPS
     FROM stock_tickers.stock_financials as fin
     WHERE fin.sector != "nan" AND fin.sector IS NOT NULL
     AND fin.marketCapitalization > 0
     GROUP BY fin.sector
     ORDER BY sectorEPS DESC
     ),  
-
+    
     industryEPS_avg as (
     SELECT fin.industry, AVG(fin.ePS) as     
     industryEPS
@@ -201,8 +201,8 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryEPS DESC
     ), 
-
-
+    
+    
     sectorEVToRevenue_avg as (
     SELECT fin.sector, AVG(fin.EVToRevenue) as sectorEVToRevenue
     FROM stock_tickers.stock_financials as fin
@@ -220,7 +220,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryEVToRevenue DESC
     ),
-
+    
     sectorRevenuePerShareTTM_avg as (
     SELECT fin.sector, AVG(fin.revenuePerShareTTM) as sectorRevenuePerShareTTM
     FROM stock_tickers.stock_financials as fin
@@ -238,47 +238,56 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryRevenuePerShareTTM DESC
     ),
-
-    sectorFiftyTwoWeekHigh_avg as (
-    SELECT fin.sector, AVG(((fin.FiftyTwoWeekHigh - tick.last_sale)/(tick.last_sale))*100) as sectorFiftyTwoWeekHigh
+    
+    offsectorFiftyTwoWeekHigh_avg as (
+    SELECT fin.sector, AVG((last_sale - FiftyTwoWeekHigh)/(FiftyTwoWeekHigh)*100) as offsectorFiftyTwoWeekHigh
     FROM stock_tickers.stock_financials as fin
     JOIN stock_tickers.stock_tickers AS tick
     ON tick.Symbol = fin.symbol
     WHERE fin.sector != "nan" AND fin.sector IS NOT NULL
     AND fin.marketCapitalization > 0
+    AND FiftyTwoWeekHigh > 0
     GROUP BY fin.sector
-    ORDER BY sectorFiftyTwoWeekHigh DESC
+    ORDER BY offsectorFiftyTwoWeekHigh DESC
     ),
     
-    industryFiftyTwoWeekHigh_avg as (
-    SELECT fin.industry, AVG(((fin.FiftyTwoWeekHigh - tick.last_sale)/(tick.last_sale))*100) as industryFiftyTwoWeekHigh
+    offindustryFiftyTwoWeekHigh_avg as (
+    SELECT fin.industry, AVG((last_sale - FiftyTwoWeekHigh)/(FiftyTwoWeekHigh)*100) as offindustryFiftyTwoWeekHigh
     FROM stock_tickers.stock_financials as fin
+    JOIN stock_tickers.stock_tickers AS tick
+    ON tick.Symbol = fin.symbol
     WHERE fin.industry != "nan" AND fin.industry IS NOT NULL
     AND fin.marketCapitalization > 0
+    AND FiftyTwoWeekHigh > 0
     GROUP BY fin.industry
-    ORDER BY industryFiftyTwoWeekHigh DESC
+    ORDER BY offindustryFiftyTwoWeekHigh DESC
     ),
-
-    sectorTwoHundredDayMovingAverage_avg as (
-    SELECT fin.sector, AVG(((fin.TwoHundredDayMovingAverage - tick.last_sale)/(tick.last_sale))*100) as sectorTwoHundredDayMovingAverage
+    
+    offsectorTwoHundredDayMovingAverage_avg as (
+    SELECT fin.sector, AVG((last_sale - TwoHundredDayMovingAverage)/(TwoHundredDayMovingAverage)*100) as offsectorTwoHundredDayMovingAverage
     FROM stock_tickers.stock_financials as fin
     JOIN stock_tickers.stock_tickers AS tick
     ON tick.Symbol = fin.symbol
     WHERE fin.sector != "nan" AND fin.sector IS NOT NULL
     AND fin.marketCapitalization > 0
+    AND TwoHundredDayMovingAverage > 0
     GROUP BY fin.sector
-    ORDER BY sectorTwoHundredDayMovingAverage DESC
+    ORDER BY offsectorTwoHundredDayMovingAverage DESC
     ),
     
-    industryTwoHundredDayMovingAverage_avg as (
-    SELECT fin.industry, AVG(((fin.TwoHundredDayMovingAverageTwoHundredDayMovingAverage - tick.last_sale)/(tick.last_sale))*100) as industryTwoHundredDayMovingAverage
+    offindustryTwoHundredDayMovingAverage_avg as (
+    SELECT fin.industry, AVG((last_sale - TwoHundredDayMovingAverage)/(TwoHundredDayMovingAverage)*100) as offindustryTwoHundredDayMovingAverage
     FROM stock_tickers.stock_financials as fin
+    JOIN stock_tickers.stock_tickers AS tick
+    ON tick.Symbol = fin.symbol
     WHERE fin.industry != "nan" AND fin.industry IS NOT NULL
     AND fin.marketCapitalization > 0
+    AND TwoHundredDayMovingAverage > 0
     GROUP BY fin.industry
-    ORDER BY industryTwoHundredDayMovingAverage DESC
+    ORDER BY offindustryTwoHundredDayMovingAverage DESC
     ),
-
+    
+    
     sectorProfitMargin_avg as (
     SELECT fin.sector, AVG(fin.ProfitMargin) as sectorProfitMargin
     FROM stock_tickers.stock_financials as fin
@@ -296,7 +305,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryProfitMargin DESC
     ),
-
+    
     sectorQuarterlyEarningsGrowthYOY_avg as (
     SELECT fin.sector, AVG(fin.quarterlyEarningsGrowthYOY) as sectorQuarterlyEarningsGrowthYOY
     FROM stock_tickers.stock_financials as fin
@@ -305,7 +314,7 @@ def query_stocks():
     GROUP BY fin.sector
     ORDER BY sectorQuarterlyEarningsGrowthYOY DESC
     ),
-
+    
     industryQuarterlyEarningsGrowthYOY_avg as (
     SELECT fin.industry, AVG(fin.quarterlyEarningsGrowthYOY) as industryQuarterlyEarningsGrowthYOY
     FROM stock_tickers.stock_financials as fin
@@ -314,7 +323,7 @@ def query_stocks():
     GROUP BY fin.industry
     ORDER BY industryQuarterlyEarningsGrowthYOY DESC
     ),
-
+    
     sectorQuarterlyRevenueGrowthYOY_avg as (
     SELECT fin.sector, AVG(fin.quarterlyRevenueGrowthYOY) as sectorQuarterlyRevenueGrowthYOY
     FROM stock_tickers.stock_financials as fin
@@ -333,79 +342,141 @@ def query_stocks():
     ORDER BY industryQuarterlyRevenueGrowthYOY DESC
     )
     
-    SELECT tick.Symbol, 
-    SUM(
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    ) AS sector_score,
-    SUM(
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    CASE WHEN THEN ELSE END
-    ) AS industry_score
-
-
-
+    SELECT tick.Symbol, tick.Name, fin.sector, fin.industry, last_sale, (last_sale - FiftyTwoWeekHigh)/(FiftyTwoWeekHigh)*100 AS offFiftyTwoWeekHigh,
+    (
+    (CASE WHEN (trailingpe < sectorTrailingPE) OR (trailingpe < industryTrailingPE) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (priceToSalesRatioTTM < sectorTrailingPS) OR (priceToSalesRatioTTM < industryTrailingPS) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (ProfitMargin >= sectorProfitMargin) OR (ProfitMargin >= industryProfitMargin) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (PEGRatio <= industryPEG) OR (PEGRatio <= sectorPEG) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (bookvalue <= sectorBookValue) OR (bookvalue <= industryBookValue) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (OperatingMarginTTM >= sectorOperatingMarginTTM) OR (OperatingMarginTTM >= industryOperatingMarginTTM) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (ReturnOnAssetsTTM >= sectorReturnOnAssetsTTM) OR (ReturnOnAssetsTTM >= industryReturnOnAssetsTTM) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (ReturnOnEquityTTM >= sectorReturnOnEquityTTM) OR (ReturnOnEquityTTM >= industryReturnOnEquityTTM) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (PriceToBookRatio <= sectorPriceToBookRatio) OR (PriceToBookRatio <= industryPriceToBookRatio) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (dividendYield >= sectorDividendYield) OR (dividendYield >= industryDividendYield) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (ePS >= sectorEPS) OR (ePS >= industryEPS) THEN 1 ELSE 0 END) +   
+    (CASE WHEN (EVToRevenue <= sectorEVToRevenue) OR (EVToRevenue <= industryEVToRevenue) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (revenuePerShareTTM >= sectorRevenuePerShareTTM) OR (revenuePerShareTTM >= industryRevenuePerShareTTM) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (quarterlyEarningsGrowthYOY >= sectorQuarterlyEarningsGrowthYOY) OR (quarterlyEarningsGrowthYOY >= industryQuarterlyEarningsGrowthYOY) THEN 1 ELSE 0 END) + 
+    (CASE WHEN (quarterlyRevenueGrowthYOY >= sectorQuarterlyRevenueGrowthYOY) OR (quarterlyRevenueGrowthYOY >= industryQuarterlyRevenueGrowthYOY) THEN 1 ELSE 0 END) +     
+    (CASE WHEN ((last_sale - FiftyTwoWeekHigh)/(FiftyTwoWeekHigh)*100 < offsectorFiftyTwoWeekHigh) OR ((last_sale - FiftyTwoWeekHigh)/(FiftyTwoWeekHigh)*100 < offindustryFiftyTwoWeekHigh) THEN 1 ELSE 0 END) + 
+    (CASE WHEN ((last_sale - TwoHundredDayMovingAverage)/(TwoHundredDayMovingAverage)*100 < offsectorTwoHundredDayMovingAverage) OR ((last_sale - TwoHundredDayMovingAverage)/(TwoHundredDayMovingAverage)*100 < offindustryTwoHundredDayMovingAverage) THEN 1 ELSE 0 END)        
+    ) AS relative_value_score
+    
     FROM stock_tickers.stock_financials AS fin
     JOIN stock_tickers.stock_tickers AS tick
     ON tick.Symbol = fin.symbol
+    
     JOIN sectorTrailingPE_avg 
-    ON sectorTrailingPE.sector = fin.sector
+    ON sectorTrailingPE_avg.sector = fin.sector
+    
+    JOIN industrytrailingPE_avg 
+    ON industryTrailingPE_avg.industry = fin.industry 
+    
     JOIN sectorTrailingPS_avg
     ON sectorTrailingPS_avg.sector = fin.sector
-    JOIN sectorPEG_avg
-    ON sectorPEG_avg.sector = fin.sector
-    JOIN sectorProfitMargin_avg
-    ON sectorProfitMargin_avg.sector = fin.sector  
-    JOIN industrytrailingPE_avg 
-    ON industryTrailingPE_avg.industry = fin.industry
+    
     JOIN industryTrailingPS_avg
     ON industryTrailingPS_avg.industry = fin.industry
-    JOIN industryPEG_avg
-    ON industryPEG_avg.industry = fin.industry
+    
+    JOIN sectorProfitMargin_avg
+    ON sectorProfitMargin_avg.sector = fin.sector  
+    
     JOIN industryProfitMargin_avg
     ON industryProfitMargin_avg.industry = fin.industry 
+    
+    JOIN sectorPEG_avg
+    ON sectorPEG_avg.sector = fin.sector
+    
+    JOIN industryPEG_avg
+    ON industryPEG_avg.industry = fin.industry
+    
+    JOIN sectorBookValue_avg
+    ON sectorBookValue_avg.sector = fin.sector
+    
+    JOIN industryBookValue_avg
+    ON industryBookValue_avg.industry = fin.industry    
+    
+    JOIN sectorOperatingMarginTTM_avg
+    ON sectorOperatingMarginTTM_avg.sector = fin.sector
+    
+    JOIN industryOperatingMarginTTM_avg
+    ON industryOperatingMarginTTM_avg.industry = fin.industry    
+    
+    JOIN sectorReturnOnAssetsTTM_avg
+    ON sectorReturnOnAssetsTTM_avg.sector = fin.sector
+    
+    JOIN industryReturnOnAssetsTTM_avg
+    ON industryReturnOnAssetsTTM_avg.industry = fin.industry    
+    
+    JOIN sectorReturnOnEquityTTM_avg
+    ON sectorReturnOnEquityTTM_avg.sector = fin.sector
+    
+    JOIN industryReturnOnEquityTTM_avg
+    ON industryReturnOnEquityTTM_avg.industry = fin.industry    
+        
+    JOIN sectorPriceToBookRatio_avg
+    ON sectorPriceToBookRatio_avg.sector = fin.sector
+    
+    JOIN industryPriceToBookRatio_avg
+    ON industryPriceToBookRatio_avg.industry = fin.industry    
+    
+    JOIN sectorDividendYield_avg
+    ON sectorDividendYield_avg.sector = fin.sector
+    
+    JOIN industryDividendYield_avg
+    ON industryDividendYield_avg.industry = fin.industry    
+              
+    JOIN sectorEPS_avg
+    ON sectorEPS_avg.sector = fin.sector
+    
+    JOIN industryEPS_avg
+    ON industryEPS_avg.industry = fin.industry    
+    
+    JOIN sectorEVToRevenue_avg
+    ON sectorEVToRevenue_avg.sector = fin.sector
+    
+    JOIN industryEVToRevenue_avg
+    ON industryEVToRevenue_avg.industry = fin.industry    
+      
+    JOIN sectorRevenuePerShareTTM_avg
+    ON sectorRevenuePerShareTTM_avg.sector = fin.sector
+    
+    JOIN industryRevenuePerShareTTM_avg
+    ON industryRevenuePerShareTTM_avg.industry = fin.industry    
+    
+    JOIN offsectorFiftyTwoWeekHigh_avg
+    ON offsectorFiftyTwoWeekHigh_avg.sector = fin.sector
+    
+    JOIN offindustryFiftyTwoWeekHigh_avg
+    ON offindustryFiftyTwoWeekHigh_avg.industry = fin.industry    
+    
+    JOIN offsectorTwoHundredDayMovingAverage_avg
+    ON offsectorTwoHundredDayMovingAverage_avg.sector = fin.sector
+    
+    JOIN offindustryTwoHundredDayMovingAverage_avg
+    ON offindustryTwoHundredDayMovingAverage_avg.industry = fin.industry    
+    
     JOIN sectorQuarterlyEarningsGrowthYOY_avg
     ON sectorQuarterlyEarningsGrowthYOY_avg.sector = fin.sector
-    JOIN sectorQuarterlyRevenueGrowthYOY_avg
-    ON sectorQuarterlyRevenueGrowthYOY_avg.sector = fin.sector
+    
     JOIN industryQuarterlyEarningsGrowthYOY_avg
-    ON industryQuarterlyEarningsGrowthYOY_avg.industry = fin.industry
+    ON industryQuarterlyEarningsGrowthYOY_avg.industry = fin.industry  
+    
+    JOIN sectorQuarterlyRevenueGrowthYOY_avg
+    ON sectorQuarterlyRevenueGrowthYOY_avg.sector = fin.sector 
+    
     JOIN industryQuarterlyRevenueGrowthYOY_avg
     ON industryQuarterlyRevenueGrowthYOY_avg.industry = fin.industry
     
-    -- WHERE FiftyTwoWeekHigh != 0
-    -- AND trailingpe IS NOT NULL
-    -- AND priceToSalesRatioTTM IS NOT NULL
-    -- AND PEGRatio IS NOT NULL
-    -- AND ProfitMargin IS NOT NULL
-    -- AND ((trailingpe < sectorTrailingPE) OR (trailingpe < industryTrailingPE))
-    -- AND ((priceToSalesRatioTTM < sectorTrailingPS) OR (priceToSalesRatioTTM < industryTrailingPS))
-    -- AND ((ProfitMargin >= sectorProfitMargin) OR (ProfitMargin >= industryProfitMargin))
-    -- AND ((PEGRatio <= industryPEG) OR (PEGRatio <= sectorPEG))
-    -- AND ((quarterlyEarningsGrowthYOY >= sectorQuarterlyEarningsGrowthYOY) OR (quarterlyEarningsGrowthYOY >= industryQuarterlyEarningsGrowthYOY))
-    -- AND ((quarterlyRevenueGrowthYOY >= sectorQuarterlyRevenueGrowthYOY) OR (quarterlyRevenueGrowthYOY >= industryQuarterlyRevenueGrowthYOY))
-    -- AND tick.last_sale < FiftyDayMovingAverage
-    -- AND tick.last_sale < FiftyTwoWeekHigh
-    -- AND fin.quarterlyEarningsGrowthYOY > 0
-    -- AND fin.quarterlyRevenueGrowthYOY > 0
-    -- AND fin.dividendYield > 0
-    -- ORDER BY marketCapitalization DESC;
+    WHERE FiftyTwoWeekHigh > 0
+    
+    ORDER BY relative_value_score DESC, offFiftyTwoWeekHigh ASC
     """,
     project_id = 'stock-screener-342515',
     credentials = service_account.Credentials.from_service_account_file(credentials))
 
     # drop duplicates, send to csv file
-    undervalued_stocks = undervalued_stocks.drop_duplicates(subset=['symbol'])
     undervalued_stocks.to_csv('undervalued_stocks_' + str(datetime.now().strftime("%Y-%m-%d__%H-%M-%S")) + '.csv', index=False)
 
     # send to BigQuery
@@ -447,11 +518,11 @@ def query_stocks():
                               )
 
     # get from BigQuery
-    undervalued_stocks = pd.read_gbq('SELECT * FROM {}'.format('stock_tickers.undervalued_stocks'),
+    undervalued_stocks = pd.read_gbq('SELECT * FROM {} ORDER BY relative_value_score DESC, offFiftyTwoWeekHigh ASC'.format('stock_tickers.undervalued_stocks'),
                 project_id = 'stock-screener-342515',
                 credentials = service_account.Credentials.from_service_account_file(credentials))
 
 
-    print('Undervalued Stocks BQ: ', undervalued_stocks.head())
+    print('Undervalued Stocks Query: ', undervalued_stocks.head())
 
     return print("Undervalued Stocks Query Successful")

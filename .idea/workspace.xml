@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="d178ad48-597e-4ae9-b664-a219f06b052f" name="Changes" comment="updated query">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/email_results.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/dags/query_stocks.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/dag_processor_manager/dag_processor_manager.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" beforeDir="false" afterPath="$PROJECT_DIR$/airflow-docker/logs/scheduler/latest" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660392990780</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="updated query">
+      <created>1661614221837</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1661614221837</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
