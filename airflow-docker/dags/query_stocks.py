@@ -340,8 +340,9 @@ def query_stocks():
     AND fin.marketCapitalization > 0
     GROUP BY fin.industry
     ORDER BY industryQuarterlyRevenueGrowthYOY DESC
-    )
+    ),
     
+    value_stocks_cte AS (
     SELECT tick.Symbol, tick.Name, fin.sector, fin.industry, last_sale, (last_sale - FiftyTwoWeekHigh)/(FiftyTwoWeekHigh)*100 AS offFiftyTwoWeekHigh,
     (
     (CASE WHEN (trailingpe < sectorTrailingPE) OR (trailingpe < industryTrailingPE) THEN 1 ELSE 0 END) + 
@@ -364,6 +365,7 @@ def query_stocks():
     ) AS relative_value_score
     
     FROM stock_tickers.stock_financials AS fin
+    
     JOIN stock_tickers.stock_tickers AS tick
     ON tick.Symbol = fin.symbol
     
@@ -470,7 +472,17 @@ def query_stocks():
     ON industryQuarterlyRevenueGrowthYOY_avg.industry = fin.industry
     
     WHERE FiftyTwoWeekHigh > 0
+    ),
     
+    value_stocks_ranking_cte AS (
+    SELECT *,
+    ROW_NUMBER() OVER(PARTITION BY sector, industry ORDER BY relative_value_score DESC, offFiftyTwoWeekHigh ASC) AS sector_value_ranking
+    FROM value_stocks_cte
+    )
+    
+    SELECT * 
+    FROM value_stocks_ranking_cte
+    WHERE sector_value_ranking = 1
     ORDER BY relative_value_score DESC, offFiftyTwoWeekHigh ASC
     """,
     project_id = 'stock-screener-342515',
