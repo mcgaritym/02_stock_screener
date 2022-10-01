@@ -6,11 +6,7 @@ from airflow.operators.bash import BashOperator
 from airflow.operators.python import PythonOperator
 
 # import python functions in local python files
-from create_database import create_database
-from extract_transform_load_tickers import extract_transform_load_tickers
-from extract_transform_load_financials_AV import extract_transform_load_financials_AV
-from query_stocks import query_stocks
-from email_results import email_results
+from functions import *
 
 # specify default args
 default_args = {
